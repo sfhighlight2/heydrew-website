@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>HeyDrew Page Tree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<style>
+@page{size:11in 8.5in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1E285F;--ink:#0D112A;--muted:#5A6280;--line:#DCE1EC;--paper:#FFFFFF;--bg:#F4F6F8;--green:#04CE00;--green-d:#129D0F;--green-ink:#155E12;--mint:#E7F8E6;--sky:#2EA3F2;--amber:#945C07;--amber-bg:#FFF4DC}
+body{font-family:"DM Sans",Helvetica,Arial,sans-serif;color:var(--navy);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:11in;height:8.5in;padding:.45in .5in .4in;position:relative;overflow:hidden;background:var(--bg);page-break-after:always;display:flex;flex-direction:column}
+.page:last-child{page-break-after:auto}
+.mono{font-family:"DM Mono",ui-monospace,monospace}
+header.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.22in}
+header.top .brand{display:flex;align-items:center;gap:14px}
+header.top .brand img{height:40px}
+header.top .brand .t{border-left:1.5px solid var(--line);padding-left:14px}
+header.top h1{font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1}
+header.top .sub{font-size:11px;color:var(--muted);margin-top:4px}
+header.top .meta{text-align:right;font-size:9.5px;color:var(--muted);line-height:1.5}
+header.top .meta b{color:var(--navy)}
+.stamp{display:inline-block;border:1.5px solid var(--navy);border-radius:3px;padding:3px 7px;font:500 9px/1 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;transform:rotate(-2deg);background:#fff}
+
+/* root node */
+.root{display:flex;justify-content:center;margin-bottom:12px;position:relative}
+.rootnode{background:var(--navy);color:#fff;border-radius:10px;padding:9px 20px;display:flex;align-items:center;gap:10px;box-shadow:0 6px 16px -8px rgba(30,40,95,.6)}
+.rootnode img{width:26px;height:26px;border-radius:7px}
+.rootnode b{font-size:15px;letter-spacing:-.01em}
+.rootnode span{font:400 10.5px "DM Mono",monospace;opacity:.75}
+.trunk{height:14px;width:2px;background:var(--navy);margin:0 auto}
+.rail{height:2px;background:var(--navy);margin:0 7.1%}
+
+/* columns */
+.cols{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;flex:1;min-height:0}
+.col{display:flex;flex-direction:column;gap:7px;position:relative;padding-top:12px}
+.col::before{content:"";position:absolute;top:0;left:50%;width:2px;height:12px;background:var(--navy)}
+.sec{background:#fff;border:1.5px solid var(--navy);border-radius:8px;padding:8px 9px 7px;position:relative}
+.sec h2{font-size:13px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:5px}
+.sec h2 .dd{font:500 8px "DM Mono",monospace;background:var(--navy);color:#fff;border-radius:3px;padding:2px 4px;letter-spacing:.06em}
+.sec .path{font:400 9px "DM Mono",monospace;color:var(--muted);margin-top:2px}
+.sec.home{background:var(--mint);border-color:var(--green-d)}
+.grp{font:500 8px "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:3px 0 -2px 4px}
+.pg{background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 8px 5px;position:relative;margin-left:10px}
+.pg::before{content:"";position:absolute;left:-10px;top:50%;width:9px;height:1.5px;background:#AEB6CC}
+.pg::after{content:"";position:absolute;left:-10px;top:-8px;bottom:50%;width:1.5px;background:#AEB6CC}
+.pg b{display:block;font-size:10.5px;font-weight:700;line-height:1.2}
+.pg code{display:block;font:400 8.2px "DM Mono",monospace;color:var(--muted);margin-top:2px;word-break:break-all}
+.pg.sub{margin-left:20px;background:#FBFCFE}
+.pg.sub::before{left:-10px}
+.pg:has(.tag){padding-right:38px}
+.pg .tag{position:absolute;right:5px;top:5px;font:500 7px "DM Mono",monospace;letter-spacing:.05em;border-radius:3px;padding:1.5px 4px;text-transform:uppercase}
+.tag.cta{background:var(--green);color:#0B1033}
+.tag.hub{background:var(--navy);color:#fff}
+.anchors{margin:3px 0 0 20px;display:flex;flex-wrap:wrap;gap:3px}
+.anchors span{font:400 7.6px "DM Mono",monospace;color:var(--navy);background:#EEF1F8;border-radius:3px;padding:1.5px 4px}
+
+.bottom{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:10px;margin-top:10px}
+.box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.box h3{font:500 8.5px "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.box .row{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font:400 8.4px "DM Mono",monospace;border-radius:4px;padding:2px 6px;border:1px solid var(--line);background:var(--bg);color:var(--navy)}
+.box.warn{background:var(--amber-bg);border-color:#F0D08A}
+.box.warn h3{color:var(--amber)}
+.box.warn .chip{background:#fff;border-color:#F0D08A;color:#5F3A05}
+.box.ext .chip b{font-weight:500}
+footer.foot{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:8.5px;color:var(--muted)}
+.legend{display:flex;gap:12px;align-items:center}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+
+/* page 2 */
+.p2grid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;flex:1;min-height:0}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:10px}
+th{font:500 8.5px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:7px 10px;border-bottom:1.5px solid var(--navy);background:#fff}
+td{padding:8.6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td code{font:400 9.2px "DM Mono",monospace}
+td.arrow{color:var(--green-d);font-weight:700;width:14px;padding:5px 0;text-align:center}
+td.code{font:500 8.5px "DM Mono",monospace;color:var(--muted);width:34px}
+tr:last-child td{border-bottom:0}
+h2.h{font-size:16px;font-weight:800;letter-spacing:-.01em;margin-bottom:3px}
+p.lead{font-size:10.5px;color:var(--muted);margin-bottom:9px;line-height:1.45}
+.stack{display:flex;flex-direction:column;gap:10px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 15px}
+.card h3{font-size:12.5px;font-weight:800;margin-bottom:6px}
+.card ol,.card ul{padding-left:16px;font-size:10.5px;line-height:1.6;color:var(--navy)}
+.card li{margin-bottom:2px}
+.card li b{font-weight:700}
+.card.warn{background:var(--amber-bg);border-color:#F0D08A}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:10px}
+.kv dt{font:500 9px "DM Mono",monospace;color:var(--muted);padding-top:1px}
+</style></head>
+<body>
+
+<!-- PAGE 1: VISUAL SITEMAP -->
+<section class="page">
+  <header class="top">
+    <div class="brand"><img src="logo.png" alt="HeyDrew"><div class="t"><h1>Page Tree</h1><div class="sub">Website redesign · 24 pages · clean URLs as they will go live</div></div></div>
+    <div class="meta"><span class="stamp">Sitemap v1 · 24 Sep 2026</span><br><br><b>heydrew.com</b> · source: <span class="mono">dist/sitemap.xml</span></div>
+  </header>
+
+  <div class="root"><div class="rootnode"><img src="icon.png" alt=""><b>heydrew.com</b><span>/ · Home</span></div></div>
+  <div class="rail"></div>
+
+  <div class="cols">
+    <!-- HOME -->
+    <div class="col">
+      <div class="sec home"><h2>Home</h2><div class="path">/</div></div>
+      <div class="pg"><b>Hero + strategy estimator</b><code>2 questions → TaxLand</code><span class="tag cta">CTA</span></div>
+      <div class="pg"><b>How it works · Strategies</b><code>on-page sections</code></div>
+      <div class="pg"><b>Illustrative example</b><code>$135K ledger (labeled)</code></div>
+      <div class="pg"><b>Testimonials · Founder</b><code>real clients · Andrew</code></div>
+      <div class="pg"><b>Pricing · FAQ · Final CTA</b><code>+ exit-intent popup</code></div>
+    </div>
+
+    <!-- PRODUCT -->
+    <div class="col">
+      <div class="sec"><h2>Product <span class="dd">▾ MENU</span></h2><div class="path">/product/</div></div>
+      <div class="pg"><b>How It Works</b><code>/product/how-it-works/</code></div>
+      <div class="pg"><b>TaxLand Assessment</b><code>/product/taxland/</code><span class="tag cta">CTA</span></div>
+      <div class="pg"><b>Your Tax Valet</b><code>/product/tax-valet/</code></div>
+      <div class="pg"><b>Bookkeeping &amp; Payroll</b><code>/product/bookkeeping-payroll/</code></div>
+      <div class="pg"><b>Pricing</b><code>/product/pricing/</code></div>
+    </div>
+
+    <!-- SOLUTIONS -->
+    <div class="col">
+      <div class="sec"><h2>Solutions <span class="dd">▾ MENU</span></h2><div class="path">/solutions/ · /strategies/</div></div>
+      <div class="grp">By business</div>
+      <div class="pg"><b>S-Corp Owners</b><code>/solutions/s-corp-owners/</code></div>
+      <div class="pg"><b>Self-Employed &amp; LLCs</b><code>/solutions/self-employed/</code></div>
+      <div class="pg"><b>Real Estate Investors</b><code>/solutions/real-estate-investors/</code></div>
+      <div class="pg"><b>Families &amp; Gen. Wealth</b><code>/solutions/families/</code></div>
+      <div class="grp">By strategy</div>
+      <div class="pg"><b>All Strategies</b><code>/strategies/</code><span class="tag hub">HUB</span></div>
+      <div class="anchors"><span>#hire-your-kids</span><span>#augusta-rule</span><span>#solo-401k</span><span>#accountable-plan</span><span>#hsa</span><span>#hra</span><span>#ira</span><span>#529-plan</span></div>
+    </div>
+
+    <!-- CASE STUDIES -->
+    <div class="col">
+      <div class="sec"><h2>Case Studies</h2><div class="path">/case-studies/</div></div>
+      <div class="pg"><b>In their words</b><code>6 real client quotes</code></div>
+      <div class="pg"><b>Scenario picker</b><code>illustrative, not clients</code></div>
+      <div class="anchors"><span>#scenario-a</span><span>#scenario-b</span><span>#scenario-c</span><span>#scenario-d</span></div>
+      <div class="pg"><b>Worked example</b><code>$135K ledger (labeled)</code></div>
+      <div class="pg"><b>Share your story</b><code>→ /company/contact/</code></div>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="col">
+      <div class="sec"><h2>Resources <span class="dd">▾ MENU</span></h2><div class="path">/resources/</div></div>
+      <div class="pg"><b>Resources hub</b><code>/resources/</code><span class="tag hub">HUB</span></div>
+      <div class="pg"><b>Guides</b><code>/resources/guides/</code></div>
+      <div class="pg sub"><b>Proactive tax planning</b><code>…/guides/proactive-tax-planning/</code></div>
+      <div class="pg sub"><b>First-call checklist</b><code>…/guides/first-call-checklist/</code></div>
+      <div class="pg sub"><b>Records that hold up</b><code>…/guides/records-that-hold-up/</code></div>
+      <div class="pg"><b>Worksheets &amp; Templates</b><code>/resources/worksheets/</code></div>
+      <div class="pg sub"><b>4 PDF downloads</b><code>/downloads/*.pdf</code></div>
+      <div class="pg"><b>FAQ</b><code>/resources/faq/</code></div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="col">
+      <div class="sec"><h2>Company <span class="dd">▾ MENU</span></h2><div class="path">/company/</div></div>
+      <div class="pg"><b>About HeyDrew</b><code>/company/about/</code></div>
+      <div class="pg"><b>Careers</b><code>/company/careers/</code><span class="tag hub" style="background:var(--green);color:#0B1033">HIRING</span></div>
+      <div class="pg"><b>Affiliate Program</b><code>/company/affiliates/</code></div>
+      <div class="pg"><b>Contact</b><code>/company/contact/</code></div>
+      <div class="pg"><b>Security &amp; Privacy</b><code>/company/security/</code></div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="box warn"><h3>Legal · migrate before launch (keep exact paths)</h3>
+      <div class="row"><span class="chip">/engagement-terms/</span><span class="chip">/privacy-policy/</span><span class="chip">/cookie-policy/</span><span class="chip">/sms-terms/</span><span class="chip">/terms-of-use/</span></div></div>
+    <div class="box"><h3>System files</h3>
+      <div class="row"><span class="chip">/sitemap.xml</span><span class="chip">/robots.txt</span><span class="chip">/llms.txt</span><span class="chip">/llms-full.txt</span><span class="chip">/404</span><span class="chip">/_redirects (38)</span></div></div>
+    <div class="box ext"><h3>External destinations</h3>
+      <div class="row"><span class="chip"><b>taxland.heydrew.com</b> assessment</span><span class="chip"><b>portal.heydrew.com</b> sign-in</span><span class="chip">Impact · affiliates</span><span class="chip">Dover · jobs</span></div></div>
+  </div>
+
+  <footer class="foot">
+    <div class="legend"><span><i style="background:var(--navy)"></i>Nav item / dropdown</span><span><i style="background:#fff;border:1px solid var(--line)"></i>Page</span><span><i style="background:#EEF1F8"></i>On-page anchor</span><span><i style="background:var(--green)"></i>Primary conversion</span></div>
+    <div>HeyDrew · Aspire Advisors LLC d/b/a HeyDrew! · Page 1 of 2</div>
+  </footer>
+</section>
+
+<!-- PAGE 2: URL MAP + NOTES -->
+<section class="page">
+  <header class="top">
+    <div class="brand"><img src="logo.png" alt="HeyDrew"><div class="t"><h1>URL Map &amp; Launch Notes</h1><div class="sub">Where today's heydrew.com links go, and what's needed to switch over</div></div></div>
+    <div class="meta"><span class="stamp">301 redirects · 38 rules</span></div>
+  </header>
+
+  <div class="p2grid">
+    <div>
+      <h2 class="h">Old URL → new URL</h2>
+      <p class="lead">Every live WordPress address points to its new home, so search rankings and old links carry over. Both slash and no-slash versions are covered.</p>
+      <table>
+        <thead><tr><th>Old (live WordPress)</th><th></th><th>New</th><th>Code</th></tr></thead>
+        <tbody>
+          <tr><td><code>/about-us</code></td><td class="arrow">→</td><td><code>/company/about/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/how-it-works</code></td><td class="arrow">→</td><td><code>/product/how-it-works/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/why-we-are-different</code></td><td class="arrow">→</td><td><code>/product/how-it-works/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/our-strategies</code></td><td class="arrow">→</td><td><code>/strategies/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/faq</code></td><td class="arrow">→</td><td><code>/resources/faq/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/careers</code></td><td class="arrow">→</td><td><code>/company/careers/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/contact</code></td><td class="arrow">→</td><td><code>/company/contact/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/affiliate</code></td><td class="arrow">→</td><td><code>/company/affiliates/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/terms-of-service</code></td><td class="arrow">→</td><td><code>/engagement-terms/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/messaging-terms</code></td><td class="arrow">→</td><td><code>/sms-terms/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/wp-content/uploads/…/*.pdf</code> (4)</td><td class="arrow">→</td><td><code>/downloads/*.pdf</code></td><td class="code">301</td></tr>
+          <tr><td><code>/sitemap_index.xml</code>, <code>/page-sitemap.xml</code></td><td class="arrow">→</td><td><code>/sitemap.xml</code></td><td class="code">301</td></tr>
+          <tr><td><code>/feed</code>, <code>/comments/feed/</code></td><td class="arrow">→</td><td><code>/</code></td><td class="code">301</td></tr>
+          <tr><td><code>/get-started</code></td><td class="arrow">→</td><td><code>taxland.heydrew.com</code></td><td class="code">302</td></tr>
+          <tr><td><code>/login</code></td><td class="arrow">→</td><td><code>portal.heydrew.com</code></td><td class="code">302</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stack">
+      <div class="card">
+        <h3>At a glance</h3>
+        <dl class="kv">
+          <dt>PAGES</dt><dd>24 indexable + 404</dd>
+          <dt>MENUS</dt><dd>Product ▾ · Solutions ▾ · Case Studies · Resources ▾ · Company ▾</dd>
+          <dt>PRIMARY CTA</dt><dd>"See what you can keep" → TaxLand assessment</dd>
+          <dt>SECONDARY</dt><dd>"Book a strategy call" → Contact (booking link TBC)</dd>
+          <dt>BUILD</dt><dd><span class="mono">cd site &amp;&amp; node tools/build.mjs</span> → <span class="mono">dist/</span></dd>
+          <dt>REPO</dt><dd><span class="mono">github.com/sfhighlight2/heydrew-website</span></dd>
+        </dl>
+      </div>
+      <div class="card warn">
+        <h3>Before the domain switches</h3>
+        <ol>
+          <li><b>Migrate the 5 legal pages</b> at their exact live paths (SMS terms is likely registered for messaging compliance).</li>
+          <li><b>Confirm the booking link</b> for "Book a strategy call".</li>
+          <li><b>Replace the HRA plan PDF</b>. The live file shows an internal review note.</li>
+          <li><b>Noindex the old prototype</b> at hey-drew.vercel.app and any staging deploys.</li>
+          <li><b>Verify</b> Google Search Console + Bing, submit the sitemap, and spot-check redirects.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Recommended next pages</h3>
+        <ul>
+          <li>Tax Strategist vs. CPA (comparison)</li>
+          <li>Strategy pages under <span class="mono">/strategies/</span>: Augusta Rule, Accountable Plan, Hire Your Kids, S-Corp Reasonable Salary, Solo 401(k)</li>
+          <li>Guides: how to reduce business taxes, when to elect S-Corp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <div>Prototype sitemap for internal review. Page names and URLs may change before launch.</div>
+    <div>HeyDrew · Page 2 of 2</div>
+  </footer>
+</section>
+</body></html>
