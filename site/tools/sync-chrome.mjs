@@ -10,7 +10,7 @@
        so a page can opt out of e.g. the overlays by removing the markers);
      - prefixes relative href/src values in those blocks with the page's data-root
        ("../" for product/, solutions/, company/, resources/ pages);
-     - sets ?src=<data-page> on TaxLand and contact links (site.js does this at
+     - sets ?src=<data-page> on TaxLand and contact links (company/contact.html) (site.js does this at
        runtime too; this keeps no-JS links right);
      - marks the current page: aria-current="page" on links whose data-slug equals
        data-page, and .is-current on its dropdown trigger.
@@ -55,7 +55,7 @@ const isRelative = v => v && !/^(?:[a-z][a-z0-9+.-]*:|#|\/|\.\.\/|data:)/i.test(
 function localize(block, root, slug) {
   let s = block;
   if (root) s = s.replace(/\s(href|src)="([^"]*)"/g, (m, attr, v) => isRelative(v) ? ` ${attr}="${root}${v}"` : m);
-  s = s.replace(/(https:\/\/(?:taxland\.heydrew\.com|heydrew\.com\/contact)\/\?src=)[a-z0-9-]+/g, `$1${slug}`);
+  s = s.replace(/(https:\/\/(?:taxland\.heydrew\.com|heydrew\.com\/contact)\/\?src=|company\/contact\.html\?src=)[a-z0-9-]+/g, `$1${slug}`);
   // current page
   s = s.replace(/\saria-current="page"/g, '').replace(/\sis-current/g, '');
   s = s.replace(/(<a\b[^>]*\bdata-slug="([^"]+)"[^>]*)>/g, (m, open, sl) => sl === slug ? `${open} aria-current="page">` : m);

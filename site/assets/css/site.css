@@ -445,3 +445,8 @@ html:not(.js) .nav-item:hover>.nav-panel,html:not(.js) .nav-item:focus-within>.n
   .box::after{transition:opacity 150ms!important}
   .nav-panel,.nav-panel.is-open{transform:none}
 }
+
+/* ---------- H1 topic kicker (SEO: the plain-words topic lives inside the H1) ---------- */
+.h1-kicker{display:block;margin:0 0 14px;font:500 12px/1.35 var(--mono);letter-spacing:.08em;text-transform:uppercase;font-variation-settings:normal;color:var(--navy-600);text-wrap:wrap}
+.on-dark .h1-kicker,.tl-h1 .h1-kicker{color:var(--navy-300)}
+@media (max-width:767px){.h1-kicker{margin-bottom:10px;font-size:11px}}

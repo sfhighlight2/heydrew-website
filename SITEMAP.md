@@ -28,7 +28,7 @@ site/
   company/security.html
   img/  img/pages/
 ```
-All internal links are relative and end in `.html`. Primary CTA everywhere: "See what you can keep" → `https://taxland.heydrew.com/?src=<page-slug>&pos=<position>`. Secondary: "Book a strategy call" → `https://heydrew.com/contact/?src=<page-slug>` (booking URL still to be confirmed).
+All internal links are relative and end in `.html`. Primary CTA everywhere: "See what you can keep" → `https://taxland.heydrew.com/?src=<page-slug>&pos=<position>`. Secondary: "Book a strategy call" → `company/contact.html?src=<page-slug>&pos=<position>` (internal; swap in the booking URL once confirmed). Production URLs are clean (`/company/contact/`) via `site/tools/build.mjs`.
 
 ## Navigation
 **Product ▾** (each item has a one-line description in the dropdown)

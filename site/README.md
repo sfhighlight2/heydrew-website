@@ -31,6 +31,47 @@ The homepage now shares its chrome and styles with every page.
 
 **Copy rule:** never state a number of strategies anywhere (no "8", "eight", "N of 8", "+ 4 more").
 
+## Production build: clean URLs + SEO (`tools/build.mjs`)
+
+The `.html` files in `site/` are the **source** (relative links, work over `file://`). Deploy the **build**, not the source.
+
+```bash
+cd site
+node tools/sync-chrome.mjs        # only if you edited the chrome in _template.html
+node tools/build.mjs              # writes ../dist and lints it (exit 1 on any error)
+cd ../dist && python3 -m http.server 8080   # preview at http://localhost:8080
+```
+
+Options: `--out <dir>` (default `../dist`), `--origin https://heydrew.com` (use the staging origin for a preview deploy, and keep staging `noindex` at the host).
+
+**What the build does**
+- **Clean URLs.** Every page becomes `dist/<path>/index.html`: `product/pricing.html` → `/product/pricing/`, `solutions/strategies.html` → `/strategies/`, `resources/guide-proactive-tax-planning.html` → `/resources/guides/proactive-tax-planning/`. The `PAGES` list at the top of the script is the URL map. **Add new pages there.**
+- **Links.** It rewrites relative `href`/`src`/`srcset` to root-absolute clean URLs, and sets `data-root="/"`.
+- **Head.** It injects:
+  - a canonical link
+  - `robots` meta
+  - Open Graph and Twitter tags (default image `img/og-default.jpg`, 1200×630)
+  - favicon, apple-touch-icon and manifest links
+  - self-hosted fonts (`assets/fonts/*.woff2`, inline `@font-face` with `font-display:swap`, and a preload for DM Sans), replacing Google Fonts
+- **JSON-LD.** One `@graph` per page:
+  - On every page: Organization (no address or phone), WebSite, WebPage and BreadcrumbList. The breadcrumbs are read from the visible crumbs.
+  - By page type: Service, WebApplication (TaxLand), Article (guides), CollectionPage + ItemList, and Person (Andrew, on Home and About).
+  - FAQPage is built from the Q&A visible on the page, so the markup always matches the text. Any inline JSON-LD in the sources is dropped.
+- **Generated files:** `404.html` (noindex), `sitemap.xml`, `robots.txt` (AI crawlers explicitly allowed), `llms.txt`, `llms-full.txt` (page text as Markdown), `site.webmanifest`, `_redirects` (Netlify / Cloudflare Pages) and `vercel.json` (the same 301 map from the old WordPress URLs).
+- **Assets.** It copies only what the pages reference, plus fonts, icons and `downloads/*.pdf` (the four real worksheets, now served from `/downloads/`; the old `/wp-content/...pdf` URLs 301 there).
+- **Lint** (the build fails on any error):
+  - every title is unique and ≤60 characters; every description is unique and ≤155
+  - every page has a canonical, exactly one H1, and alt + width/height on each image
+  - no broken internal links or srcset entries
+  - the JSON-LD parses and the sitemap matches the pages
+  - no "never auto-renew", no "licensed CPA", and no strategy counts
+
+**Article dates:** the `DATES` map in the script is empty on purpose. Add a page's real `published`/`modified` date only once it is live. Never backdate.
+
+**Legal pages** (`/privacy-policy/`, `/terms-of-use/`, `/engagement-terms/`, `/sms-terms/`, `/cookie-policy/`) are linked at their live paths but are not in this prototype. The build prints a NOTE until they exist. **Launch blocker:** migrate their real text before DNS moves, keeping the exact paths.
+
+**Responsive images:** the large hero and scene images have `-720`/`-640`/`-1200` variants with `srcset`/`sizes`.
+
 ## Open / preview
 
 - **Quickest:** open `index.html` in a browser. It works from `file://`.

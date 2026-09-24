@@ -264,7 +264,7 @@ Title ≤ 60 characters, description ≤ 155 (both counted and verified). Brand 
 | TaxLand (`product/taxland.html`) | `/product/taxland/` | free tax strategy assessment | tax savings assessment; tax savings quiz | TaxLand: Free Tax Strategy Assessment for Owners | TaxLand is HeyDrew's free tax strategy assessment, played like a game. Answer questions about your business and family to see which strategies may fit. |
 | Tax Valet (`product/tax-valet.html`) | `/product/tax-valet/` | year-round tax support | dedicated tax contact | Your Tax Valet: Year-Round Tax Support, One Contact | Your Tax Valet is your dedicated point of contact at HeyDrew. Message them from your portal; they coordinate your strategy, filing, books and payroll. |
 | Bookkeeping & Payroll (`product/bookkeeping-payroll.html`) | `/product/bookkeeping-payroll/` | bookkeeping and payroll for business owners | S-Corp payroll service | Bookkeeping & Payroll for Business Owners | HeyDrew | Optional monthly bookkeeping and in-house payroll, coordinated by the Tax Valet who runs your tax strategy. Clean books and a salary that holds up. |
-| Pricing (`product/pricing.html`) | `/product/pricing/` | tax strategy pricing | how much does a tax strategist cost | Tax Strategy Pricing: One Annual Fee | HeyDrew | How HeyDrew pricing works: one annual fee based on your entities and complexity, quoted on your strategy call before you commit, and paid upfront. |
+| Pricing (`product/pricing.html`) | `/product/pricing/` | tax strategy pricing | how much does a tax strategist cost | Tax Strategy Pricing: One Annual Fee | HeyDrew | One annual fee based on your entities and complexity, quoted on your call before you commit. We reach out about 30 days before renewal with options. |
 | S-Corp Owners (`solutions/s-corp-owners.html`) | `/solutions/s-corp-owners/` | S-Corp tax strategy | S-Corp tax planning; S-Corp owner salary | S-Corp Tax Strategy: Salary, Payroll & Planning | HeyDrew | Tax planning for S-Corp owners: a documented reasonable salary, clean payroll, the Accountable Plan, the Augusta Rule and retirement, planned in time. |
 | Self-Employed (`solutions/self-employed.html`) | `/solutions/self-employed/` | tax strategies for self-employed | LLC tax strategies; single-member LLC tax planning | Tax Strategies for Self-Employed & LLC Owners | HeyDrew | Year-round tax planning for sole proprietors and single-member LLCs: Solo 401(k), HSA, home office, hiring your kids, estimates and S-Corp timing. |
 | Real Estate (`solutions/real-estate-investors.html`) | `/solutions/real-estate-investors/` | tax planning for real estate investors | real estate professional status; cost segregation | Tax Planning for Real Estate Investors | HeyDrew | Tax planning for business owners who hold property: entity structure, the Augusta Rule, real estate professional status, cost segregation and records. |
@@ -278,7 +278,7 @@ Title ≤ 60 characters, description ≤ 155 (both counted and verified). Brand 
 | Guide: records (`resources/guide-records-that-hold-up.html`) | `/resources/guides/records-that-hold-up/` | business tax records to keep | how long to keep business tax records; documenting deductions | Business Tax Records That Hold Up: A Plain Guide | HeyDrew | How business owners keep records that support their deductions: write it down when it happens, tie costs to a business purpose, put plans in writing. |
 | Worksheets (`resources/worksheets.html`) | `/resources/worksheets/` | tax planning worksheets | Augusta Rule worksheet; accountable plan template; HRA plan document | Free Tax Worksheets & Templates for Owners | HeyDrew | Free templates: an Augusta Rule comparable-rent worksheet, an Accountable Plan board resolution, and an HRA plan document and employment agreement. |
 | FAQ (`resources/faq.html`) | `/resources/faq/` | tax strategy FAQ | HeyDrew FAQ; is a tax strategist worth it | Tax Strategy FAQ: Straight Answers | HeyDrew | Straight answers about HeyDrew: what it is, who it fits, pricing, filing, audit risk, keeping your current CPA, catching up on prior years and security. |
-| About (`company/about.html`) | `/company/about/` | HeyDrew | Andrew Cordle; HeyDrew founder | About HeyDrew and Founder Andrew Cordle | HeyDrew is a year-round tax strategy service for business owners, founded by Andrew Cordle. Why it exists and how software and licensed pros split the work. |
+| About (`company/about.html`) | `/company/about/` | HeyDrew | Andrew Cordle; HeyDrew founder | About HeyDrew and Founder Andrew Cordle | HeyDrew is year-round tax strategy for business owners, founded by Andrew Cordle. Why it exists and how software and licensed pros split the work. |
 | Careers (`company/careers.html`) | `/company/careers/` | HeyDrew careers | remote jobs | Careers at HeyDrew: Remote Roles in the US | Join HeyDrew and help business owners keep what they earn. How we work, what we value, and the open remote roles on our team right now. |
 | Affiliates (`company/affiliates.html`) | `/company/affiliates/` | tax strategy affiliate program | CPA referral program | Tax Strategy Affiliate Program | HeyDrew | Refer business owners to HeyDrew through our affiliate program on Impact. Built for CPAs, coaches, creators and communities. Terms live on Impact. |
 | Contact (`company/contact.html`) | `/company/contact/` | contact HeyDrew | book a tax strategy call | Contact HeyDrew: Book a Tax Strategy Call | Reach a person at HeyDrew. Send a message, book a strategy call, start the free assessment, or sign in to message your Tax Valet. |
@@ -304,7 +304,7 @@ Title ≤ 60 characters, description ≤ 155 (both counted and verified). Brand 
 <!-- KEYMAP-END -->
 
 Notes:
-- The Pricing meta drops "never auto-renews" until C5 is resolved; restore it once the Engagement Terms match.
+- C5 resolved by the client (2026-09-24): no "never auto-renews" anywhere; renewal copy is "We reach out about 30 days before your renewal with your options."
 - Guide metas must match the final guide text. The resources builder should adjust wording, not intent, if content differs.
 - H1 guidance per page: include the primary keyword or its plain variant in the H1 (kicker span allowed) and in the first sentence.
 
@@ -412,3 +412,15 @@ Self-host fonts (H9) · `srcset`/`sizes` on all hero and scene images (H8) · no
 10. **FAQ and definitions:** one `.qa` per question; the answer's first sentence stands alone (answer, then detail).
 11. **Tables and lists:** comparisons in real `<table>` with `<th scope>`; steps in `<ol>`; checklists in `<ul>`. Define a term in the sentence where it first appears ("An accountable plan is…"); don't build a glossary page.
 12. **Case studies:** testimonials as `<blockquote>` + `<cite>` with visible text (quote word for word). Scenario headings are descriptive ("Illustrative scenario: an S-Corp consultant"). Link each strategy mentioned to its `solutions/strategies.html#anchor` and the matching solutions page. Use the §5 title/meta.
+
+---
+
+## Phase 2 status (2026-09-24)
+
+Implemented. See `research/seo/PHASE2_REPORT.md` for details and verification. Client decisions applied:
+- Renewal: "We reach out about 30 days before your renewal with your options." Nothing says "never auto-renews".
+- Credentials: "licensed (tax) professionals" everywhere.
+- No address or phone anywhere, including schema.
+- Clean URLs come from `site/tools/build.mjs`, which outputs `dist/`.
+
+Resources scope is final: no glossary and no tax calendar.

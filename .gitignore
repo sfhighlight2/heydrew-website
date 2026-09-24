@@ -8,3 +8,6 @@ research/verify/
 research/**/web/
 node_modules/
 .DS_Store
+
+# Production build output (regenerate with: cd site && node tools/build.mjs)
+dist/

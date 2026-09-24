@@ -248,7 +248,7 @@
   function updateSticky(){
     if(!sticky) return;
     var st='default', b='See what you can keep', s='Free. A few minutes.', S=HD.state||{};
-    if(S.entity&&!S.rev){ st='resume'; b='Finish your plan'; s='1 question left'; sticky.setAttribute('href',$('#plan')?'#plan':ROOT+'index.html#plan'); }
+    if(S.entity&&!S.rev){ st='resume'; b='Finish your plan'; s='1 question left'; sticky.setAttribute('href',$('#plan')?'#plan':ROOT+(ROOT==='/'?'':'index.html')+'#plan'); }
     else if(S.entity&&S.rev){ st='continue'; b='Continue in TaxLand'; s='Your answers carry over'; sticky.href=tlURL('sticky',S); }
     else sticky.href=tlURL('sticky',{});
     sticky.setAttribute('data-state',st);
