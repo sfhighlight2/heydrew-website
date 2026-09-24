@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TaxLand: the free tax strategy assessment | HeyDrew</title>
-<meta name="description" content="TaxLand is HeyDrew's free assessment, played like a game. Answer questions about your business and family and see which tax strategies may fit. A few minutes, no credit card.">
+<title>Tax Planning Checklist: What to Bring to Your First Call</title>
+<meta name="description" content="A checklist for your first tax strategy call: the returns, entity documents, payroll and books to gather, and the questions to ask, so the plan fits.">
 <meta name="theme-color" content="#F7F8FB">
 <meta name="color-scheme" content="light">
 <script>
@@ -17,148 +17,14 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/site.css">
 <link rel="stylesheet" href="../assets/css/pages.css">
+<link rel="stylesheet" href="../assets/css/resources.css">
 <style id="page-css">
-/* ---------- Hero: a three-layer diorama (backdrop, Drew, grass) with the copy on the dark side ---------- */
-.tl-hero{padding-top:16px}
-.tl-stage{min-height:min(760px,calc(100vh - 104px));min-height:min(760px,calc(100dvh - 104px));display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);background:var(--ink-950);isolation:isolate}
-.tl-scene{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.tl-layer{position:absolute}
-.tl-back{inset:-8% -3%}
-.tl-back img{width:100%;height:100%;object-fit:cover;object-position:40% 62%;filter:saturate(.92)}
-.tl-ov{inset:0;background:linear-gradient(90deg,rgba(11,16,51,0) 0%,rgba(11,16,51,.08) 40%,rgba(11,16,51,.72) 60%,#0B1033 80%)}
-.tl-drew{left:7%;bottom:-40px;width:clamp(340px,33vw,470px)}
-.tl-drew img{width:100%;height:auto}
-.tl-label{position:absolute;left:50%;top:27%;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:rgba(11,16,51,.55);border:1px solid rgba(255,255,255,.28);border-radius:4px;padding:6px 8px;white-space:nowrap}
-.tl-fg{left:-2%;right:-2%;bottom:-2px}
-.tl-fg img{width:100%;height:auto;display:block}
-.tl-copy{grid-column:2;position:relative;z-index:2;align-self:center;padding:56px 56px 64px 0;color:#fff}
-.tl-copy .crumbs a{color:var(--navy-300)}
-.tl-h1{margin-top:22px;font-size:clamp(2.5rem,1.4rem + 2.6vw,4rem);font-weight:680;letter-spacing:-.038em;line-height:1;font-variation-settings:"opsz" 40;color:#fff;text-wrap:balance}
-.tl-h1 .hl::after{background:rgba(4,206,0,.42)}
-.tl-copy .lead{margin-top:22px;color:var(--navy-200);max-width:30em}
-.tl-copy .cta-row{margin-top:32px}
-.tl-copy .small{margin-top:12px;color:var(--navy-300)}
-
-/* ---------- Run sheet: three facts on one ledger row ---------- */
-.run{padding:40px 0 0}
-.run-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
-.run-row>div{padding:20px 24px 0;border-left:1px solid var(--line)}
-.run-row>div:first-child{border-left:0;padding-left:0}
-.run-row .mono{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
-.run-row b{display:block;margin-top:10px;font-size:clamp(1.5rem,1.1rem + 1vw,2rem);line-height:1.1;font-weight:650;letter-spacing:-.03em;color:var(--ink-950)}
-.run-row p{margin-top:6px;font-size:15px;line-height:22px;color:var(--navy-600)}
-
-/* ---------- What it asks: areas + a playable sample question ---------- */
-.asks{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:80px;align-items:start}
-.asks .lead{margin-top:20px}
-.areas{margin-top:36px;border-top:1px solid var(--line)}
-.areas li{display:grid;grid-template-columns:120px 1fr;column-gap:16px;padding:16px 0;border-bottom:1px solid var(--navy-100)}
-.areas .mono{font-size:12px;line-height:24px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
-.areas p{font-size:16px;line-height:24px;color:var(--navy-900)}
-.play{position:sticky;top:112px;padding:0 32px 28px 64px}
-.play .pd-h{margin-left:-40px;padding-left:40px}
-.play-q{margin-top:26px;font-size:24px;line-height:30px;font-weight:650;letter-spacing:-.02em;color:var(--navy-900);text-wrap:balance}
-.play-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.pchip{min-height:48px;padding:0 18px;border:1px solid var(--line);border-radius:12px;background:#fff;font:500 16px/1 var(--sans);color:var(--navy-900);transition:border-color 160ms var(--ease),background-color 160ms var(--ease),transform 120ms var(--ease)}
-@media (hover:hover){ .pchip:hover{border-color:var(--navy-400);background:var(--navy-50)} }
-.pchip:active{transform:scale(.97)}
-.pchip[aria-pressed="true"]{background:var(--navy-900);border-color:var(--navy-900);color:#fff}
-.play-out{margin-top:24px;min-height:132px;border-top:1px dashed var(--navy-300);padding-top:20px}
-.play-idle{font-size:15px;line-height:22px;color:var(--navy-500)}
-.unlock{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:start;padding:16px 18px;border:1px solid var(--green-200);background:var(--green-100);border-radius:4px}
-.unlock .box{margin-top:4px;border-color:var(--green-700)}
-.unlock b{display:block;font-size:17px;line-height:24px;font-weight:650;color:var(--navy-900)}
-.unlock b small{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--green-700);margin-left:8px;vertical-align:2px}
-.unlock span.t{display:block;margin-top:4px;font-size:15px;line-height:22px;color:var(--navy-600)}
-.unlock--skip{border-color:var(--line);background:var(--navy-50)}
-.unlock--skip .box{border-color:var(--navy-300)}
-.play-note{margin-top:16px;font-size:12px;line-height:17px;color:var(--navy-500)}
-
-/* ---------- What you get: the map (signature, second beat) ---------- */
-.map{position:relative;padding:56px 48px 48px;background-color:#fff;background-image:linear-gradient(var(--navy-100) 1px,transparent 1px),linear-gradient(90deg,var(--navy-100) 1px,transparent 1px);background-size:48px 48px;background-position:-1px -1px}
-.map-path{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.map-path path{fill:none;stroke:var(--navy-400);stroke-width:2.5;stroke-dasharray:2 10;stroke-linecap:round}
-.map-grid{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto auto;gap:48px 20px}
-.spot{position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:var(--paper-shadow);padding:16px 16px 14px}
-.spot .mono{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
-.spot h3{margin-top:10px;font-size:18px;line-height:23px;font-weight:650;letter-spacing:-.015em;color:var(--navy-900)}
-.spot p{margin-top:6px;font-size:14px;line-height:20px;color:var(--navy-600)}
-.spot--fit .mono{color:var(--green-700)}
-.spot--fit{border-color:var(--green-200)}
-.spot--look .mono{color:var(--navy-600)}
-.spot--end{background:var(--navy-900);border-color:var(--navy-900)}
-.spot--end h3{color:#fff}.spot--end p{color:var(--navy-300)}.spot--end .mono{color:var(--green-400)}
-.s1{grid-column:1/4;grid-row:1}
-.s2{grid-column:5/8;grid-row:1;margin-top:72px}
-.s3{grid-column:9/12;grid-row:1}
-.s4{grid-column:8/11;grid-row:2}
-.s5{grid-column:3/7;grid-row:2;margin-top:48px}
-.map>.stamp{position:absolute;right:28px;top:-14px;z-index:2}
-.map-note{margin-top:16px;font-size:13px;line-height:19px;color:var(--navy-500);max-width:72ch}
-.get-head{display:grid;grid-template-columns:minmax(0,1fr);max-width:760px;margin-bottom:56px}
-.get-head .lead{margin-top:20px}
-
-/* ---------- Privacy ---------- */
-.priv{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:80px;align-items:start}
-.priv .lead{margin-top:20px}
-.priv .link{margin-top:24px}
-.priv-list li{display:grid;grid-template-columns:28px 1fr;column-gap:12px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:17px;line-height:26px;color:#fff}
-.priv-list li:first-child{border-top:1px solid rgba(255,255,255,.14)}
-.priv-list .ck{color:var(--green-400);font-weight:700}
-.sec--ink .link{color:#fff}
-
-/* ---------- FAQ quote ---------- */
-.faq-l .quote--card{margin-top:32px}
-
-/* ---------- Final CTA without Drew (he was the hero) ---------- */
-.cta-band--solo .cta-stage{grid-template-columns:minmax(0,1fr);padding-bottom:0}
-.cta-band--solo .cta-copy{max-width:720px}
-.cta-band--solo .link{color:#fff}
-.cta-band--ink .hl::after{background:rgba(4,206,0,.42)}
-
-@media (max-width:1023px){
-  .tl-stage{grid-template-columns:1fr;min-height:0;display:block}
-  .tl-scene{position:relative;inset:auto;height:420px}
-  .tl-ov{background:linear-gradient(180deg,rgba(11,16,51,0) 60%,rgba(11,16,51,.85) 100%)}
-  .tl-drew{left:4%;bottom:-24px;width:300px}
-  .tl-copy{grid-column:auto;padding:8px 40px 48px}
-  .asks,.priv{grid-template-columns:1fr;row-gap:40px}
-  .play{position:relative;top:auto}
-  .map{padding:40px 24px 32px}
-}
-@media (max-width:767px){
-  .tl-hero{padding-top:8px}
-  .tl-scene{height:340px}
-  .tl-back{inset:-6% -4%}
-  .tl-back img{object-position:34% 60%}
-  .tl-drew{width:240px;left:2%;bottom:-20px}
-  .tl-label{font-size:10px;left:44%;top:22%}
-  .tl-fg{left:-30%;right:-30%}
-  .tl-copy{padding:4px 20px 32px}
-  .tl-h1{margin-top:16px;letter-spacing:-.034em;line-height:1.04}
-  .tl-copy .lead{margin-top:14px}
-  .tl-copy .cta-row{margin-top:24px}
-  .tl-copy .btn{width:100%}
-  .run-row{grid-template-columns:1fr}
-  .run-row>div{border-left:0;padding:16px 0;border-bottom:1px solid var(--line)}
-  .areas li{grid-template-columns:1fr;row-gap:2px}
-  .play{padding:0 16px 20px 40px}
-  .play .pd-h{margin-left:-24px;padding-left:24px}
-  .play-q{font-size:20px;line-height:26px}
-  .map{padding:32px 14px 20px;background-size:32px 32px}
-  .map-path{display:none}
-  .map-grid{grid-template-columns:1fr;gap:14px;padding-left:22px}
-  .map-grid::before{content:"";position:absolute;left:6px;top:12px;bottom:12px;width:2px;background:repeating-linear-gradient(to bottom,var(--navy-300) 0 4px,transparent 4px 10px)}
-  .spot{grid-column:auto!important;grid-row:auto!important;margin-top:0!important}
-  .map>.stamp{right:8px}
-  .cta-band--solo .cta-drew{display:none}
-}
 </style>
 </head>
-<body data-page="taxland" data-root="../">
+<body data-page="guide-first-call-checklist" data-root="../">
 <!-- chrome:sprite -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="arr" viewBox="0 0 16 16"><path d="M2.5 8h10.2M8.8 3.8 13 8l-4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -182,13 +48,13 @@
     <nav class="nav" id="nav" aria-label="Primary">
       <ul class="nav-list">
         <li class="nav-item" data-group="product">
-          <button class="nav-top is-current" type="button" id="nt-product" aria-expanded="false" aria-controls="np-product" data-group="product">Product<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <button class="nav-top" type="button" id="nt-product" aria-expanded="false" aria-controls="np-product" data-group="product">Product<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
           <div class="nav-panel np--product" id="np-product" aria-labelledby="nt-product">
             <div class="np-main">
               <span class="np-lbl">The service</span>
               <ul>
                 <li><a class="np-link" href="../product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a></li>
-                <li><a class="np-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland" aria-current="page"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a></li>
+                <li><a class="np-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a></li>
                 <li><a class="np-link" href="../product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a></li>
                 <li><a class="np-link" href="../product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a></li>
                 <li><a class="np-link" href="../product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a></li>
@@ -200,7 +66,7 @@
                 <div><span class="tab"><i class="tick" aria-hidden="true"></i>Free assessment</span><p class="np-feat-h">See which strategies fit you.</p></div>
               </div>
               <p class="np-feat-p">A few minutes in TaxLand shows which ones fit your business.</p>
-              <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=taxland&amp;pos=nav_product" data-pos="nav_product" data-cta="nav_product">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+              <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=nav_product" data-pos="nav_product" data-cta="nav_product">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
               <p class="micro">Free. No credit card.</p>
             </div>
           </div>
@@ -231,7 +97,7 @@
         </li>
         <li class="nav-item"><a class="nav-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies">Case Studies</a></li>
         <li class="nav-item" data-group="resources">
-          <button class="nav-top" type="button" id="nt-resources" aria-expanded="false" aria-controls="np-resources" data-group="resources">Resources<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <button class="nav-top is-current" type="button" id="nt-resources" aria-expanded="false" aria-controls="np-resources" data-group="resources">Resources<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
           <div class="nav-panel np--resources" id="np-resources" aria-labelledby="nt-resources">
             <div class="np-main">
               <span class="np-lbl">The tax-planning binder</span>
@@ -243,7 +109,7 @@
               <span class="np-lbl np-lbl--gap">Start with a guide</span>
               <div class="np-sheet np-sheet--guides">
                 <a class="np-q" href="../resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
-                <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+                <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call" aria-current="page"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
                 <a class="np-q" href="../resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
               </div>
               <a class="np-allres" href="../resources.html" data-slug="resources" data-nav="resources"><span>All resources</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
@@ -274,7 +140,7 @@
     </nav>
     <div class="hdr-r">
       <a class="signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
-      <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=taxland&amp;pos=nav" data-pos="nav" data-cta="nav"><span class="btn-long">See what you can keep</span><span class="btn-short">Start free</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=nav" data-pos="nav" data-cta="nav"><span class="btn-long">See what you can keep</span><span class="btn-short">Start free</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
       <button class="menu-btn" type="button" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span></button>
     </div>
   </div>
@@ -283,10 +149,10 @@
   <div class="sheet-top"><img src="../img/o-logo.webp" width="61" height="36" alt="HeyDrew!"><button class="close-btn" type="button" id="menu-close" aria-label="Close menu">✕</button></div>
   <nav class="sheet-nav" aria-label="Mobile">
     <div class="sm-group" data-group="product">
-      <button class="sm-top is-current" type="button" aria-expanded="false" aria-controls="sm-product" data-group="product"><span>Product</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-product" data-group="product"><span>Product</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
       <div class="sm-body" id="sm-product"><div><div class="sm-list">
         <a class="sm-link" href="../product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a>
-        <a class="sm-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland" aria-current="page"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a>
+        <a class="sm-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a>
         <a class="sm-link" href="../product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a>
         <a class="sm-link" href="../product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a>
         <a class="sm-link" href="../product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a>
@@ -312,7 +178,7 @@
     </div>
     <a class="sm-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies"><span>Case Studies</span></a>
     <div class="sm-group" data-group="resources">
-      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-resources" data-group="resources"><span>Resources</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <button class="sm-top is-current" type="button" aria-expanded="false" aria-controls="sm-resources" data-group="resources"><span>Resources</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
       <div class="sm-body" id="sm-resources"><div><div class="sm-list">
         <a class="sm-link" href="../resources/guides.html" data-slug="guides" data-nav="guides"><span class="np-ic" aria-hidden="true"><svg><use href="#i-guide"/></svg></span><span><span class="np-t">Guides</span><span class="np-d">Plain-English reads before your first call</span></span></a>
         <a class="sm-link" href="../resources/worksheets.html" data-slug="worksheets" data-nav="worksheets"><span class="np-ic" aria-hidden="true"><svg><use href="#i-sheet"/></svg></span><span><span class="np-t">Worksheets &amp; Templates</span><span class="np-d">Real PDFs that put a strategy on record</span></span></a>
@@ -320,7 +186,7 @@
         <span class="sm-lbl">Start with a guide</span>
         <div class="np-sheet sm-sheet">
           <a class="np-q" href="../resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
-          <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+          <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call" aria-current="page"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
           <a class="np-q" href="../resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
         </div>
         <a class="sm-link sm-link--plain sm-allres" href="../resources.html" data-slug="resources" data-nav="resources"><span><span class="np-t">All resources</span><span class="np-d">Guides, worksheets and FAQ on one page</span></span></a>
@@ -339,138 +205,188 @@
     <a class="sm-signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
   </nav>
   <div class="sheet-foot">
-    <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=taxland&amp;pos=nav" data-pos="nav" data-cta="nav_sheet">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+    <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=nav" data-pos="nav" data-cta="nav_sheet">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
     <p class="micro">Free. Takes a few minutes. No credit card.</p>
   </div>
 </div>
 <!-- /chrome:header -->
 
 <main id="main">
-<section class="tl-hero" aria-labelledby="ph-h">
-    <div class="stage tl-stage on-dark" id="tl-stage">
-      <div class="tl-scene" aria-hidden="true">
-        <div class="tl-layer tl-back" id="tl-back"><img src="../img/taxland-backdrop.webp" srcset="../img/o-backdrop-800.webp 800w, ../img/o-backdrop-1600.webp 1600w, ../img/taxland-backdrop.webp 2400w" sizes="(max-width:767px) 150vw, 1400px" width="2400" height="1028" alt="" fetchpriority="high" decoding="async"></div>
-        <div class="tl-layer tl-ov"></div>
-        <div class="tl-layer tl-drew" id="tl-drew"><img src="../img/drew-hero.webp" width="1100" height="1375" alt="" decoding="async"><span class="tl-label">Illustrative screen</span></div>
-        <div class="tl-layer tl-fg" id="tl-fg"><img src="../img/taxland-foreground.webp" width="2400" height="1028" alt="" decoding="async"></div>
-      </div>
-      <div class="tl-copy">
-        <ol class="crumbs" aria-label="Breadcrumb" data-hero-in style="--i:0"><li><a href="../index.html">HeyDrew</a></li><li><a href="how-it-works.html">Product</a></li><li aria-current="page">TaxLand</li></ol>
-        <h1 class="tl-h1" id="ph-h" data-hero-in style="--i:1">Your taxes, played like a <span class="hl">game</span>.</h1>
-        <p class="lead" data-hero-in style="--i:2">TaxLand asks about your business and family, then maps the strategies that may fit.</p>
-        <div class="cta-row" data-sticky-hide data-hero-in style="--i:3">
-          <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=taxland&amp;pos=hero" data-pos="hero" data-cta="hero">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
-        </div>
-        <p class="small" data-hero-in style="--i:4">Free. Takes a few minutes. No credit card.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="run" aria-label="The assessment at a glance">
-    <div class="wrap">
-      <div class="run-row" data-reveal="stagger">
-        <div><span class="mono">Time</span><b>A few minutes</b><p>Quick questions. No documents needed to play.</p></div>
-        <div><span class="mono">Cost</span><b>Free</b><p>No credit card, no trial that turns into a bill.</p></div>
-        <div><span class="mono">Phone calls</span><b>None, unless you book one</b><p>You see your map before anyone calls you.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" aria-labelledby="asks-h">
-    <div class="wrap asks">
-      <div data-reveal>
-        <h2 class="h2" id="asks-h">Questions you can answer without your accountant.</h2>
-        <p class="lead">Each answer unlocks, or rules out, a strategy. Nothing to upload, nothing to look up.</p>
-        <ul class="areas" data-confirm="TaxLand question areas">
-          <li><span class="mono">Your business</span><p>How it's set up and roughly what it brings in.</p></li>
-          <li><span class="mono">Your family</span><p>Kids, your home, and what you're saving for.</p></li>
-          <li><span class="mono">Your money</span><p>How you pay yourself and the accounts you already have.</p></li>
-        </ul>
-      </div>
-      <div class="paper paper--margin play" id="play" data-reveal>
-        <p class="pd-h"><span class="pd-t">TaxLand</span><span class="tab">Try a sample</span></p>
-        <p class="play-q" id="play-q">Do your kids help out in the business?</p>
-        <div class="play-chips" role="group" aria-labelledby="play-q">
-          <button type="button" class="pchip" aria-pressed="false" data-a="yes">Yes, they help</button>
-          <button type="button" class="pchip" aria-pressed="false" data-a="notyet">Not yet</button>
-          <button type="button" class="pchip" aria-pressed="false" data-a="none">No kids</button>
-        </div>
-        <div class="play-out" id="play-out" aria-live="polite">
-          <p class="play-idle">Pick an answer to see what TaxLand does with it.</p>
-        </div>
-        <p class="play-note">A sample question for illustration. The real assessment asks more, and a match isn't advice until a professional reviews it.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec--band" aria-labelledby="get-h">
-    <div class="wrap">
-      <header class="get-head" data-reveal>
-        <h2 class="h2" id="get-h">At the end, a map of what may fit.</h2>
-        <p class="lead">The strategies you likely qualify for, in plain English, before you talk to anyone. Then you decide what's next.</p>
-      </header>
-      <div class="paper map" id="map" role="group" aria-label="An illustrative strategy map">
-        <span class="stamp">Illustrative</span>
-        <svg class="map-path" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true"><path d="M140 110 C 260 110, 300 190, 420 200 S 640 100, 800 110 S 920 260, 780 320 S 520 360, 360 360"/></svg>
-        <div class="map-grid">
-          <div class="spot spot--fit s1"><span class="mono"><span class="box on" aria-hidden="true"></span>May fit</span><h3>Hire Your Kids</h3><p>Pay your kids real wages for real work in the business.</p></div>
-          <div class="spot spot--fit s2"><span class="mono"><span class="box on" aria-hidden="true"></span>May fit</span><h3>Augusta Rule</h3><p>Rent your home to your business for a limited number of days a year.</p></div>
-          <div class="spot spot--fit s3"><span class="mono"><span class="box on" aria-hidden="true"></span>May fit</span><h3>Accountable Plan</h3><p>Reimburse yourself through the business for real expenses, the right way.</p></div>
-          <div class="spot spot--look s4"><span class="mono"><span class="box" aria-hidden="true"></span>Ask on your call</span><h3>Solo 401(k)</h3><p>A retirement account for self-employed owners. Worth a closer look.</p></div>
-          <div class="spot spot--end s5"><span class="mono">Next, if you want</span><h3>Book a call with a Tax Valet</h3><p>Talk fit and your price. No obligation.</p></div>
+  <div class="rp" aria-hidden="true"><i></i></div>
+  <article class="guide" aria-labelledby="ph-h">
+    <header class="ph rh">
+      <div class="stage ph-stage">
+        <div class="rh-grid">
+          <div class="ph-copy">
+            <nav class="crumbs-nav" aria-label="Breadcrumb" data-hero-in style="--i:0"><ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../resources.html">Resources</a></li><li><a href="guides.html">Guides</a></li><li aria-current="page">First-call checklist</li></ol></nav>
+            <h1 class="ph-h1" id="ph-h" data-hero-in style="--i:1">Tax planning checklist: what to bring to your first <span class="hl">call</span></h1>
+            <p class="rh-sum" data-hero-in style="--i:2">For your first tax planning call, bring last year&rsquo;s returns, your entity details and a picture of how money moves through your business: income, payroll and the costs you pay personally. Add your family&rsquo;s accounts and your questions. You don&rsquo;t need everything; gaps are normal and worth naming.</p>
+          </div>
+          <aside class="kt paper paper--margin" aria-label="Key takeaways" data-hero-in style="--i:3">
+          <p class="kt-h"><span>Key takeaways</span></p>
+          <ul>
+            <li><span class="box" aria-hidden="true"></span>The essentials: prior-year returns, entity details and how money moves through the business.</li>
+            <li><span class="box" aria-hidden="true"></span>Family details matter too: kids&rsquo; ages, savings accounts and how health insurance is set up.</li>
+            <li><span class="box" aria-hidden="true"></span>Missing documents rarely stop a first call. Say what you don&rsquo;t have.</li>
+            <li><span class="box" aria-hidden="true"></span>Bring questions that tie each strategy to paperwork and a deadline.</li>
+          </ul>
+        </aside>
         </div>
       </div>
-      <p class="map-note">Illustrative map. Your map depends on your answers. We only recommend strategies you actually qualify for, and nobody can promise a specific result.</p>
-    </div>
-  </section>
+    </header>
 
-  <section class="sec sec--ink on-dark" aria-labelledby="priv-h">
-    <div class="wrap priv">
-      <div data-reveal>
-        <h2 class="h2" id="priv-h">Your answers stay yours.</h2>
-        <p class="lead">What you tell TaxLand is used to find strategies for you. That's it.</p>
-        <a class="link" href="../company/security.html">How we protect your data<svg aria-hidden="true"><use href="#arr"/></svg></a>
-      </div>
-      <ul class="priv-list" data-reveal="stagger">
-        <li><span class="ck" aria-hidden="true">✓</span>Encrypted in transit and at rest.</li>
-        <li><span class="ck" aria-hidden="true">✓</span>Only the people working your account can see it.</li>
-        <li><span class="ck" aria-hidden="true">✓</span>Never sold, rented or shared with advertisers.</li>
-        <li><span class="ck" aria-hidden="true">✓</span>Your tax information isn't used or disclosed beyond preparing your return without your written consent.</li>
-      </ul>
-    </div>
-  </section>
+    <div class="sec">
+      <div class="wrap art">
+        <nav class="toc" aria-label="On this page" data-spy>
+          <span class="toc-h">On this page</span>
+          <ol>
+              <li><a href="#call">What happens on the first call?</a></li>
+              <li><a href="#why">Why gather anything first?</a></li>
+              <li><a href="#checklist">The checklist</a></li>
+              <li><a href="#missing">What if I don&rsquo;t have everything?</a></li>
+              <li><a href="#ask">What should I ask?</a></li>
+              <li><a href="#after">What happens after?</a></li>
+          </ol>
+          <div class="toc-foot">
+            <span class="small">Free. A few minutes.</span>
+            <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=toc" data-pos="toc" data-cta="toc">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div>
+        </nav>
 
-  <section class="sec" aria-labelledby="faq-h">
-    <div class="wrap faq-grid">
-      <div class="faq-l">
-        <h2 class="h2" id="faq-h">Before you play.</h2>
-        <figure class="quote quote--card">
-          <blockquote><p>“What hooked me was how he simplified something complex so anyone can understand it.”</p></blockquote>
-          <figcaption><img src="../img/o-t-kesh.webp" width="56" height="56" alt="Kesh K." loading="lazy"><div><b>Kesh K.</b><span>Business Owner, Scottsdale AZ</span></div></figcaption>
-        </figure>
-        <p class="micro quote-note">Testimonials reflect individual experiences and are not a guarantee of future results.</p>
-      </div>
-      <div class="acc paper paper--margin">
-        <div class="qa" data-q="tl_free"><h3><button type="button" aria-expanded="false"><span class="qn">Q1</span>Is it really free?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Yes. The assessment is free and there's no credit card. If none of the strategies fit you, it cost nothing to find out.</p></div></div></div>
-        <div class="qa" data-q="tl_after"><h3><button type="button" aria-expanded="false"><span class="qn">Q2</span>What happens after? Is it a sales call?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>You'll see which strategies may fit. If you want to go further, you book a call with a Tax Valet to talk fit and pricing. No obligation.</p></div></div></div>
-        <div class="qa" data-q="tl_docs"><h3><button type="button" aria-expanded="false"><span class="qn">Q3</span>Do I need my tax documents to play?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>No. TaxLand asks questions you can answer from memory. Documents come later, if you decide to work with us, and your Tax Valet sends an exact checklist.</p></div></div></div>
-        <div class="qa" data-q="tl_guarantee"><h3><button type="button" aria-expanded="false"><span class="qn">Q4</span>Can it guarantee I'll save money?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>No, and be skeptical of anyone who says otherwise. What we guarantee is that we'll look at every strategy you legitimately qualify for and show you the math.</p></div></div></div>
-        <div class="qa" data-q="tl_who"><h3><button type="button" aria-expanded="false"><span class="qn">Q5</span>Who is it for?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>S-Corps, LLCs, partnerships and self-employed folks with real complexity: multiple income streams, property, equipment or a growing team.</p></div></div></div>
+        <div class="prose">
+          <details class="toc-m">
+            <summary>On this page<svg aria-hidden="true"><use href="#chev"/></svg></summary>
+            <ol>
+              <li><a href="#call">What happens on the first call?</a></li>
+              <li><a href="#why">Why gather anything first?</a></li>
+              <li><a href="#checklist">The checklist</a></li>
+              <li><a href="#missing">What if I don&rsquo;t have everything?</a></li>
+              <li><a href="#ask">What should I ask?</a></li>
+              <li><a href="#after">What happens after?</a></li>
+            </ol>
+          </details>
+
+          <h2 id="call">What happens on the first call?</h2>
+          <p>The first call is a conversation about your situation, whether HeyDrew is a fit, and what it would cost. It comes after you answer a few questions about your business, and before any documents change hands. If it&rsquo;s a fit, you meet your Tax Valet, send your documents and get a written strategy with a plan to put it in place. <a href="../product/how-it-works.html">How HeyDrew works, step by step</a>, covers the whole sequence.</p>
+          <p>Pricing is covered live on the call, because it depends on your entities and how complex your situation is. You&rsquo;ll know the number before you commit. <a href="../product/pricing.html">How pricing works</a> explains the rest.</p>
+
+          <h2 id="why">Why gather anything before the call?</h2>
+          <p>Because the call is only as specific as the picture you bring. With last year&rsquo;s returns and a rough view of this year, the conversation can be about your actual numbers instead of general ideas, and the scope can be set correctly the first time.</p>
+          <p>You don&rsquo;t need a perfect folder. Your Tax Valet sends an exact checklist once you sign up. This list gets you ahead of it, and it tends to surface the questions that matter.</p>
+
+          <blockquote class="pq" data-reveal><p>You don&rsquo;t need a perfect folder. You need an honest picture of how money moves through your business.</p></blockquote>
+
+          <h2 id="checklist">What should I bring to a tax planning call?</h2>
+          <p>Bring your prior-year returns, your entity details, a picture of this year&rsquo;s income and payroll, and the family and account details that shape which strategies apply. Tick items as you gather them; your ticks stay in this browser only.</p>
+
+          <div class="ck paper paper--margin" id="ck" data-reveal>
+            <div class="ck-top"><span class="plan-title">Your first-call checklist</span><span class="ck-count" id="ck-count" aria-live="polite">0 of 15 gathered</span></div>
+            <fieldset class="ck-g">
+              <legend>The business</legend>
+              <ul>
+              <li><label><input type="checkbox" data-ck="biz-returns"><span class="box" aria-hidden="true"></span><span><span>Last year&rsquo;s business return, if you filed one</span><small>Plus the year before, if it&rsquo;s easy to find.</small></span></label></li>
+              <li><label><input type="checkbox" data-ck="biz-entity"><span class="box" aria-hidden="true"></span><span><span>Entity details: formation papers, EIN and any S-Corp election letter</span><small>The IRS acceptance letter is enough for the election.</small></span></label></li>
+              <li><label><input type="checkbox" data-ck="biz-owners"><span class="box" aria-hidden="true"></span><span><span>Who owns what share, if there&rsquo;s more than one owner</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="biz-states"><span class="box" aria-hidden="true"></span><span><span>Every state you operate or have employees in</span><small>Multiple states and entities are fine. Just name them all.</small></span></label></li>
+              </ul>
+            </fieldset>
+            <fieldset class="ck-g">
+              <legend>Money in, money out</legend>
+              <ul>
+              <li><label><input type="checkbox" data-ck="mo-pl"><span class="box" aria-hidden="true"></span><span><span>A year-to-date profit and loss, or access to your books</span><small>Rough is fine. It shows how money moves through the business.</small></span></label></li>
+              <li><label><input type="checkbox" data-ck="mo-payroll"><span class="box" aria-hidden="true"></span><span><span>Payroll reports, including what you pay yourself</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="mo-personal"><span class="box" aria-hidden="true"></span><span><span>Business costs you&rsquo;re paying from personal accounts</span><small>Phone, mileage, a home office: these often point to a reimbursement plan.</small></span></label></li>
+              <li><label><input type="checkbox" data-ck="mo-property"><span class="box" aria-hidden="true"></span><span><span>A list of property and major equipment you own</span></span></label></li>
+              </ul>
+            </fieldset>
+            <fieldset class="ck-g">
+              <legend>You and your family</legend>
+              <ul>
+              <li><label><input type="checkbox" data-ck="me-returns"><span class="box" aria-hidden="true"></span><span><span>Last year&rsquo;s personal return</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="me-kids"><span class="box" aria-hidden="true"></span><span><span>Your kids&rsquo; ages, and any work they do for the business</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="me-accounts"><span class="box" aria-hidden="true"></span><span><span>Retirement, HSA and college savings accounts you already have</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="me-health"><span class="box" aria-hidden="true"></span><span><span>How your health insurance is set up</span><small>Whether it&rsquo;s a high-deductible plan matters for an HSA.</small></span></label></li>
+              </ul>
+            </fieldset>
+            <fieldset class="ck-g">
+              <legend>Your questions</legend>
+              <ul>
+              <li><label><input type="checkbox" data-ck="q-goals"><span class="box" aria-hidden="true"></span><span><span>What you want this year: lower taxes, cleaner books, a big purchase</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="q-behind"><span class="box" aria-hidden="true"></span><span><span>Anything you&rsquo;re behind on, including prior-year filings</span></span></label></li>
+              <li><label><input type="checkbox" data-ck="q-heard"><span class="box" aria-hidden="true"></span><span><span>Strategies you&rsquo;ve heard about and want checked</span></span></label></li>
+              </ul>
+            </fieldset>
+            <div class="ck-foot">
+              <p class="small">Gaps are normal. Mark what you don&rsquo;t have and bring it up on the call.</p>
+              <div class="ck-actions"><button type="button" id="ck-print">Print checklist</button><button type="button" id="ck-reset">Clear ticks</button></div>
+            </div>
+          </div>
+
+          <h2 id="missing">What if I don&rsquo;t have everything?</h2>
+          <p>Come to the call anyway. Missing documents are one of the most common things owners worry about, and they rarely stop a first conversation. Say what you&rsquo;re missing and why.</p>
+          <p>If you&rsquo;re behind on prior-year filings, raise it early. Catching up is work that can happen alongside planning, but it changes the order of operations, so your team needs to know before they build the plan.</p>
+
+          <h2 id="ask">What should I ask on the call?</h2>
+          <p>Ask questions that tie a strategy to your paperwork and your calendar. A few worth bringing:</p>
+          <ul class="dash">
+            <li>Which strategies do I likely qualify for, and why?</li>
+            <li>What would each one need from me: agreements, logs, payroll, a written plan?</li>
+            <li>What has to happen before December 31, and what can wait until filing?</li>
+            <li>Who is my point of contact, and how do I reach them? (At HeyDrew, that&rsquo;s your <a href="../product/tax-valet.html">Tax Valet</a>.)</li>
+            <li>Do my books and payroll need work before the strategy can hold up?</li>
+            <li>What&rsquo;s included, and what does it cost?</li>
+          </ul>
+          <p>If a strategy you&rsquo;ve read about isn&rsquo;t a fit, ask why. The answer usually tells you something useful about your setup. <a href="../solutions/strategies.html">All strategies, explained</a> is a good place to find the names before the call.</p>
+
+          <h2 id="after">What happens after the call?</h2>
+          <p>If you move forward, three things happen in order.</p>
+          <ol class="steps" data-reveal="stagger">
+            <li><span class="st-n">01</span><div><h3>Meet your Tax Valet</h3><p>One dedicated point of contact who knows your file and coordinates the specialists.</p></div></li>
+            <li><span class="st-n">02</span><div><h3>Send over your documents</h3><p>Upload them once to your secure client portal, working from the exact checklist your Tax Valet sends.</p></div></li>
+            <li><span class="st-n">03</span><div><h3>Get your strategy</h3><p>A written plan built from your numbers, plus the steps to put it in place.</p></div></li>
+          </ol>
+          <p>From there, the paperwork carries the plan. The <a href="guide-records-that-hold-up.html">records guide</a> covers the habits that keep it solid, and the <a href="worksheets.html">worksheets and templates</a> are the documents several strategies start with.</p>
+
+          <aside class="rel paper paper--margin" aria-label="Checklist items that point to a strategy" data-reveal>
+            <span class="rel-h">Checklist items that point to a strategy</span>
+            <a href="../solutions/strategies.html#accountable-plan"><span class="box" aria-hidden="true"></span><span>Accountable Plan<small>If you pay business costs from personal accounts</small></span></a>
+            <a href="../solutions/strategies.html#hire-your-kids"><span class="box" aria-hidden="true"></span><span>Hire Your Kids<small>If your children can do real work for the business</small></span></a>
+            <a href="../solutions/strategies.html#hsa"><span class="box" aria-hidden="true"></span><span>HSA<small>If your health plan is HSA-eligible</small></span></a>
+            <a href="../solutions/strategies.html#solo-401k"><span class="box" aria-hidden="true"></span><span>Solo 401(k)<small>If you have no employees besides you (and a spouse)</small></span></a>
+            <a href="../solutions/self-employed.html"><span class="box" aria-hidden="true"></span><span>Tax planning for the self-employed<small>Sole proprietors and single-member LLCs</small></span></a>
+          </aside>
+
+          <div class="cta-stub" data-reveal>
+            <div><p class="h3">Not sure which strategies to ask about?</p><p>The free TaxLand assessment maps the ones that may fit before your call.</p></div>
+            <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=mid" data-pos="mid" data-cta="mid">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div>
+
+          <p class="note" data-reveal><b>Educational only, not tax advice.</b> Your situation needs your own review. Tax rules, limits and deadlines change, and every strategy has to be set up and documented correctly for your business.</p>
+
+          <p class="muted">Keep going: <a href="guide-proactive-tax-planning.html">proactive vs. reactive tax planning</a>, the <a href="faq.html">HeyDrew FAQ</a>, or <a href="../resources.html">all resources</a>.</p>
+
+          <nav class="pn" aria-label="More guides">
+            <a class="paper" href="guide-proactive-tax-planning.html" rel="prev"><span class="mono"><svg aria-hidden="true"><use href="#arr"/></svg>Previous guide</span><b>Proactive vs. reactive tax planning</b></a>
+            <a class="paper" href="guide-records-that-hold-up.html" rel="next"><span class="mono">Next guide<svg aria-hidden="true"><use href="#arr"/></svg></span><b>How to keep records that hold up</b></a>
+          </nav>
+        </div>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="cta-band cta-band--ink cta-band--solo on-dark" aria-labelledby="cta-h" data-sticky-hide>
+  <section class="cta-band" aria-labelledby="cta-h" data-sticky-hide>
     <div class="stage cta-stage">
-      <div class="cta-copy">
-        <h2 class="h2" id="cta-h">Your map is a few minutes <span class="hl">away</span>.</h2>
-        <p class="lead">Play TaxLand and see which strategies may fit your business, before the year closes.</p>
+      <div class="cta-copy" data-reveal>
+        <h2 class="h2" id="cta-h">Plan the year while it&rsquo;s still <span class="hl">open</span>.</h2>
+        <p class="lead">See which strategies fit your business before December 31 decides for you.</p>
         <div class="cta-row">
-          <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=taxland&amp;pos=final" data-pos="final" data-cta="final">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
-          <a class="link" href="https://heydrew.com/contact/?src=taxland&amp;pos=final" data-confirm="booking URL" data-call="final_call">Rather talk first? Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=final" data-pos="final" data-cta="final">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          <a class="btn btn--ghost" href="../company/contact.html" data-call="final_call">Book a strategy call</a>
         </div>
-        <p class="small">Free. No credit card.</p>
+        <p class="small">Free. Takes a few minutes. No credit card.</p>
       </div>
+      <div class="cta-drew" aria-hidden="true"><img src="../img/o-drew-celebrate.webp" width="400" height="685" alt="" loading="lazy" decoding="async"><span class="cta-shadow"></span></div>
+      <span class="horizon" aria-hidden="true"></span>
     </div>
   </section>
 </main>
@@ -491,7 +407,7 @@
         <div><h4>Product</h4><a href="../product/how-it-works.html" data-foot="how_it_works">How It Works</a><a href="../product/taxland.html" data-foot="taxland">TaxLand Assessment</a><a href="../product/tax-valet.html" data-foot="tax_valet">Your Tax Valet</a><a href="../product/bookkeeping-payroll.html" data-foot="bookkeeping_payroll">Bookkeeping &amp; Payroll</a><a href="../product/pricing.html" data-foot="pricing">Pricing</a></div>
         <div><h4>Solutions</h4><a href="../solutions/s-corp-owners.html" data-foot="s_corp_owners">S-Corp Owners</a><a href="../solutions/self-employed.html" data-foot="self_employed">Self-Employed &amp; LLCs</a><a href="../solutions/real-estate-investors.html" data-foot="real_estate_investors">Real Estate Investors</a><a href="../solutions/families.html" data-foot="families">Families &amp; Generational Wealth</a><a href="../solutions/strategies.html" data-foot="strategies">All Strategies</a></div>
         <div><h4>Company</h4><a href="../company/about.html" data-foot="about">About HeyDrew</a><a href="../company/careers.html" data-foot="careers">Careers</a><a href="../company/affiliates.html" data-foot="affiliates">Affiliate Program</a><a href="../company/contact.html" data-foot="contact">Contact</a><a href="../company/security.html" data-foot="security">Security &amp; Privacy</a></div>
-        <div><h4>Resources</h4><a href="../resources.html" data-foot="resources">All resources</a><a href="../resources/guides.html" data-foot="guides">Guides</a><a href="../resources/worksheets.html" data-foot="worksheets">Worksheets &amp; Templates</a><a href="../resources/faq.html" data-foot="faq">FAQ</a><a href="../case-studies.html" data-foot="case_studies">Case Studies</a><a href="https://taxland.heydrew.com/?src=taxland&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
+        <div><h4>Resources</h4><a href="../resources.html" data-foot="resources">All resources</a><a href="../resources/guides.html" data-foot="guides">Guides</a><a href="../resources/worksheets.html" data-foot="worksheets">Worksheets &amp; Templates</a><a href="../resources/faq.html" data-foot="faq">FAQ</a><a href="../case-studies.html" data-foot="case_studies">Case Studies</a><a href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
       </div>
     </div>
     <hr>
@@ -534,7 +450,7 @@
         <li><span class="box" aria-hidden="true"></span><span class="nm">Solo 401(k)</span></li>
       </ul><span class="stamp xi-stamp" id="xi-stamp" aria-hidden="true">Unchecked</span></div>
       <p class="xi-more" id="xi-more" aria-hidden="true">+ more in your full plan</p>
-      <a class="btn btn--primary xi-go" id="xi-go" href="https://taxland.heydrew.com/?src=taxland&amp;pos=exit" data-pos="exit" data-cta="exit_intent">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <a class="btn btn--primary xi-go" id="xi-go" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=exit" data-pos="exit" data-cta="exit_intent">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
       <p class="micro xi-fine">Free. Takes a few minutes. No credit card.</p>
       <div class="xi-stub">
         <form id="xi-form" novalidate>
@@ -551,57 +467,16 @@
   </div>
 </div>
 
-<a class="sticky" id="sticky" href="https://taxland.heydrew.com/?src=taxland&amp;pos=sticky" data-pos="sticky" aria-label="See what you can keep, free assessment">
+<a class="sticky" id="sticky" href="https://taxland.heydrew.com/?src=guide-first-call-checklist&amp;pos=sticky" data-pos="sticky" aria-label="See what you can keep, free assessment">
   <img src="../img/o-drew-avatar.webp" width="32" height="32" alt="">
   <span class="t"><b id="st-b">See what you can keep</b><span id="st-s">Free. A few minutes.</span></span>
   <span class="go" aria-hidden="true"><svg><use href="#arr"/></svg></span>
 </a>
 <!-- /chrome:overlays -->
 
-<!-- Shared behaviour. GSAP is optional: pages render complete without it. -->
 <script src="../assets/js/site.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script>
-/* TaxLand: hero diorama parallax, sample question, map reveal. */
-(function(){
-  var out=HD.$('#play-out'), chips=HD.$$('.pchip');
-  var R={
-    yes:'<div class="unlock"><span class="box on" aria-hidden="true"></span><span><b>Hire Your Kids<small>May fit</small></b><span class="t">Real wages for real work can be a business expense. TaxLand adds it to your map and moves on.</span></span></div>',
-    notyet:'<div class="unlock unlock--skip"><span class="box" aria-hidden="true"></span><span><b>Noted for later</b><span class="t">TaxLand keeps it off your map for now. If your kids start helping, it comes back on your call.</span></span></div>',
-    none:'<div class="unlock unlock--skip"><span class="box" aria-hidden="true"></span><span><b>Skipped</b><span class="t">No kids, no problem. TaxLand moves on, so your map only shows what may fit.</span></span></div>'
-  };
-  chips.forEach(function(c){ c.addEventListener('click',function(){
-    chips.forEach(function(o){ o.setAttribute('aria-pressed',o===c?'true':'false'); });
-    var a=c.getAttribute('data-a'); if(out) out.innerHTML=R[a];
-    var card=out&&out.firstChild; if(card&&window.gsap&&!HD.REDUCE) window.gsap.from(card,{opacity:0,y:10,scale:.98,duration:.32,ease:'power4.out',clearProps:'all'});
-    if(a==='yes'&&card){ var b=card.querySelector('.box'); if(b&&!HD.REDUCE){ b.classList.remove('on'); setTimeout(function(){ b.classList.add('on'); },180); } }
-    HD.track('taxland_sample_answer',{answer:a});
-  }); });
-})();
-document.addEventListener('DOMContentLoaded',function(){
-  var g=window.gsap, ST=window.ScrollTrigger; if(!g||!ST||HD.REDUCE) return;
-  g.registerPlugin(ST);
-  var mm=g.matchMedia();
-  /* Three depths: the valley drifts slowest, Drew in the middle, the grass fastest over his waist. */
-  mm.add('(min-width:1024px)',function(){
-    var o={trigger:'#tl-stage',start:'top top',end:'bottom top',scrub:.6};
-    g.to('#tl-back',{yPercent:6,ease:'none',scrollTrigger:o});
-    g.to('#tl-drew',{y:-50,ease:'none',scrollTrigger:o});
-    g.to('#tl-fg',{y:-150,ease:'none',scrollTrigger:o});
-    g.from('#tl-fg',{y:60,duration:1.1,ease:'power3.out'});
-    g.from('#tl-drew',{y:40,opacity:0,duration:.9,ease:'power3.out',delay:.15});
-  });
-  mm.add('(max-width:1023px)',function(){
-    var o={trigger:'#tl-stage',start:'top top',end:'bottom top',scrub:.6};
-    g.to('#tl-back',{yPercent:4,ease:'none',scrollTrigger:o});
-    g.to('#tl-fg',{y:-60,ease:'none',scrollTrigger:o});
-  });
-  /* The map fills in along the path, spot by spot. */
-  var spots=HD.$$('#map .spot');
-  g.from(spots,{opacity:0,y:18,scale:.96,duration:.5,ease:'power3.out',stagger:.14,clearProps:'opacity,transform',scrollTrigger:{trigger:'#map',start:'top 72%',once:true}});
-  g.from('#map > .stamp',{opacity:0,scale:1.35,rotate:-10,duration:.26,ease:'power4.out',delay:.9,clearProps:'opacity,transform',scrollTrigger:{trigger:'#map',start:'top 72%',once:true}});
-});
-</script>
+<script src="../assets/js/resources.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resources | HeyDrew</title>
-<meta name="description" content="Free tax-planning worksheets, plain-English guides, a month-by-month planning calendar, a glossary and straight answers for business owners.">
+<title>Tax Planning Resources for Business Owners | HeyDrew</title>
+<meta name="description" content="Free tax worksheets and templates, plain-English planning guides and straight answers for business owners, from the team at HeyDrew.">
 <meta name="theme-color" content="#F7F8FB">
 <meta name="color-scheme" content="light">
 <script>
@@ -17,169 +17,11 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&amp;display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/resources.css">
 <style id="page-css">
-/* Resources: a binder of Plan papers. Tabs index the binder; every section is a kind of paper. */
-.rs-sec{scroll-margin-top:124px}
-@media (max-width:1023px){ .rs-sec{scroll-margin-top:110px} }
-.rs-drew img{max-height:470px}
-
-/* ---------- Binder tabs (sticky under the header) ---------- */
-.bt{position:sticky;top:72px;z-index:40;margin-top:40px;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bt-in{display:flex;align-items:flex-end;gap:6px;height:56px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.bt-in::-webkit-scrollbar{display:none}
-.bt a{flex:none;display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 16px;margin-bottom:-1px;border:1px solid var(--line);border-bottom:0;border-radius:4px 4px 0 0;background:var(--navy-50);font-size:15px;font-weight:500;color:var(--navy-600);text-decoration:none;transition:background-color 160ms var(--ease),color 160ms var(--ease),transform 160ms var(--ease)}
-.bt a:hover{color:var(--navy-900);background:#fff}
-.bt-n{font:500 11px/1 var(--mono);color:var(--navy-400)}
-.bt a[aria-current="true"]{background:var(--ink-950);border-color:var(--ink-950);color:#fff;transform:translateY(-3px)}
-.bt a[aria-current="true"] .bt-n{color:var(--green-400)}
-@media (max-width:1023px){ .bt{top:60px;margin-top:24px} .bt-in{height:52px} .bt a{height:42px;padding:0 13px;font-size:14px} }
-
-/* ---------- A. Worksheets: sheets on the desk ---------- */
-.docs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2fr);column-gap:40px;align-items:start}
-.docs>.doc{padding-top:61px}
-.doc-set-lbl{display:flex;align-items:center;gap:10px;height:28px;margin-bottom:16px;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-600)}
-.doc-clip{position:relative;width:12px;height:22px;border:1.5px solid var(--navy-400);border-radius:6px}
-.doc-clip::after{content:"";position:absolute;left:2px;right:2px;top:4px;bottom:-2px;border:1.5px solid var(--navy-400);border-bottom:0;border-radius:4px 4px 0 0}
-.doc-set-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding-top:16px;border-top:1px dashed var(--navy-300)}
-.doc-sheet{position:relative;display:block;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:var(--paper-shadow);transform:rotate(var(--r,0deg));transition:transform 260ms var(--ease),box-shadow 260ms var(--ease)}
-.doc-sheet img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:3px}
-.doc-sheet::after{content:"";position:absolute;top:-1px;right:-1px;width:30px;height:30px;background:linear-gradient(225deg,var(--band) 0 50%,#E4E8F2 50% 100%);border-radius:0 0 0 3px;box-shadow:-2px 2px 3px -1px rgba(11,16,51,.12)}
-.doc-pdf{position:absolute;left:-8px;bottom:20px;font:500 11px/1 var(--mono);letter-spacing:.06em;color:#fff;background:var(--ink-950);border-radius:4px;padding:6px 8px}
-@media (hover:hover){ .doc-sheet:hover{transform:rotate(0deg) translateY(-6px);box-shadow:var(--paper-shadow),0 28px 40px -24px rgba(11,16,51,.35)} }
-.doc-meta{margin-top:24px}
-.doc-for{display:block;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);margin-bottom:10px}
-.doc-t{font-size:19px;line-height:25px;font-weight:600;letter-spacing:-.014em;color:var(--navy-900);text-wrap:balance}
-.doc-meta p{margin-top:8px;font-size:15px;line-height:23px;color:var(--navy-600)}
-.doc-dl{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:6px;font-size:15px;font-weight:600;color:var(--green-700);text-decoration:none}
-.doc-dl svg{width:14px;height:14px;transform:rotate(90deg);transition:transform 160ms var(--ease)}
-.doc-dl:hover{text-decoration:underline;text-underline-offset:4px}
-.doc-dl:hover svg{transform:rotate(90deg) translateX(3px)}
-.docs-note{margin-top:48px;padding-top:20px;border-top:1px solid var(--navy-200);max-width:80ch;font-size:14px;line-height:21px;color:var(--navy-500)}
-
-/* ---------- B. Guides: divider tabs on one sheet ---------- */
-.gd{max-width:1080px}
-.gd-tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;position:relative;z-index:1}
-.gd-tabs::-webkit-scrollbar{display:none}
-.gd-tabs button{flex:none;display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 18px;margin-bottom:-1px;border:1px solid var(--line);border-bottom-color:transparent;border-radius:4px 4px 0 0;background:var(--navy-50);font-size:15px;font-weight:500;color:var(--navy-600);transition:background-color 160ms,color 160ms}
-.gd-tabs button:hover{color:var(--navy-900)}
-.gd-tabs button[aria-selected="true"]{background:#fff;color:var(--navy-900);font-weight:600;border-bottom-color:#fff}
-.gd-n{font:500 11px/1 var(--mono);color:var(--navy-400)}
-.gd-tabs button[aria-selected="true"] .gd-n{color:var(--green-700)}
-.gp{padding:40px 48px 44px;border-radius:0 4px 4px 4px}
-.gp+.gp{margin-top:32px}
-.js .gd-tabs:not([hidden])~.gp{margin-top:0}
-.gp[hidden]{display:none}
-.gp:focus-visible{outline-offset:4px}
-.gp-h{font-size:28px;line-height:34px;font-weight:650;letter-spacing:-.022em;color:var(--navy-900);padding-bottom:20px;border-bottom:2px solid var(--ink-950)}
-.gp-intro{margin-top:20px;font-size:17px;line-height:27px;color:var(--navy-600);max-width:66ch}
-.gp-cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:48px;margin-top:28px;align-items:start}
-.gp-prose p{font-size:17px;line-height:27px;color:var(--navy-900)}
-.gp-prose p+p{margin-top:16px}
-.gp-prose p:last-child{color:var(--navy-600)}
-.gp-cmp{border:1px solid var(--line);border-radius:4px}
-.gp-cmp .cmp{font-size:15px;line-height:21px}
-.gp-cmp .cmp th,.gp-cmp .cmp td{padding:13px 16px}
-.gp-cmp .cmp caption{padding:14px 16px}
-/* checklist */
-.ck-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px;margin-top:28px}
-.ck-g{margin:0;padding:0;border:0;min-width:0}
-.ck-g legend{padding:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
-.ck-g label{position:relative;display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-top:1px solid var(--navy-100);font-size:16px;line-height:24px;color:var(--navy-900);cursor:pointer}
-.ck-g input{position:absolute;opacity:0;width:1px;height:1px}
-.ck-g .box{margin-top:5px}
-.ck-g input:checked+.box{border-color:var(--green-700)}
-.ck-g input:checked+.box::after{transform:rotate(45deg) scale(1)}
-.ck-g input:checked~span:last-child{color:var(--navy-500);text-decoration:line-through;text-decoration-color:var(--navy-300)}
-.ck-g input:focus-visible+.box{outline:3px solid var(--ink-950);outline-offset:3px}
-.ck-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px;padding-top:16px;border-top:1px dashed var(--navy-300)}
-.ck-count{font:500 13px/1 var(--mono);color:var(--navy-600)}
-.ck-reset{min-height:44px;padding:0 4px;background:none;border:0;font-size:14px;font-weight:500;color:var(--navy-500);text-decoration:underline;text-underline-offset:3px}
-.ck-reset:hover{color:var(--navy-900)}
-/* clauses */
-.clauses{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:12px}
-.clauses li{display:grid;grid-template-columns:48px minmax(0,1fr);padding:22px 0;border-bottom:1px solid var(--navy-100)}
-.cl-n{font:500 13px/24px var(--mono);color:var(--green-700)}
-.clauses h4{margin:0;font-size:17px;line-height:24px;font-weight:600;color:var(--navy-900)}
-.clauses p{margin-top:6px;font-size:15px;line-height:23px;color:var(--navy-600)}
-
-/* ---------- C. Calendar (ink band) ---------- */
-.rs-cal .sh{margin-bottom:28px}
-.cal-key{display:flex;flex-wrap:wrap;gap:10px 28px;margin-bottom:28px;font-size:14px;line-height:20px;color:var(--navy-300)}
-.cal-key span{display:inline-flex;align-items:center;gap:10px}
-.k-due,.k-move{width:9px;height:9px;flex:none}
-.k-due{background:var(--green-400)}
-.k-move{border:1.5px solid var(--navy-400)}
-.cal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.16);border-left:1px solid rgba(255,255,255,.16)}
-.cal>li{position:relative;padding:22px 22px 26px;border-right:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);transition:background-color 200ms var(--ease)}
-.cal h3{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:19px;line-height:24px;font-weight:600;letter-spacing:-.012em;color:#fff}
-.cal ul{margin-top:14px;display:grid;gap:9px}
-.cal ul li{position:relative;padding-left:19px;font-size:14px;line-height:20px;color:var(--navy-200)}
-.cal ul li::before{content:"";position:absolute;left:0;top:6px;width:8px;height:8px;border:1.5px solid var(--navy-400)}
-.cal ul li.due{color:#fff}
-.cal ul li.due::before{border:0;background:var(--green-400);width:9px;height:9px}
-.cal>li.is-now{background:rgba(255,255,255,.06);box-shadow:inset 0 2px 0 var(--green-400)}
-.cal .now-tag{font:500 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-950);background:var(--green-400);border-radius:4px;padding:5px 6px}
-
-/* ---------- D. Glossary ---------- */
-.gl-head{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) 340px;column-gap:48px;align-items:end}
-.gl-find label{display:block;margin-bottom:8px;font-size:14px;line-height:20px;font-weight:600;color:var(--navy-900)}
-.gl-find input{width:100%;height:52px;padding:0 16px;border:1px solid var(--navy-300);border-radius:4px;background:#fff;font:400 16px/1 var(--sans);color:var(--navy-900);box-shadow:var(--elev-1)}
-.gl-find input::placeholder{color:var(--navy-500)}
-.gl-find input:focus-visible{outline:3px solid var(--ink-950);outline-offset:2px}
-.gl-status{min-height:20px;margin-top:6px;font-size:13px;line-height:20px;color:var(--navy-500)}
-.gl{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
-.gl>div{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:20px;padding:20px 0;border-top:1px solid var(--navy-200)}
-.gl>div[hidden]{display:none}
-.gl dt{font-size:16px;line-height:24px;font-weight:600;color:var(--navy-900)}
-.gl dd{margin:0;font-size:15px;line-height:23px;color:var(--navy-600)}
-.gl mark{background:var(--green-200);color:inherit;border-radius:2px}
-.gl-empty{padding:28px 0;border-top:1px solid var(--navy-200);font-size:16px;color:var(--navy-600)}
-
-/* ---------- E. FAQ ---------- */
-.rs-sec .faq-l{top:150px}
-
-@media (max-width:1023px){
-  .docs{grid-template-columns:1fr 1fr;row-gap:48px;column-gap:28px}
-  .docs>.doc{padding-top:0}
-  .doc-set{grid-column:1 / -1}
-  .doc-set-grid{column-gap:28px}
-  .gp-cols{grid-template-columns:1fr;row-gap:28px}
-  .cal{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .gl-head{grid-template-columns:1fr;row-gap:24px}
-  .gl{grid-template-columns:1fr}
-}
-@media (max-width:767px){
-  .rs-drew img{max-height:260px}
-  .docs,.doc-set-grid{column-gap:16px}
-  .docs{row-gap:36px}
-  .doc-meta{margin-top:16px}
-  .doc-t{font-size:16px;line-height:21px}
-  .doc-meta p{font-size:14px;line-height:20px}
-  .doc-for{font-size:10px;line-height:14px;margin-bottom:6px}
-  .doc-pdf{left:-5px;bottom:12px;font-size:10px;padding:5px 6px}
-  .doc-sheet::after{width:22px;height:22px}
-  .docs-note{margin-top:32px}
-  .gd-tabs{margin-right:calc(-1 * var(--gut))}
-  .gd-tabs button{height:44px;padding:0 13px;font-size:14px}
-  .gp{padding:24px 16px 28px}
-  .gp-h{font-size:21px;line-height:27px;padding-bottom:14px}
-  .gp-intro,.gp-prose p{font-size:16px;line-height:25px}
-  .gp-cmp .cmp th,.gp-cmp .cmp td{padding:11px 10px}
-  .gp-cmp .cmp{font-size:14px;line-height:20px}
-  .ck-grid{grid-template-columns:1fr;gap:22px}
-  .ck-g label{font-size:15px;line-height:22px}
-  .clauses{grid-template-columns:1fr}
-  .clauses li{grid-template-columns:36px minmax(0,1fr);padding:18px 0}
-  .cal{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;border-left:0;margin-right:calc(-1 * var(--gut));padding-right:var(--gut);scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .cal::-webkit-scrollbar{display:none}
-  .cal>li{scroll-snap-align:start;border-left:1px solid rgba(255,255,255,.16)}
-  .cal>li+li{border-left:0}
-  .gl>div{grid-template-columns:1fr;row-gap:4px;padding:16px 0}
-}
-
 </style>
 </head>
 <body data-page="resources" data-root="">
@@ -192,6 +34,9 @@
   <symbol id="i-valet" viewBox="0 0 24 24"><path d="M4.5 5.5h15v10.5h-8.25L7 19.5V16H4.5z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></symbol>
   <symbol id="i-books" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M9 3.5v17M12.5 8H16M12.5 11.5H16M12.5 15H15"/></symbol>
   <symbol id="i-price" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-2.75-1.5-2.75 1.5-2.75-1.5-2.75 1.5z"/><path d="M9.5 8h5M9.5 11.5h5M9.5 15h2.5"/></symbol>
+  <symbol id="i-guide" viewBox="0 0 24 24"><path d="M12 6.75C10 5.25 7.25 4.75 4 4.75v13c3.25 0 6 .5 8 2 2-1.5 4.75-2 8-2v-13c-3.25 0-6 .5-8 2Z"/><path d="M12 6.75v13"/></symbol>
+  <symbol id="i-sheet" viewBox="0 0 24 24"><path d="M6 3.5h8.5l3.5 3.5v13.5H6z"/><path d="M14.5 3.5V7H18"/><path d="M9 11.5h6M9 14.5h6M9 17.5h3.5"/></symbol>
+  <symbol id="i-faq" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.75a2.4 2.4 0 1 1 3.3 2.25c-.55.25-.9.75-.9 1.35v.55"/><path d="M12 16.6v.15"/></symbol>
 </svg>
 <!-- /chrome:sprite -->
 <a class="skip" href="#main">Skip to content</a>
@@ -251,7 +96,33 @@
           </div>
         </li>
         <li class="nav-item"><a class="nav-top" href="case-studies.html" data-slug="case-studies" data-nav="case_studies">Case Studies</a></li>
-        <li class="nav-item"><a class="nav-top" href="resources.html" data-slug="resources" data-nav="resources" aria-current="page">Resources</a></li>
+        <li class="nav-item" data-group="resources">
+          <button class="nav-top is-current" type="button" id="nt-resources" aria-expanded="false" aria-controls="np-resources" data-group="resources">Resources<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--resources" id="np-resources" aria-labelledby="nt-resources">
+            <div class="np-main">
+              <span class="np-lbl">The tax-planning binder</span>
+              <ul>
+                <li><a class="np-link" href="resources/guides.html" data-slug="guides" data-nav="guides"><span class="np-ic" aria-hidden="true"><svg><use href="#i-guide"/></svg></span><span><span class="np-t">Guides</span><span class="np-d">Plain-English reads before your first call</span></span></a></li>
+                <li><a class="np-link" href="resources/worksheets.html" data-slug="worksheets" data-nav="worksheets"><span class="np-ic" aria-hidden="true"><svg><use href="#i-sheet"/></svg></span><span><span class="np-t">Worksheets &amp; Templates</span><span class="np-d">Real PDFs that put a strategy on record</span></span></a></li>
+                <li><a class="np-link" href="resources/faq.html" data-slug="faq" data-nav="faq"><span class="np-ic" aria-hidden="true"><svg><use href="#i-faq"/></svg></span><span><span class="np-t">FAQ</span><span class="np-d">Straight answers about working with us</span></span></a></li>
+              </ul>
+              <span class="np-lbl np-lbl--gap">Start with a guide</span>
+              <div class="np-sheet np-sheet--guides">
+                <a class="np-q" href="resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
+                <a class="np-q" href="resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+                <a class="np-q" href="resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
+              </div>
+              <a class="np-allres" href="resources.html" data-slug="resources" data-nav="resources" aria-current="page"><span>All resources</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+            </div>
+            <a class="np-feat np-docfeat" href="resources/worksheets.html#augusta" data-nav="feat_worksheet_augusta">
+              <span class="np-doc" aria-hidden="true"><img src="img/pages/docs/augusta.webp" width="560" height="746" alt="" loading="lazy" decoding="async"><span class="np-doc-pdf">PDF</span></span>
+              <span class="tab"><i class="tick" aria-hidden="true"></i>Free worksheet</span>
+              <span class="np-feat-h">Augusta Rule Comparable Worksheet</span>
+              <span class="np-feat-p">Log local venue rates that support the rent your business pays to meet at your home.</span>
+              <span class="np-docgo">See the worksheet<svg aria-hidden="true"><use href="#arr"/></svg></span>
+            </a>
+          </div>
+        </li>
         <li class="nav-item" data-group="company">
           <button class="nav-top" type="button" id="nt-company" aria-expanded="false" aria-controls="np-company" data-group="company">Company<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
           <div class="nav-panel np--company" id="np-company" aria-labelledby="nt-company">
@@ -306,7 +177,21 @@
       </div></div></div>
     </div>
     <a class="sm-top" href="case-studies.html" data-slug="case-studies" data-nav="case_studies"><span>Case Studies</span></a>
-    <a class="sm-top" href="resources.html" data-slug="resources" data-nav="resources" aria-current="page"><span>Resources</span></a>
+    <div class="sm-group" data-group="resources">
+      <button class="sm-top is-current" type="button" aria-expanded="false" aria-controls="sm-resources" data-group="resources"><span>Resources</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-resources"><div><div class="sm-list">
+        <a class="sm-link" href="resources/guides.html" data-slug="guides" data-nav="guides"><span class="np-ic" aria-hidden="true"><svg><use href="#i-guide"/></svg></span><span><span class="np-t">Guides</span><span class="np-d">Plain-English reads before your first call</span></span></a>
+        <a class="sm-link" href="resources/worksheets.html" data-slug="worksheets" data-nav="worksheets"><span class="np-ic" aria-hidden="true"><svg><use href="#i-sheet"/></svg></span><span><span class="np-t">Worksheets &amp; Templates</span><span class="np-d">Real PDFs that put a strategy on record</span></span></a>
+        <a class="sm-link" href="resources/faq.html" data-slug="faq" data-nav="faq"><span class="np-ic" aria-hidden="true"><svg><use href="#i-faq"/></svg></span><span><span class="np-t">FAQ</span><span class="np-d">Straight answers about working with us</span></span></a>
+        <span class="sm-lbl">Start with a guide</span>
+        <div class="np-sheet sm-sheet">
+          <a class="np-q" href="resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
+          <a class="np-q" href="resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+          <a class="np-q" href="resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
+        </div>
+        <a class="sm-link sm-link--plain sm-allres" href="resources.html" data-slug="resources" data-nav="resources" aria-current="page"><span><span class="np-t">All resources</span><span class="np-d">Guides, worksheets and FAQ on one page</span></span></a>
+      </div></div></div>
+    </div>
     <div class="sm-group" data-group="company">
       <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-company" data-group="company"><span>Company</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
       <div class="sm-body" id="sm-company"><div><div class="sm-list">
@@ -327,325 +212,113 @@
 <!-- /chrome:header -->
 
 <main id="main">
-  <!-- Hero -->
-  <section class="ph ph--split rs-hero" aria-labelledby="ph-h">
+  <section class="ph ph--split" aria-labelledby="ph-h">
     <div class="stage ph-stage">
       <div class="ph-grid">
         <div class="ph-copy">
-          <ol class="crumbs" aria-label="Breadcrumb" data-hero-in style="--i:0"><li><a href="index.html">HeyDrew</a></li><li aria-current="page">Resources</li></ol>
-          <h1 class="ph-h1" id="ph-h" data-hero-in style="--i:1">The tax-planning <span class="hl">binder</span>.</h1>
-          <p class="lead" data-hero-in style="--i:2">Real worksheets, plain-English guides, a planning calendar and the words you'll hear on your first call. Free to use.</p>
-          <div class="cta-row" data-sticky-hide data-hero-in style="--i:3">
+          <nav class="crumbs-nav" aria-label="Breadcrumb" data-hero-in style="--i:0"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Resources</li></ol></nav>
+          <h1 class="ph-h1" id="ph-h" data-hero-in style="--i:1">Tax planning resources, kept in one <span class="hl">binder</span>.</h1>
+          <p class="lead" data-hero-in style="--i:2">These tax planning resources for business owners are free to read and download. There are plain-English guides for before your first call, real worksheets that put a strategy on the record, and straight answers about working with HeyDrew. Start with whichever matches your question.</p>
+          <div data-hero-in style="--i:3"><div class="cta-row" data-sticky-hide>
             <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=resources&amp;pos=hero" data-pos="hero" data-cta="hero">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
-            <a class="link" href="https://heydrew.com/contact/?src=resources&amp;pos=hero" data-call="hero_call" data-confirm="booking URL">Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a>
-          </div>
+            <a class="link" href="company/contact.html" data-call="hero_call">Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div></div>
         </div>
-        <figure class="ph-media ph-media--cutout rs-drew" aria-hidden="true">
+        <figure class="ph-media ph-media--cutout ov-drew" aria-hidden="true">
           <img src="img/pages/drew-reading.webp" width="900" height="1120" alt="" fetchpriority="high">
         </figure>
       </div>
     </div>
   </section>
 
-  <div class="binder">
-  <!-- Binder tabs (sticky section index; sticks only while the binder sections scroll) -->
-  <nav class="bt" id="bt" aria-label="Resources sections">
-    <div class="wrap bt-in">
-      <a href="#worksheets" data-bt="worksheets"><span class="bt-n">A</span>Worksheets</a>
-      <a href="#guides" data-bt="guides"><span class="bt-n">B</span>Guides</a>
-      <a href="#calendar" data-bt="calendar"><span class="bt-n">C</span>Calendar</a>
-      <a href="#glossary" data-bt="glossary"><span class="bt-n">D</span>Glossary</a>
-      <a href="#faq" data-bt="faq"><span class="bt-n">E</span>FAQ</a>
-    </div>
-  </nav>
-
-  <!-- A. Worksheets & templates -->
-  <section class="sec sec--band rs-sec" id="worksheets" aria-labelledby="ws-h">
+  <section class="sec" aria-labelledby="bx-h">
     <div class="wrap">
       <header class="sh" data-reveal>
-        <span class="tab"><i class="tick" aria-hidden="true"></i>Free downloads</span>
-        <h2 class="h2" id="ws-h">Worksheets &amp; templates.</h2>
-        <p class="lead">The paperwork that puts a strategy on the record. These are the same templates our team works from.</p>
+        <h2 class="h2" id="bx-h">What&rsquo;s in the binder?</h2>
+        <p class="lead">Guides to read, worksheets to fill in, and answers to the questions owners ask most. Each section has its own page.</p>
       </header>
 
-      <div class="docs" id="docs">
-        <article class="doc" id="doc-augusta" style="--r:-1.4deg">
-          <a class="doc-sheet" href="https://heydrew.com/wp-content/uploads/2026/07/Augusta-Rule-Comparable-Worksheet.pdf" target="_blank" rel="noopener" data-dl="augusta_worksheet" aria-label="Download the Augusta Rule Comparable Worksheet (PDF, opens in a new tab)">
-            <img src="img/pages/docs/augusta.webp" width="560" height="746" alt="" loading="lazy" decoding="async">
-            <span class="doc-pdf">PDF</span>
-          </a>
-          <div class="doc-meta">
-            <span class="doc-for">For the Augusta Rule</span>
-            <h3 class="doc-t">Comparable (FMV) Worksheet</h3>
-            <p>Record at least three comparable local venue rates, with screenshots, to support the daily rent your business pays for using your home.</p>
-            <a class="doc-dl" href="https://heydrew.com/wp-content/uploads/2026/07/Augusta-Rule-Comparable-Worksheet.pdf" target="_blank" rel="noopener" data-dl="augusta_worksheet">Download PDF<span class="sr-only"> (opens in a new tab)</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
-          </div>
-        </article>
-
-        <article class="doc" id="doc-accountable" style="--r:.9deg">
-          <a class="doc-sheet" href="https://heydrew.com/wp-content/uploads/2026/07/Accountable-Plan-Board-Resolution-Owner-Resolution.pdf" target="_blank" rel="noopener" data-dl="accountable_resolution" aria-label="Download the Accountable Plan Board or Owner Resolution (PDF, opens in a new tab)">
-            <img src="img/pages/docs/accountable.webp" width="560" height="746" alt="" loading="lazy" decoding="async">
-            <span class="doc-pdf">PDF</span>
-          </a>
-          <div class="doc-meta">
-            <span class="doc-for">For the Accountable Plan</span>
-            <h3 class="doc-t">Board Resolution / Owner Resolution</h3>
-            <p>Formally adopts the plan before reimbursements start. One version for a board or multiple owners, one for a single owner.</p>
-            <a class="doc-dl" href="https://heydrew.com/wp-content/uploads/2026/07/Accountable-Plan-Board-Resolution-Owner-Resolution.pdf" target="_blank" rel="noopener" data-dl="accountable_resolution">Download PDF<span class="sr-only"> (opens in a new tab)</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
-          </div>
-        </article>
-
-        <div class="doc-set">
-          <p class="doc-set-lbl"><span class="doc-clip" aria-hidden="true"></span>For an HRA: use these two together</p>
-          <div class="doc-set-grid">
-            <article class="doc" id="doc-hra-plan" style="--r:-.6deg">
-              <a class="doc-sheet" href="https://heydrew.com/wp-content/uploads/2026/07/HRA-Written-Plan-Document.pdf" target="_blank" rel="noopener" data-dl="hra_plan" aria-label="Download the HRA Written Plan Document (PDF, opens in a new tab)">
-                <img src="img/pages/docs/hra-plan.webp" width="560" height="746" alt="" loading="lazy" decoding="async">
-                <span class="doc-pdf">PDF</span>
-              </a>
-              <div class="doc-meta">
-                <h3 class="doc-t">HRA Written Plan Document</h3>
-                <p>The plan itself: who's eligible, the annual maximum, covered expenses and how claims work. It has to exist before any reimbursement is paid.</p>
-                <a class="doc-dl" href="https://heydrew.com/wp-content/uploads/2026/07/HRA-Written-Plan-Document.pdf" target="_blank" rel="noopener" data-dl="hra_plan">Download PDF<span class="sr-only"> (opens in a new tab)</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
-              </div>
-            </article>
-            <article class="doc" id="doc-hra-employment" style="--r:1.2deg">
-              <a class="doc-sheet" href="https://heydrew.com/wp-content/uploads/2026/07/HRA-Employment-Agreement.pdf" target="_blank" rel="noopener" data-dl="hra_employment" aria-label="Download the HRA Employment Agreement (PDF, opens in a new tab)">
-                <img src="img/pages/docs/hra-employment.webp" width="560" height="746" alt="" loading="lazy" decoding="async">
-                <span class="doc-pdf">PDF</span>
-              </a>
-              <div class="doc-meta">
-                <h3 class="doc-t">HRA Employment Agreement</h3>
-                <p>A standalone agreement that documents a real job with specific duties, pay and hours. The HRA terms stay in the plan document.</p>
-                <a class="doc-dl" href="https://heydrew.com/wp-content/uploads/2026/07/HRA-Employment-Agreement.pdf" target="_blank" rel="noopener" data-dl="hra_employment">Download PDF<span class="sr-only"> (opens in a new tab)</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
-              </div>
-            </article>
-          </div>
+      <div class="bx" data-reveal>
+        <div class="bx-tabs">
+          <a id="bxt-guides" href="#guides"><span class="n" aria-hidden="true">A</span><span><b>Guides</b><small>Read before your first call</small></span></a>
+          <a id="bxt-worksheets" href="#worksheets"><span class="n" aria-hidden="true">B</span><span><b>Worksheets &amp; Templates</b><small>Free PDFs for real strategies</small></span></a>
+          <a id="bxt-faq" href="#faq"><span class="n" aria-hidden="true">C</span><span><b>FAQ</b><small>Straight answers</small></span></a>
         </div>
-      </div>
-      <p class="docs-note" data-reveal>Templates are for recordkeeping and are not tax, legal or financial advice. Each one carries its own disclaimer. Have your Tax Valet or attorney review a document before you sign it or rely on it.</p>
-    </div>
-  </section>
-
-  <!-- B. Guides -->
-  <section class="sec rs-sec" id="guides" aria-labelledby="gd-h">
-    <div class="wrap">
-      <header class="sh" data-reveal>
-        <h2 class="h2" id="gd-h">Three short guides.<span class="l2">Read one before your first call.</span></h2>
-      </header>
-
-      <div class="gd" data-reveal>
-        <div class="gd-tabs" role="tablist" aria-label="Guides" hidden>
-          <button type="button" role="tab" id="gt-1" aria-controls="gp-1" aria-selected="true"><span class="gd-n">B1</span>Proactive vs. reactive planning</button>
-          <button type="button" role="tab" id="gt-2" aria-controls="gp-2" aria-selected="false" tabindex="-1"><span class="gd-n">B2</span>What to bring to your first call</button>
-          <button type="button" role="tab" id="gt-3" aria-controls="gp-3" aria-selected="false" tabindex="-1"><span class="gd-n">B3</span>Records that hold up</button>
-        </div>
-
-        <!-- Guide 1 -->
-        <article class="gp paper" id="gp-1" role="tabpanel" aria-labelledby="gt-1" tabindex="0">
-          <h3 class="gp-h">Proactive vs. reactive tax planning</h3>
-          <div class="gp-cols">
-            <div class="gp-prose">
-              <p>Most tax work is reactive. The year ends, you hand over your numbers, and a professional reports what already happened. That's necessary, but by then almost every decision that shapes your bill has been made.</p>
-              <p>Proactive planning moves the conversation to the front of the year. You look at how you're paid, who works in the business, how expenses are handled and what you're saving, while there's still time to change them. Then you document the moves as you make them, so filing becomes a review, not a surprise.</p>
-              <p>Proactive doesn't mean aggressive. It means using the rules that already exist, on purpose, with paperwork that shows you qualified.</p>
+        <div class="bx-pages">
+          <article class="bxp paper paper--margin" id="guides" aria-labelledby="bxp-guides-h">
+            <div class="bxp-top"><h3 id="bxp-guides-h">Tax planning guides</h3><span class="mono" aria-hidden="true">A / Guides</span></div>
+            <p class="bxp-lede">Three short, plain-English guides for business owners: proactive planning, what to bring to your first call, and records that hold up.</p>
+            <div class="pv-guides">
+              <a href="resources/guide-proactive-tax-planning.html"><b>Proactive vs. reactive tax planning</b><span>Why planning during the year beats reporting after it, and when to start.</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+              <a href="resources/guide-first-call-checklist.html"><b>What to bring to your first call</b><span>A tick-as-you-go checklist of documents, details and questions.</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+              <a href="resources/guide-records-that-hold-up.html"><b>How to keep records that hold up</b><span>The habits and paperwork that keep a deduction defensible.</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
             </div>
-            <div class="cmp-wrap gp-cmp">
-              <table class="cmp">
-                <caption>Side by side</caption>
-                <thead><tr><th scope="col"><span class="sr-only">Question</span></th><th scope="col">Reactive</th><th scope="col" class="us">Proactive</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">When the work happens</th><td>After the year ends</td><td class="us">All year, starting early</td></tr>
-                  <tr><th scope="row">What gets looked at</th><td>Last year's numbers</td><td class="us">This year's decisions</td></tr>
-                  <tr><th scope="row">Who starts the conversation</th><td>You, at filing time</td><td class="us">Your team, on a schedule</td></tr>
-                  <tr><th scope="row">What you can still change</th><td>Very little</td><td class="us">Pay, hiring, reimbursements, savings</td></tr>
-                  <tr><th scope="row">The paperwork</th><td>Rebuilt from memory</td><td class="us">Kept as it happens</td></tr>
-                </tbody>
-              </table>
+            <div class="bxp-go"><a class="link" href="resources/guides.html">All tax planning guides<svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </article>
+
+          <article class="bxp paper paper--margin" id="worksheets" aria-labelledby="bxp-ws-h">
+            <div class="bxp-top"><h3 id="bxp-ws-h">Worksheets &amp; templates</h3><span class="mono" aria-hidden="true">B / Worksheets</span></div>
+            <p class="bxp-lede">The paperwork that puts a strategy on the record, for the Augusta Rule, an accountable plan and an HRA. Free PDFs.</p>
+            <div class="pv-sheets">
+              <figure><a class="dsheet" style="--r:-1.4deg" href="resources/worksheets.html#augusta"><img src="img/pages/docs/augusta.webp" width="560" height="746" alt="First page of the Augusta Rule comparable-rent worksheet" loading="lazy" decoding="async"><span class="dsheet-pdf" aria-hidden="true">PDF</span></a><figcaption>Augusta Rule worksheet</figcaption></figure>
+              <figure><a class="dsheet" style="--r:.9deg" href="resources/worksheets.html#accountable"><img src="img/pages/docs/accountable.webp" width="560" height="746" alt="First page of the Accountable Plan board and owner resolution" loading="lazy" decoding="async"><span class="dsheet-pdf" aria-hidden="true">PDF</span></a><figcaption>Accountable Plan resolution</figcaption></figure>
+              <figure><a class="dsheet" style="--r:-.6deg" href="resources/worksheets.html#hra-plan"><img src="img/pages/docs/hra-plan.webp" width="560" height="746" alt="First page of the HRA written plan document" loading="lazy" decoding="async"><span class="dsheet-pdf" aria-hidden="true">PDF</span></a><figcaption>HRA written plan</figcaption></figure>
+              <figure><a class="dsheet" style="--r:1.2deg" href="resources/worksheets.html#hra-employment"><img src="img/pages/docs/hra-employment.webp" width="560" height="746" alt="First page of the HRA employment agreement" loading="lazy" decoding="async"><span class="dsheet-pdf" aria-hidden="true">PDF</span></a><figcaption>HRA employment agreement</figcaption></figure>
             </div>
-          </div>
-        </article>
+            <div class="bxp-go"><a class="link" href="resources/worksheets.html">What each worksheet is for, and when to use it<svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </article>
 
-        <!-- Guide 2 -->
-        <article class="gp paper" id="gp-2" role="tabpanel" aria-labelledby="gt-2" tabindex="0">
-          <h3 class="gp-h">What to bring to your first call</h3>
-          <p class="gp-intro">Your Tax Valet sends an exact checklist once you sign up. This list gets you ahead of it. Tick things off as you gather them; your ticks stay in this browser only.</p>
-          <div class="ck-grid" id="ck">
-            <fieldset class="ck-g">
-              <legend>The business</legend>
-              <label><input type="checkbox" data-ck="biz-returns"><span class="box" aria-hidden="true"></span><span>Last year's business return, if you filed one</span></label>
-              <label><input type="checkbox" data-ck="biz-entity"><span class="box" aria-hidden="true"></span><span>Entity details: formation papers, EIN, and any S-Corp election letter</span></label>
-              <label><input type="checkbox" data-ck="biz-owners"><span class="box" aria-hidden="true"></span><span>Who owns what share, if there's more than one owner</span></label>
-              <label><input type="checkbox" data-ck="biz-states"><span class="box" aria-hidden="true"></span><span>Every state you operate or have employees in</span></label>
-            </fieldset>
-            <fieldset class="ck-g">
-              <legend>Money in, money out</legend>
-              <label><input type="checkbox" data-ck="mo-pl"><span class="box" aria-hidden="true"></span><span>A year-to-date profit and loss, or access to your books</span></label>
-              <label><input type="checkbox" data-ck="mo-payroll"><span class="box" aria-hidden="true"></span><span>Payroll reports, including what you pay yourself</span></label>
-              <label><input type="checkbox" data-ck="mo-personal"><span class="box" aria-hidden="true"></span><span>Business costs you're paying from personal accounts</span></label>
-              <label><input type="checkbox" data-ck="mo-property"><span class="box" aria-hidden="true"></span><span>A list of property and major equipment you own</span></label>
-            </fieldset>
-            <fieldset class="ck-g">
-              <legend>You and your family</legend>
-              <label><input type="checkbox" data-ck="me-returns"><span class="box" aria-hidden="true"></span><span>Last year's personal return</span></label>
-              <label><input type="checkbox" data-ck="me-kids"><span class="box" aria-hidden="true"></span><span>Your kids' ages, and any work they do for the business</span></label>
-              <label><input type="checkbox" data-ck="me-accounts"><span class="box" aria-hidden="true"></span><span>Retirement, HSA and college savings accounts you already have</span></label>
-              <label><input type="checkbox" data-ck="me-health"><span class="box" aria-hidden="true"></span><span>How your health insurance is set up</span></label>
-            </fieldset>
-            <fieldset class="ck-g">
-              <legend>Your questions</legend>
-              <label><input type="checkbox" data-ck="q-goals"><span class="box" aria-hidden="true"></span><span>What you want this year: lower taxes, cleaner books, a big purchase</span></label>
-              <label><input type="checkbox" data-ck="q-behind"><span class="box" aria-hidden="true"></span><span>Anything you're behind on, including prior-year filings</span></label>
-              <label><input type="checkbox" data-ck="q-heard"><span class="box" aria-hidden="true"></span><span>Strategies you've heard about and want checked</span></label>
-            </fieldset>
-          </div>
-          <div class="ck-foot"><p class="ck-count" id="ck-count" aria-live="polite">0 of 15 gathered</p><button type="button" class="ck-reset" id="ck-reset">Clear ticks</button></div>
-        </article>
-
-        <!-- Guide 3 -->
-        <article class="gp paper" id="gp-3" role="tabpanel" aria-labelledby="gt-3" tabindex="0">
-          <h3 class="gp-h">How to keep records that hold up</h3>
-          <p class="gp-intro">A strategy is only as good as the paper behind it. These habits apply to almost every strategy we use.</p>
-          <ol class="clauses">
-            <li><span class="cl-n">§1</span><div><h4>Write it down when it happens</h4><p>Mileage logs, timesheets and meeting notes made at the time carry far more weight than a reconstruction in March.</p></div></li>
-            <li><span class="cl-n">§2</span><div><h4>Tie every cost to a business purpose</h4><p>Note who, what and why on the receipt or in your books. "Lunch" isn't a purpose. "Lunch with a client to scope a project" is.</p></div></li>
-            <li><span class="cl-n">§3</span><div><h4>Set the rate before you pay it</h4><p>Rent to yourself, wages to your kids: pay what the market would pay, and keep the comparables that prove it.</p></div></li>
-            <li><span class="cl-n">§4</span><div><h4>Put the plan in writing first</h4><p>Some arrangements, like an Accountable Plan or an HRA, need a written plan in place before the first reimbursement.</p></div></li>
-            <li><span class="cl-n">§5</span><div><h4>Keep business and personal money apart</h4><p>Separate accounts make every other record easier to trust. Move money between them on purpose, and label it.</p></div></li>
-            <li><span class="cl-n">§6</span><div><h4>Keep it long enough</h4><p>The IRS generally has three years after you file to review a return, and longer in some situations. Ask your team how long to keep each type of record.</p></div></li>
-          </ol>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- C. Planning calendar -->
-  <section class="sec sec--ink on-dark rs-sec rs-cal" id="calendar" aria-labelledby="cal-h">
-    <div class="wrap">
-      <header class="sh" data-reveal>
-        <h2 class="h2" id="cal-h">A year of planning moves, month by month.</h2>
-        <p class="lead">General and educational. Deadlines shift with weekends, holidays, extensions and your entity type, so confirm each one with your team.</p>
-      </header>
-      <div class="cal-key" data-reveal><span><i class="k-due" aria-hidden="true"></i>A filing or payment deadline usually falls this month</span><span><i class="k-move" aria-hidden="true"></i>A planning move</span></div>
-      <ol class="cal" id="cal">
-        <li data-m="0"><h3>January</h3><ul>
-          <li class="due">Year-end wage and contractor forms go out to workers</li>
-          <li class="due">Last estimated tax payment for the prior year</li>
-          <li>Set this year's plan and salary with your team</li>
-          <li>Start fresh mileage logs and timesheets</li></ul></li>
-        <li data-m="1"><h3>February</h3><ul>
-          <li>Close out last year's books</li>
-          <li>Gather prior-year documents for filing</li>
-          <li>Confirm reimbursement paperwork is complete</li></ul></li>
-        <li data-m="2"><h3>March</h3><ul>
-          <li class="due">S-Corp and partnership returns come due before personal returns</li>
-          <li>Decide on extensions with your team</li>
-          <li>Review first-quarter payroll</li></ul></li>
-        <li data-m="3"><h3>April</h3><ul>
-          <li class="due">Federal individual filing deadline</li>
-          <li class="due">First estimated tax payment for this year</li>
-          <li>Prior-year IRA and HSA contributions can generally still be made up to the filing deadline</li></ul></li>
-        <li data-m="4"><h3>May</h3><ul>
-          <li>Review first-quarter books against the plan</li>
-          <li>Submit reimbursements with receipts</li>
-          <li>Check that kids' timesheets are current</li></ul></li>
-        <li data-m="5"><h3>June</h3><ul>
-          <li class="due">Second estimated tax payment</li>
-          <li>Mid-year check-in: is income tracking the plan?</li>
-          <li>Keep agendas and notes for any home meetings</li></ul></li>
-        <li data-m="6"><h3>July</h3><ul>
-          <li>Adjust salary or distributions if the year changed</li>
-          <li>Summer work for the kids: job descriptions and hours</li></ul></li>
-        <li data-m="7"><h3>August</h3><ul>
-          <li>Back-to-school: review college savings</li>
-          <li>Check retirement contributions so far</li></ul></li>
-        <li data-m="8"><h3>September</h3><ul>
-          <li class="due">Third estimated tax payment</li>
-          <li class="due">Extended S-Corp and partnership returns usually come due</li>
-          <li>Start the fourth-quarter projection</li></ul></li>
-        <li data-m="9"><h3>October</h3><ul>
-          <li class="due">Extended individual returns usually come due</li>
-          <li>Open enrollment: check whether your health plan is HSA-eligible</li>
-          <li>The year-end planning window is open</li></ul></li>
-        <li data-m="10"><h3>November</h3><ul>
-          <li>Run the year-end projection with your team</li>
-          <li>Decide on equipment and retirement moves</li>
-          <li>Finish any paperwork for this year's strategies</li></ul></li>
-        <li data-m="11"><h3>December</h3><ul>
-          <li class="due">December 31: most moves for this tax year must be in place</li>
-          <li>Run final payroll, including any kids' wages</li>
-          <li>Submit the last reimbursements of the year</li></ul></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- D. Glossary -->
-  <section class="sec sec--band rs-sec" id="glossary" aria-labelledby="gl-h">
-    <div class="wrap">
-      <header class="sh gl-head" data-reveal>
-        <h2 class="h2" id="gl-h">Plain-English glossary.</h2>
-        <div class="gl-find">
-          <label for="gl-q">Find a term</label>
-          <input id="gl-q" type="search" autocomplete="off" spellcheck="false" placeholder="e.g. HSA" aria-describedby="gl-status">
-          <p class="gl-status" id="gl-status" aria-live="polite"></p>
+          <article class="bxp paper paper--margin" id="faq" aria-labelledby="bxp-faq-h">
+            <div class="bxp-top"><h3 id="bxp-faq-h">Frequently asked questions</h3><span class="mono" aria-hidden="true">C / FAQ</span></div>
+            <p class="bxp-lede">How HeyDrew works, pricing, filing, audit risk, your data, and bookkeeping and payroll, answered plainly.</p>
+            <ul class="pv-faq">
+              <li><a href="resources/faq.html#what-is-heydrew"><span class="qn" aria-hidden="true">Q</span><b>What is HeyDrew?</b><svg aria-hidden="true"><use href="#arr"/></svg></a></li>
+              <li><a href="resources/faq.html#cost"><span class="qn" aria-hidden="true">Q</span><b>How much does it cost?</b><svg aria-hidden="true"><use href="#arr"/></svg></a></li>
+              <li><a href="resources/faq.html#guarantee"><span class="qn" aria-hidden="true">Q</span><b>Can you guarantee I&rsquo;ll save money?</b><svg aria-hidden="true"><use href="#arr"/></svg></a></li>
+              <li><a href="resources/faq.html#audit-risk"><span class="qn" aria-hidden="true">Q</span><b>Will these strategies raise my audit risk?</b><svg aria-hidden="true"><use href="#arr"/></svg></a></li>
+              <li><a href="resources/faq.html#secure"><span class="qn" aria-hidden="true">Q</span><b>Is my information secure?</b><svg aria-hidden="true"><use href="#arr"/></svg></a></li>
+            </ul>
+            <div class="bxp-go"><a class="link" href="resources/faq.html">Read the full FAQ<svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </article>
         </div>
-      </header>
-      <dl class="gl" id="gl">
-        <div><dt>Accountable Plan</dt><dd>A written policy that lets your business reimburse you for business costs you paid personally. Done right, the business deducts the reimbursement and you don't pay income tax on it.</dd></div>
-        <div><dt>Augusta Rule</dt><dd>A rule in Section 280A that lets you rent your home for up to 14 days a year without reporting the rent as income. Businesses use it for real meetings, at a fair market rate.</dd></div>
-        <div><dt>Deduction</dt><dd>An amount that reduces your taxable income. It is not a dollar-for-dollar cut in tax; what it saves depends on your tax rate.</dd></div>
-        <div><dt>Credit</dt><dd>An amount that reduces your tax bill directly, dollar for dollar. Rarer than deductions, and often with strict rules.</dd></div>
-        <div><dt>Estimated taxes</dt><dd>Payments made during the year on income that has no withholding, like business profit. They are usually due quarterly.</dd></div>
-        <div><dt>Fair market value</dt><dd>What a stranger would pay for the same thing. Rent, wages and reimbursements between you and your business should match it.</dd></div>
-        <div><dt>HRA</dt><dd>Health Reimbursement Arrangement. An employer-funded plan that reimburses qualifying medical costs for eligible employees, under a written plan document.</dd></div>
-        <div><dt>HSA</dt><dd>Health Savings Account. Available with an HSA-eligible, high-deductible health plan. Contributions can be deductible, and money used for medical costs comes out tax-free.</dd></div>
-        <div><dt>Hire Your Kids</dt><dd>Paying your children real wages for real work in your business. The business deducts the wages, and the kids may owe little or no income tax on them.</dd></div>
-        <div><dt>Pass-through entity</dt><dd>A business whose profit "passes through" to the owners' personal returns, like an S-Corp, partnership or single-member LLC.</dd></div>
-        <div><dt>Proactive planning</dt><dd>Making tax decisions during the year, while they can still change the outcome, instead of reporting them after the year ends.</dd></div>
-        <div><dt>Reasonable compensation</dt><dd>The salary an S-Corp owner who works in the business should pay themselves: roughly what the business would pay someone else for the same work.</dd></div>
-        <div><dt>Roth vs. Traditional IRA</dt><dd>Two retirement accounts. Traditional contributions may be deductible now and taxed later; Roth contributions are taxed now and can come out tax-free later.</dd></div>
-        <div><dt>S-Corp</dt><dd>A tax election, not a type of company. An LLC or corporation can elect it. Owners who work in the business take a salary, and remaining profit can be paid as distributions.</dd></div>
-        <div><dt>Solo 401(k)</dt><dd>A retirement plan for a business with no employees besides the owner (and a spouse). You contribute as both employee and employer, which can allow more than an IRA.</dd></div>
-        <div><dt>Substantiation</dt><dd>The proof behind a number on your return: receipts, logs, agreements and notes that show the expense was real and for business.</dd></div>
-        <div><dt>529 plan</dt><dd>A savings account for education. Growth is tax-free, and withdrawals for qualified education costs are tax-free. Some states add a deduction.</dd></div>
-        <div><dt>Tax Valet</dt><dd>Your dedicated point of contact at HeyDrew. One person who knows your file, coordinates the specialists and answers your messages.</dd></div>
-        <div><dt>TaxLand</dt><dd>HeyDrew's free assessment. You answer questions about your business and family, and it maps the strategies that may fit.</dd></div>
-      </dl>
-      <p class="gl-empty" id="gl-empty" hidden>No term matches that yet. Try a shorter word, or ask your Tax Valet.</p>
-    </div>
-  </section>
-
-  <!-- E. FAQ -->
-  <section class="sec faq rs-sec" id="faq" aria-labelledby="faq-h">
-    <div class="wrap faq-grid">
-      <div class="faq-l">
-        <h2 class="h2" id="faq-h">Straight answers.</h2>
-        <p><span class="small">Still unsure?</span><a class="link" href="https://heydrew.com/contact/?src=resources&amp;pos=faq" data-call="faq_call" data-confirm="booking URL">Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a><a class="link" href="https://heydrew.com/faq/">See all FAQs<svg aria-hidden="true"><use href="#arr"/></svg></a></p>
-      </div>
-      <div class="acc paper paper--margin">
-        <div class="qa" data-q="what"><h3><button type="button" aria-expanded="false"><span class="qn">Q1</span>What is HeyDrew?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Hey! We're a tax strategy service for business owners, powered by AI and backed by licensed pros. Most accountants look backward at a year that's already over. We look forward, at the moves you can still make.</p></div></div></div>
-        <div class="qa" data-q="start"><h3><button type="button" aria-expanded="false"><span class="qn">Q2</span>What do you need from me to get started?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Prior-year returns, your entity details, and a picture of how money moves through your business. Your Tax Valet sends an exact checklist. No guessing.</p></div></div></div>
-        <div class="qa" data-q="guarantee"><h3><button type="button" aria-expanded="false"><span class="qn">Q3</span>Can you guarantee I'll save money?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>No, and be skeptical of anyone who says otherwise. What we guarantee is that we'll look at every strategy you legitimately qualify for and show you the math.</p></div></div></div>
-        <div class="qa" data-q="audit"><h3><button type="button" aria-expanded="false"><span class="qn">Q4</span>Will these strategies raise my audit risk?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>We only recommend strategies you actually qualify for, and we help you build the documentation to back them up. Defensibility is the whole point.</p></div></div></div>
-        <div class="qa" data-q="custom"><h3><button type="button" aria-expanded="false"><span class="qn">Q5</span>Is my strategy custom, or a template?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Custom. It's built from your numbers, your entity structure, and your goals.</p></div></div></div>
-        <div class="qa" data-q="behind"><h3><button type="button" aria-expanded="false"><span class="qn">Q6</span>What if I'm behind on prior years?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>We can help you catch up. Bring it up on your call.</p></div></div></div>
-        <div class="qa" data-q="multi"><h3><button type="button" aria-expanded="false"><span class="qn">Q7</span>I have multiple entities and multiple states. Can you handle that?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Yes. Tell us the full picture on your call so we scope it right.</p></div></div></div>
-        <div class="qa" data-q="data"><h3><button type="button" aria-expanded="false"><span class="qn">Q8</span>Do you sell my data?<span class="pl" aria-hidden="true"></span></button></h3><div class="ans"><div><p>Never. We don't sell it, rent it, or share it with advertisers. And we won't use or disclose your tax information beyond preparing your return without your written consent.</p></div></div></div>
       </div>
     </div>
   </section>
 
-  </div>
+  <section class="sec sec--band" id="featured" aria-labelledby="fw-h">
+    <div class="wrap">
+      <div class="fw" id="doc-augusta">
+        <div class="fw-desk" data-deal>
+          <a class="dsheet" style="--r:-2deg" href="https://heydrew.com/wp-content/uploads/2026/07/Augusta-Rule-Comparable-Worksheet.pdf" target="_blank" rel="noopener" data-dl="augusta_worksheet" aria-label="Download the Augusta Rule Comparable (FMV) Worksheet (PDF, opens in a new tab)"><img src="img/pages/docs/augusta.webp" width="560" height="746" alt="First page of the Augusta Rule comparable-rent worksheet" loading="lazy" decoding="async"><span class="dsheet-pdf" aria-hidden="true">PDF</span></a>
+          <span class="stamp" aria-hidden="true">Free PDF</span>
+        </div>
+        <div class="fw-copy" data-reveal>
+          <span class="tab"><i class="tick" aria-hidden="true"></i>Featured worksheet</span>
+          <h2 class="h2" id="fw-h">How do I set a fair rent for the Augusta Rule?</h2>
+          <p class="lead">Record what similar local venues charge before the first meeting day. The comparable (FMV) worksheet puts those rates, with screenshots, on the record.</p>
+          <div class="cta-row">
+            <a class="btn btn--ghost" href="https://heydrew.com/wp-content/uploads/2026/07/Augusta-Rule-Comparable-Worksheet.pdf" target="_blank" rel="noopener" data-dl="augusta_worksheet">Download PDF<span class="sr-only">: Augusta Rule Comparable (FMV) Worksheet (opens in a new tab)</span><svg aria-hidden="true" style="transform:rotate(90deg)"><use href="#arr"/></svg></a>
+            <a class="link" href="resources/worksheets.html#augusta">What you&rsquo;ll need to fill it in<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="fw-more" data-reveal>
+        <p>Also in the set</p>
+          <a class="fw-mini" id="doc-accountable" href="resources/worksheets.html#accountable"><img src="img/pages/docs/accountable.webp" width="560" height="746" alt="" loading="lazy" decoding="async"><span><b>Accountable Plan resolution</b><span>Adopts the plan before reimbursements start.</span></span></a>
+          <a class="fw-mini" id="doc-hra-plan" href="resources/worksheets.html#hra-plan"><img src="img/pages/docs/hra-plan.webp" width="560" height="746" alt="" loading="lazy" decoding="async"><span><b>HRA written plan document</b><span>The plan rules, in place before any reimbursement.</span></span></a>
+          <a class="fw-mini" id="doc-hra-employment" href="resources/worksheets.html#hra-employment"><img src="img/pages/docs/hra-employment.webp" width="560" height="746" alt="" loading="lazy" decoding="async"><span><b>HRA employment agreement</b><span>Documents a real job with duties, pay and hours.</span></span></a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Final CTA band -->
   <section class="cta-band" aria-labelledby="cta-h" data-sticky-hide>
     <div class="stage cta-stage">
       <div class="cta-copy" data-reveal>
-        <h2 class="h2" id="cta-h">The binder's ready. Now fill in <span class="hl">yours</span>.</h2>
+        <h2 class="h2" id="cta-h">The binder&rsquo;s ready. Now fill in <span class="hl">yours</span>.</h2>
         <p class="lead">See which strategies fit your business before December 31 decides for you.</p>
         <div class="cta-row">
           <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=resources&amp;pos=final" data-pos="final" data-cta="final">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
-          <a class="btn btn--ghost" href="https://heydrew.com/contact/?src=resources&amp;pos=final" data-call="final_call" data-confirm="booking URL">Book a strategy call</a>
+          <a class="btn btn--ghost" href="company/contact.html" data-call="final_call">Book a strategy call</a>
         </div>
         <p class="small">Free. Takes a few minutes. No credit card.</p>
       </div>
@@ -653,7 +326,6 @@
       <span class="horizon" aria-hidden="true"></span>
     </div>
   </section>
-
 </main>
 
 <!-- chrome:footer -->
@@ -672,7 +344,7 @@
         <div><h4>Product</h4><a href="product/how-it-works.html" data-foot="how_it_works">How It Works</a><a href="product/taxland.html" data-foot="taxland">TaxLand Assessment</a><a href="product/tax-valet.html" data-foot="tax_valet">Your Tax Valet</a><a href="product/bookkeeping-payroll.html" data-foot="bookkeeping_payroll">Bookkeeping &amp; Payroll</a><a href="product/pricing.html" data-foot="pricing">Pricing</a></div>
         <div><h4>Solutions</h4><a href="solutions/s-corp-owners.html" data-foot="s_corp_owners">S-Corp Owners</a><a href="solutions/self-employed.html" data-foot="self_employed">Self-Employed &amp; LLCs</a><a href="solutions/real-estate-investors.html" data-foot="real_estate_investors">Real Estate Investors</a><a href="solutions/families.html" data-foot="families">Families &amp; Generational Wealth</a><a href="solutions/strategies.html" data-foot="strategies">All Strategies</a></div>
         <div><h4>Company</h4><a href="company/about.html" data-foot="about">About HeyDrew</a><a href="company/careers.html" data-foot="careers">Careers</a><a href="company/affiliates.html" data-foot="affiliates">Affiliate Program</a><a href="company/contact.html" data-foot="contact">Contact</a><a href="company/security.html" data-foot="security">Security &amp; Privacy</a></div>
-        <div><h4>Resources</h4><a href="resources.html" data-foot="resources">Resources</a><a href="case-studies.html" data-foot="case_studies">Case Studies</a><a href="index.html#faq" data-foot="faq">FAQ</a><a href="https://taxland.heydrew.com/?src=resources&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
+        <div><h4>Resources</h4><a href="resources.html" data-foot="resources">All resources</a><a href="resources/guides.html" data-foot="guides">Guides</a><a href="resources/worksheets.html" data-foot="worksheets">Worksheets &amp; Templates</a><a href="resources/faq.html" data-foot="faq">FAQ</a><a href="case-studies.html" data-foot="case_studies">Case Studies</a><a href="https://taxland.heydrew.com/?src=resources&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
       </div>
     </div>
     <hr>
@@ -739,93 +411,9 @@
 </a>
 <!-- /chrome:overlays -->
 
-<!-- Shared behaviour. GSAP is optional: pages render complete without it. -->
 <script src="assets/js/site.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script>
-/* Resources page. Every block guards its elements; without JS the page is complete (all guides shown, no filter). */
-(function(){
-  var d=document, HD=window.HD||{}, track=HD.track||function(){};
-  function $(s,c){return (c||d).querySelector(s);} function $$(s,c){return [].slice.call((c||d).querySelectorAll(s));}
-  function store(k,v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)||'null'); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; } }
-
-  /* Binder tabs follow the section in view */
-  var tabs=$$('.bt a[data-bt]');
-  if(tabs.length&&'IntersectionObserver' in window){
-    var vis={}, order=tabs.map(function(a){return a.getAttribute('data-bt');});
-    var paint=function(){
-      var cur=null; order.forEach(function(id){ if(vis[id]&&!cur) cur=id; });
-      tabs.forEach(function(a){ var on=a.getAttribute('data-bt')===cur; if(on){ a.setAttribute('aria-current','true'); if(a.parentNode.scrollWidth>a.parentNode.clientWidth){ var p=a.parentNode; p.scrollTo({left:a.offsetLeft-16,behavior:'smooth'}); } } else a.removeAttribute('aria-current'); });
-    };
-    var io=new IntersectionObserver(function(en){ en.forEach(function(e){ vis[e.target.id]=e.isIntersecting; }); paint(); },{rootMargin:'-30% 0px -60% 0px'});
-    order.forEach(function(id){ var el=d.getElementById(id); if(el) io.observe(el); });
-    tabs.forEach(function(a){ a.addEventListener('click',function(){ track('binder_tab',{section:a.getAttribute('data-bt')}); }); });
-  }
-
-  /* Downloads */
-  $$('[data-dl]').forEach(function(a){ a.addEventListener('click',function(){ track('resource_download',{doc:a.getAttribute('data-dl')}); }); });
-
-  /* Guide reader: tabs over one sheet (arrow keys, Home/End) */
-  var tl=$('.gd-tabs');
-  if(tl){
-    var bs=$$('[role="tab"]',tl), ps=bs.map(function(b){return d.getElementById(b.getAttribute('aria-controls'));});
-    var sel=function(i,focus){ bs.forEach(function(b,j){ var on=i===j; b.setAttribute('aria-selected',on); b.tabIndex=on?0:-1; if(ps[j]) ps[j].hidden=!on; }); if(focus) bs[i].focus(); };
-    tl.hidden=false; sel(0);
-    bs.forEach(function(b,i){
-      b.addEventListener('click',function(){ sel(i); track('guide_open',{guide:b.id}); });
-      b.addEventListener('keydown',function(e){ var k=e.key, n=bs.length, j=null;
-        if(k==='ArrowRight') j=(i+1)%n; else if(k==='ArrowLeft') j=(i-1+n)%n; else if(k==='Home') j=0; else if(k==='End') j=n-1;
-        if(j!==null){ e.preventDefault(); sel(j,true); } });
-    });
-  }
-
-  /* First-call checklist: ticks persist in this browser only */
-  var ck=$('#ck');
-  if(ck){
-    var boxes=$$('input[data-ck]',ck), cnt=$('#ck-count'), saved=store('hd_first_call')||{};
-    var upd=function(){ var n=boxes.filter(function(b){return b.checked;}).length; if(cnt) cnt.textContent=n+' of '+boxes.length+' gathered'; };
-    boxes.forEach(function(b){ b.checked=!!saved[b.getAttribute('data-ck')]; b.addEventListener('change',function(){ saved[b.getAttribute('data-ck')]=b.checked; store('hd_first_call',saved); upd(); }); });
-    var rs=$('#ck-reset'); if(rs) rs.addEventListener('click',function(){ boxes.forEach(function(b){b.checked=false;}); saved={}; store('hd_first_call',saved); upd(); });
-    upd();
-  }
-
-  /* Calendar: mark this month; on phones, start the rail there */
-  var cal=$('#cal');
-  if(cal){
-    var m=new Date().getMonth(), li=$('li[data-m="'+m+'"]',cal);
-    if(li){ li.classList.add('is-now'); var h=$('h3',li); if(h){ var t=d.createElement('span'); t.className='now-tag'; t.textContent='This month'; h.appendChild(t); }
-      if(cal.scrollWidth>cal.clientWidth+4) cal.scrollLeft=li.offsetLeft-cal.offsetLeft; }
-  }
-
-  /* Glossary filter */
-  var q=$('#gl-q'), gl=$('#gl');
-  if(q&&gl){
-    var rows=$$('#gl>div'), empty=$('#gl-empty'), st=$('#gl-status'), tmr;
-    rows.forEach(function(r){ r._t=r.textContent.toLowerCase(); });
-    q.addEventListener('input',function(){
-      var v=q.value.trim().toLowerCase(), n=0;
-      rows.forEach(function(r){ var hit=!v||r._t.indexOf(v)>-1; r.hidden=!hit; if(hit) n++; });
-      if(empty) empty.hidden=n>0;
-      if(st) st.textContent=v?(n+(n===1?' term':' terms')+' found'):'';
-      clearTimeout(tmr); if(v) tmr=setTimeout(function(){ track('glossary_search',{q_len:v.length,results:n}); },800);
-    });
-  }
-
-  /* Motion: the worksheets are dealt onto the desk (GSAP optional, skipped for reduced motion) */
-  window.addEventListener('DOMContentLoaded',function(){
-    var g=window.gsap, ST=window.ScrollTrigger; if(!g||!ST||HD.REDUCE) return;
-    try{
-      g.registerPlugin(ST);
-      var sheets=$$('.doc-sheet'); if(!sheets.length) return;
-      g.from(sheets,{y:40,rotation:function(i){return i%2?6:-6;},opacity:0,duration:.8,ease:'power3.out',stagger:.09,clearProps:'transform,opacity',scrollTrigger:{trigger:'#docs',start:'top 82%',once:true}});
-      g.from($$('.doc-meta'),{y:14,opacity:0,duration:.6,ease:'power2.out',stagger:.09,delay:.25,clearProps:'transform,opacity',scrollTrigger:{trigger:'#docs',start:'top 82%',once:true}});
-      var cells=$$('#cal>li');
-      if(cells.length&&window.matchMedia('(min-width:768px)').matches) g.from(cells,{opacity:0,y:12,duration:.5,ease:'power2.out',stagger:.04,clearProps:'transform,opacity',scrollTrigger:{trigger:'#cal',start:'top 80%',once:true}});
-    }catch(e){ if(window.console) console.warn('resources motion disabled',e); }
-  });
-})();
-
-</script>
+<script src="assets/js/resources.js"></script>
 </body>
 </html>

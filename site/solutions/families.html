@@ -123,6 +123,9 @@
   <symbol id="i-valet" viewBox="0 0 24 24"><path d="M4.5 5.5h15v10.5h-8.25L7 19.5V16H4.5z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></symbol>
   <symbol id="i-books" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M9 3.5v17M12.5 8H16M12.5 11.5H16M12.5 15H15"/></symbol>
   <symbol id="i-price" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-2.75-1.5-2.75 1.5-2.75-1.5-2.75 1.5z"/><path d="M9.5 8h5M9.5 11.5h5M9.5 15h2.5"/></symbol>
+  <symbol id="i-guide" viewBox="0 0 24 24"><path d="M12 6.75C10 5.25 7.25 4.75 4 4.75v13c3.25 0 6 .5 8 2 2-1.5 4.75-2 8-2v-13c-3.25 0-6 .5-8 2Z"/><path d="M12 6.75v13"/></symbol>
+  <symbol id="i-sheet" viewBox="0 0 24 24"><path d="M6 3.5h8.5l3.5 3.5v13.5H6z"/><path d="M14.5 3.5V7H18"/><path d="M9 11.5h6M9 14.5h6M9 17.5h3.5"/></symbol>
+  <symbol id="i-faq" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.75a2.4 2.4 0 1 1 3.3 2.25c-.55.25-.9.75-.9 1.35v.55"/><path d="M12 16.6v.15"/></symbol>
 </svg>
 <!-- /chrome:sprite -->
 <a class="skip" href="#main">Skip to content</a>
@@ -182,7 +185,33 @@
           </div>
         </li>
         <li class="nav-item"><a class="nav-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies">Case Studies</a></li>
-        <li class="nav-item"><a class="nav-top" href="../resources.html" data-slug="resources" data-nav="resources">Resources</a></li>
+        <li class="nav-item" data-group="resources">
+          <button class="nav-top" type="button" id="nt-resources" aria-expanded="false" aria-controls="np-resources" data-group="resources">Resources<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--resources" id="np-resources" aria-labelledby="nt-resources">
+            <div class="np-main">
+              <span class="np-lbl">The tax-planning binder</span>
+              <ul>
+                <li><a class="np-link" href="../resources/guides.html" data-slug="guides" data-nav="guides"><span class="np-ic" aria-hidden="true"><svg><use href="#i-guide"/></svg></span><span><span class="np-t">Guides</span><span class="np-d">Plain-English reads before your first call</span></span></a></li>
+                <li><a class="np-link" href="../resources/worksheets.html" data-slug="worksheets" data-nav="worksheets"><span class="np-ic" aria-hidden="true"><svg><use href="#i-sheet"/></svg></span><span><span class="np-t">Worksheets &amp; Templates</span><span class="np-d">Real PDFs that put a strategy on record</span></span></a></li>
+                <li><a class="np-link" href="../resources/faq.html" data-slug="faq" data-nav="faq"><span class="np-ic" aria-hidden="true"><svg><use href="#i-faq"/></svg></span><span><span class="np-t">FAQ</span><span class="np-d">Straight answers about working with us</span></span></a></li>
+              </ul>
+              <span class="np-lbl np-lbl--gap">Start with a guide</span>
+              <div class="np-sheet np-sheet--guides">
+                <a class="np-q" href="../resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
+                <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+                <a class="np-q" href="../resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
+              </div>
+              <a class="np-allres" href="../resources.html" data-slug="resources" data-nav="resources"><span>All resources</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+            </div>
+            <a class="np-feat np-docfeat" href="../resources/worksheets.html#augusta" data-nav="feat_worksheet_augusta">
+              <span class="np-doc" aria-hidden="true"><img src="../img/pages/docs/augusta.webp" width="560" height="746" alt="" loading="lazy" decoding="async"><span class="np-doc-pdf">PDF</span></span>
+              <span class="tab"><i class="tick" aria-hidden="true"></i>Free worksheet</span>
+              <span class="np-feat-h">Augusta Rule Comparable Worksheet</span>
+              <span class="np-feat-p">Log local venue rates that support the rent your business pays to meet at your home.</span>
+              <span class="np-docgo">See the worksheet<svg aria-hidden="true"><use href="#arr"/></svg></span>
+            </a>
+          </div>
+        </li>
         <li class="nav-item" data-group="company">
           <button class="nav-top" type="button" id="nt-company" aria-expanded="false" aria-controls="np-company" data-group="company">Company<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
           <div class="nav-panel np--company" id="np-company" aria-labelledby="nt-company">
@@ -237,7 +266,21 @@
       </div></div></div>
     </div>
     <a class="sm-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies"><span>Case Studies</span></a>
-    <a class="sm-top" href="../resources.html" data-slug="resources" data-nav="resources"><span>Resources</span></a>
+    <div class="sm-group" data-group="resources">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-resources" data-group="resources"><span>Resources</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-resources"><div><div class="sm-list">
+        <a class="sm-link" href="../resources/guides.html" data-slug="guides" data-nav="guides"><span class="np-ic" aria-hidden="true"><svg><use href="#i-guide"/></svg></span><span><span class="np-t">Guides</span><span class="np-d">Plain-English reads before your first call</span></span></a>
+        <a class="sm-link" href="../resources/worksheets.html" data-slug="worksheets" data-nav="worksheets"><span class="np-ic" aria-hidden="true"><svg><use href="#i-sheet"/></svg></span><span><span class="np-t">Worksheets &amp; Templates</span><span class="np-d">Real PDFs that put a strategy on record</span></span></a>
+        <a class="sm-link" href="../resources/faq.html" data-slug="faq" data-nav="faq"><span class="np-ic" aria-hidden="true"><svg><use href="#i-faq"/></svg></span><span><span class="np-t">FAQ</span><span class="np-d">Straight answers about working with us</span></span></a>
+        <span class="sm-lbl">Start with a guide</span>
+        <div class="np-sheet sm-sheet">
+          <a class="np-q" href="../resources/guide-proactive-tax-planning.html" data-slug="guide-proactive-tax-planning" data-nav="guide_proactive"><span class="box" aria-hidden="true"></span>Proactive vs. reactive tax planning</a>
+          <a class="np-q" href="../resources/guide-first-call-checklist.html" data-slug="guide-first-call-checklist" data-nav="guide_first_call"><span class="box" aria-hidden="true"></span>What to bring to your first call</a>
+          <a class="np-q" href="../resources/guide-records-that-hold-up.html" data-slug="guide-records-that-hold-up" data-nav="guide_records"><span class="box" aria-hidden="true"></span>How to keep records that hold up</a>
+        </div>
+        <a class="sm-link sm-link--plain sm-allres" href="../resources.html" data-slug="resources" data-nav="resources"><span><span class="np-t">All resources</span><span class="np-d">Guides, worksheets and FAQ on one page</span></span></a>
+      </div></div></div>
+    </div>
     <div class="sm-group" data-group="company">
       <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-company" data-group="company"><span>Company</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
       <div class="sm-body" id="sm-company"><div><div class="sm-list">
@@ -401,7 +444,7 @@
         <div><h4>Product</h4><a href="../product/how-it-works.html" data-foot="how_it_works">How It Works</a><a href="../product/taxland.html" data-foot="taxland">TaxLand Assessment</a><a href="../product/tax-valet.html" data-foot="tax_valet">Your Tax Valet</a><a href="../product/bookkeeping-payroll.html" data-foot="bookkeeping_payroll">Bookkeeping &amp; Payroll</a><a href="../product/pricing.html" data-foot="pricing">Pricing</a></div>
         <div><h4>Solutions</h4><a href="../solutions/s-corp-owners.html" data-foot="s_corp_owners">S-Corp Owners</a><a href="../solutions/self-employed.html" data-foot="self_employed">Self-Employed &amp; LLCs</a><a href="../solutions/real-estate-investors.html" data-foot="real_estate_investors">Real Estate Investors</a><a href="../solutions/families.html" data-foot="families">Families &amp; Generational Wealth</a><a href="../solutions/strategies.html" data-foot="strategies">All Strategies</a></div>
         <div><h4>Company</h4><a href="../company/about.html" data-foot="about">About HeyDrew</a><a href="../company/careers.html" data-foot="careers">Careers</a><a href="../company/affiliates.html" data-foot="affiliates">Affiliate Program</a><a href="../company/contact.html" data-foot="contact">Contact</a><a href="../company/security.html" data-foot="security">Security &amp; Privacy</a></div>
-        <div><h4>Resources</h4><a href="../resources.html" data-foot="resources">Resources</a><a href="../case-studies.html" data-foot="case_studies">Case Studies</a><a href="../index.html#faq" data-foot="faq">FAQ</a><a href="https://taxland.heydrew.com/?src=families&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
+        <div><h4>Resources</h4><a href="../resources.html" data-foot="resources">All resources</a><a href="../resources/guides.html" data-foot="guides">Guides</a><a href="../resources/worksheets.html" data-foot="worksheets">Worksheets &amp; Templates</a><a href="../resources/faq.html" data-foot="faq">FAQ</a><a href="../case-studies.html" data-foot="case_studies">Case Studies</a><a href="https://taxland.heydrew.com/?src=families&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
       </div>
     </div>
     <hr>

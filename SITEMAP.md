@@ -43,7 +43,7 @@ All internal links are relative and end in `.html`. Primary CTA everywhere: "See
 - By business: S-Corp Owners · Self-Employed & LLCs · Real Estate Investors · Families & Generational Wealth
 - By strategy: All Strategies (plus quick links to Hire Your Kids, Augusta Rule, Solo 401(k), Accountable Plan as anchors on strategies.html)
 
-**Case Studies** (single page) · **Resources** (single page)
+**Case Studies** (single page) · **Resources ▾**: Guides (index + 3 guide pages) · Worksheets & Templates · FAQ, with resources.html as the section overview. No glossary or tax calendar (removed by the client).
 
 **Company ▾**
 - About HeyDrew · Careers ("We're hiring" pill) · Affiliate Program · Contact · Security & Privacy
@@ -51,6 +51,7 @@ All internal links are relative and end in `.html`. Primary CTA everywhere: "See
 Mobile: the same items in the menu sheet as accordions, with a CTA pinned at the bottom.
 
 ## Truth rules (non-negotiable)
+- **Client decisions (2026-09-24):** no "never auto-renews"; say "We reach out about 30 days before your renewal with your options." Say "licensed professionals" / "licensed tax professionals", never "licensed CPAs". No street address or phone number on the site. Clean URLs via a build step (source stays .html).
 - **Never state a number of strategies** (no "8", "eight", "Up to N of 8", "8-strategy checklist", "All Eight Strategies", "+ 4 more"). HeyDrew keeps adding strategies. Say "we find the best strategies for your business" / "strategies you qualify for" / "here are a few we use all the time". Page names use "All Strategies".
 - No invented testimonials, clients, stats, logos, awards, press, team names, or case-study results.
 - Real testimonials only (Kesh K., Will H., Vicky G., Jess B., Rob R., Allen D.). Quote them word for word.

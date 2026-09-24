@@ -9,7 +9,7 @@
        with the same block from _template.html (blocks a page lacks are left alone,
        so a page can opt out of e.g. the overlays by removing the markers);
      - prefixes relative href/src values in those blocks with the page's data-root
-       ("../" for product/, solutions/, company/ pages);
+       ("../" for product/, solutions/, company/, resources/ pages);
      - sets ?src=<data-page> on TaxLand and contact links (site.js does this at
        runtime too; this keeps no-JS links right);
      - marks the current page: aria-current="page" on links whose data-slug equals
@@ -46,6 +46,8 @@ const GROUPS = {
   product: ['how-it-works', 'taxland', 'tax-valet', 'bookkeeping-payroll', 'pricing'],
   solutions: ['s-corp-owners', 'self-employed', 'real-estate-investors', 'families', 'strategies'],
   company: ['about', 'careers', 'affiliates', 'contact', 'security'],
+  resources: ['resources', 'guides', 'worksheets', 'faq',
+    'guide-proactive-tax-planning', 'guide-first-call-checklist', 'guide-records-that-hold-up'],
 };
 
 const isRelative = v => v && !/^(?:[a-z][a-z0-9+.-]*:|#|\/|\.\.\/|data:)/i.test(v);
