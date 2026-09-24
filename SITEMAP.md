@@ -41,7 +41,7 @@ All internal links are relative and end in `.html`. Primary CTA everywhere: "See
 
 **Solutions ▾**
 - By business: S-Corp Owners · Self-Employed & LLCs · Real Estate Investors · Families & Generational Wealth
-- By strategy: All 8 Strategies (plus quick links to Hire Your Kids, Augusta Rule, Solo 401(k), Accountable Plan as anchors on strategies.html)
+- By strategy: All Strategies (plus quick links to Hire Your Kids, Augusta Rule, Solo 401(k), Accountable Plan as anchors on strategies.html)
 
 **Case Studies** (single page) · **Resources** (single page)
 
@@ -51,11 +51,12 @@ All internal links are relative and end in `.html`. Primary CTA everywhere: "See
 Mobile: the same items in the menu sheet as accordions, with a CTA pinned at the bottom.
 
 ## Truth rules (non-negotiable)
+- **Never state a number of strategies** (no "8", "eight", "Up to N of 8", "8-strategy checklist", "All Eight Strategies", "+ 4 more"). HeyDrew keeps adding strategies. Say "we find the best strategies for your business" / "strategies you qualify for" / "here are a few we use all the time". Page names use "All Strategies".
 - No invented testimonials, clients, stats, logos, awards, press, team names, or case-study results.
 - Real testimonials only (Kesh K., Will H., Vicky G., Jess B., Rob R., Allen D.). Quote them word for word.
 - Worked examples must be labeled "Illustrative scenario" with a disclaimer, framed as hypothetical, never presented as clients.
 - Named people: only Andrew Cordle (founder). The real team group photo exists at https://heydrew.com/wp-content/uploads/2026/09/group-headshots.jpg.
-- Real facts available: FAQ answers (brand-research/.firecrawl/faq.md), the 8 strategies (our-strategies.md), the 5-step process (how-it-works.md), careers roles + Dover apply links (careers.md), affiliate program on Impact (https://app.impact.com/campaign-campaign-info-v2/Hey-Drew.brand), real downloadable worksheets:
+- Real facts available: FAQ answers (brand-research/.firecrawl/faq.md), strategy descriptions (our-strategies.md: use these as examples, never as a complete or counted list), the 5-step process (how-it-works.md), careers roles + Dover apply links (careers.md), affiliate program on Impact (https://app.impact.com/campaign-campaign-info-v2/Hey-Drew.brand), real downloadable worksheets:
   - https://heydrew.com/wp-content/uploads/2026/07/HRA-Employment-Agreement.pdf
   - https://heydrew.com/wp-content/uploads/2026/07/Augusta-Rule-Comparable-Worksheet.pdf
   - https://heydrew.com/wp-content/uploads/2026/07/Accountable-Plan-Board-Resolution-Owner-Resolution.pdf
@@ -84,6 +85,6 @@ Each page: a hero with a clear H1, one-sentence value, primary CTA and a Drew im
 | Resources | drew-reading.webp (transparent) |
 | About | real Andrew photo + team group photo + drew-team.webp |
 | Careers | drew-whiteboard.webp (3:2 scene) |
-| Affiliates | drew-highfive.webp (transparent) |
+| Affiliates | drew-handshake.webp (transparent) |
 | Contact | drew-phone.webp (transparent) |
 | Security | drew-vault.webp (3:2 scene) |

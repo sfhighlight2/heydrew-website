@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About HeyDrew | HeyDrew</title>
+<meta name="description" content="Why HeyDrew exists, founder Andrew Cordle's note, Create. Keep. Multiply., and how AI and licensed people split the work of year-round tax strategy.">
+<meta name="theme-color" content="#F7F8FB">
+<meta name="color-scheme" content="light">
+<script>
+  /* Motion gate (keep inline, keep first): content is only pre-hidden when .js-motion exists. */
+  (function(){
+    var d=document.documentElement; d.classList.add('js'); window.__t0=(window.performance&&performance.now())||0;
+    try{ if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches){ d.classList.add('js-motion'); } }catch(e){}
+    window.__motionFailsafe=setTimeout(function(){ if(!window.__motionRan){ window.__motionLate=true; d.classList.remove('js-motion'); } },1500);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<style id="page-css">
+/* ---------- About: hero with the founder print ---------- */
+.ab-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:64px;align-items:end}
+.ab-hero .ph-copy{padding-bottom:88px;align-self:center}
+.ab-print{position:relative;margin:0 0 56px;justify-self:center;width:min(100%,360px)}
+.ab-photo{background:#fff;padding:10px 10px 0;border:1px solid var(--line);border-radius:4px;box-shadow:var(--paper-shadow);transform:rotate(1.6deg);transform-origin:50% 100%}
+.ab-photo img{width:100%;height:auto;aspect-ratio:520/679;object-fit:cover;border-radius:2px;background:var(--navy-100)}
+.ab-cap{position:absolute;z-index:1;left:-56px;bottom:-32px;width:min(290px,86%);padding:14px 16px 16px;transform:rotate(-1.2deg)}
+.ab-cap .mono{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.ab-cap b{display:block;margin-top:6px;font-size:17px;line-height:22px;font-weight:650;letter-spacing:-.01em}
+.ab-cap p{margin-top:6px;font-size:14px;line-height:20px;color:var(--navy-600)}
+@media (max-width:1023px){
+  .ab-grid{grid-template-columns:1fr}
+  .ab-hero .ph-copy{padding-bottom:40px}
+  .ab-print{width:min(100%,340px);margin-bottom:56px}
+}
+@media (max-width:767px){
+  .ab-print{width:min(78%,300px)}
+  .ab-print{margin-bottom:28px}
+  .ab-cap{position:relative;left:auto;bottom:auto;margin:-48px 0 0 -14px;width:92%}
+}
+
+/* ---------- Company facts: ledger header row ---------- */
+.ab-facts{padding:88px 0 0}
+.ab-facts dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+.ab-facts dl>div{padding:18px 24px 0;border-left:1px solid var(--line)}
+.ab-facts dl>div:first-child{border-left:0;padding-left:0}
+.ab-facts dt{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.ab-facts dd{margin:12px 0 0;font-size:17px;line-height:24px;font-weight:600;letter-spacing:-.01em;color:var(--navy-900)}
+.ab-facts dd img{display:inline-block;width:26px;height:26px;border-radius:50%;vertical-align:-7px;margin-right:8px;object-fit:cover}
+@media (max-width:1023px){ .ab-facts dl{grid-template-columns:1fr 1fr} .ab-facts dl>div:nth-child(odd){border-left:0;padding-left:0} .ab-facts dl>div:nth-child(n+3){border-top:1px solid var(--line);margin-top:18px} }
+@media (max-width:767px){ .ab-facts{padding-top:56px} .ab-facts dl>div{padding:14px 12px 0 14px} .ab-facts dd{font-size:15px;line-height:21px} }
+
+/* ---------- Why: backward vs forward ---------- */
+.ab-why .h2{max-width:14em}
+.ab-why-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:80px;margin-top:56px;align-items:start}
+.ab-why-body p{font-size:18px;line-height:29px;color:var(--navy-600);max-width:44ch}
+.ab-why-body p+p{margin-top:18px}
+.ab-why-body .ticks{margin-top:32px;max-width:44ch}
+.ab-dir{display:grid;gap:16px}
+.ab-dir-row{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr);align-items:center;column-gap:20px;padding:26px 28px;border:1px solid var(--line);border-radius:4px;background:#fff}
+.ab-dir-row .mono{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);display:flex;align-items:center;gap:10px}
+.ab-dir-row .mono svg{width:18px;height:18px}
+.ab-dir-row p{font-size:22px;line-height:29px;font-weight:600;letter-spacing:-.015em}
+.ab-dir-row.is-back{background:var(--navy-50)}
+.ab-dir-row.is-back p{color:var(--navy-500);font-weight:500}
+.ab-dir-row.is-back svg{transform:scaleX(-1);color:var(--navy-400)}
+.ab-dir-row.is-fwd{box-shadow:var(--paper-shadow)}
+.ab-dir-row.is-fwd .mono{color:var(--green-700)}
+.ab-dir-note{font-size:14px;line-height:20px;color:var(--navy-500);padding-left:2px}
+@media (max-width:1023px){ .ab-why-grid{grid-template-columns:1fr;row-gap:48px} }
+@media (max-width:767px){ .ab-why-grid{margin-top:32px} .ab-why-body p{font-size:16px;line-height:25px} .ab-dir-row{grid-template-columns:1fr;row-gap:10px;padding:18px} .ab-dir-row p{font-size:18px;line-height:25px} }
+
+/* ---------- Founder note: a letter on ruled plan paper ---------- */
+.ab-note-sec{background:var(--navy-50)}
+.ab-note-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);column-gap:64px;align-items:start}
+.ab-letter{padding:0 48px 40px 80px}
+.ab-letter-h{display:flex;align-items:center;gap:12px;height:72px;margin-left:-40px;padding-left:40px;border-bottom:1px solid var(--line)}
+.ab-letter-h img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.ab-letter-h .pd-t{font-size:15px;font-weight:600}
+.ab-letter-h .mono{margin-left:auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.ab-letter .h2{margin-top:36px;font-size:clamp(1.75rem,1.2rem + 1.6vw,2.5rem)}
+.ab-letter p{margin-top:20px;font-size:18px;line-height:32px;color:rgba(30,40,95,.9);max-width:58ch}
+.ab-letter .ab-pull{font-size:22px;line-height:32px;font-weight:600;letter-spacing:-.015em;color:var(--navy-900)}
+.ab-sign{margin-top:32px;display:flex;flex-direction:column}
+.ab-sign i{font-size:30px;line-height:36px;font-weight:400;letter-spacing:-.02em;color:var(--navy-900)}
+.ab-sign span{font:500 12px/18px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);margin-top:6px}
+.ab-bio{position:sticky;top:112px}
+.ab-bio h3{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);padding-bottom:14px;border-bottom:1px solid var(--navy-200)}
+.ab-bio li{display:grid;grid-template-columns:96px minmax(0,1fr);column-gap:12px;padding:14px 0;border-bottom:1px solid var(--navy-200);font-size:16px;line-height:23px}
+.ab-bio li span{font:500 12px/23px var(--mono);color:var(--navy-500)}
+.ab-bio li b{font-weight:600}
+.ab-bio p{margin-top:20px;font-size:15px;line-height:22px;color:var(--navy-600);max-width:34ch}
+@media (max-width:1023px){ .ab-note-grid{grid-template-columns:1fr;row-gap:40px} .ab-bio{position:static} }
+@media (max-width:767px){
+  .ab-letter{padding:0 18px 28px 34px}
+  .ab-letter-h{height:60px;margin-left:-16px;padding-left:16px}
+  .ab-letter p{font-size:16px;line-height:28px}
+  .ab-letter .ab-pull{font-size:19px;line-height:28px}
+}
+
+/* ---------- Create. Keep. Multiply. (signature) ---------- */
+.ckm-sec{padding-bottom:calc(var(--sec) * .75)}
+.ckm-intro{margin-top:16px;font-size:18px;line-height:28px;color:var(--navy-600);max-width:40ch}
+.ckm{margin-top:40px;border-top:1px solid var(--line)}
+.ckm-row{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);column-gap:48px;align-items:center;padding:clamp(12px,1.6vw,22px) 0;border-bottom:1px solid var(--line)}
+.ckm-w{display:block;font-size:clamp(3.5rem,1.2rem + 8.4vw,9.5rem);line-height:.98;font-weight:720;letter-spacing:-.055em;color:var(--navy-900);font-variation-settings:"opsz" 40;padding-bottom:.06em}
+.ckm-row p{font-size:18px;line-height:27px;color:var(--navy-500);max-width:28ch}
+.ckm-row:not(.is-keep) .ckm-w{color:var(--navy-200)}
+.ckm-row.is-keep p{color:var(--navy-900)}
+.ckm-row.is-keep p b{display:block;font-weight:650;margin-bottom:4px}
+.ckm-row .hl::after{height:.22em;bottom:.12em}
+.ckm-stamp{position:absolute;right:0;top:50%;margin-top:-68px;transform:rotate(-6deg)}
+@media (max-width:1023px){ .ckm-stamp{top:18px;margin-top:0} }
+@media (max-width:767px){
+  .ckm-row{grid-template-columns:1fr;row-gap:6px;padding:14px 0 18px}
+  .ckm-row p{font-size:16px;line-height:24px}
+  .ckm-stamp{top:22px}
+}
+
+/* ---------- Who does what ---------- */
+.wdw{padding:0;max-width:980px;overflow:hidden}
+.wdw table{width:100%;border-collapse:collapse}
+.wdw caption{text-align:left;padding:18px 28px;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);border-bottom:1px solid var(--line)}
+.wdw th,.wdw td{padding:18px 28px;text-align:left;border-bottom:1px solid var(--navy-100);vertical-align:middle}
+.wdw tbody tr:last-child>*{border-bottom:0}
+.wdw thead th{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);padding-top:16px;padding-bottom:14px}
+.wdw thead th.c,.wdw td{width:120px;text-align:center}
+.wdw thead th.c-p{color:var(--green-700)}
+.wdw tbody th{font-size:17px;line-height:24px;font-weight:500;color:var(--navy-900)}
+.wdw tbody th small{display:block;margin-top:2px;font-size:14px;line-height:20px;color:var(--navy-500);font-weight:400}
+.wdw td .box{vertical-align:middle}
+.wdw td.p-col{background:var(--green-100)}
+.wdw thead th.c-p{background:var(--green-100)}
+.wdw .dash{display:inline-block;width:10px;height:1.5px;background:var(--navy-200);vertical-align:middle}
+.wdw-split{border-top:2px solid var(--navy-900)}
+@media (max-width:767px){
+  .wdw th,.wdw td{padding:14px 12px}
+  .wdw caption{padding:14px 12px}
+  .wdw thead th.c,.wdw td{width:64px}
+  .wdw tbody th{font-size:15px;line-height:21px}
+  .wdw tbody th small{font-size:13px;line-height:18px}
+}
+
+/* ---------- Team ---------- */
+.ab-team-top{display:grid;grid-template-columns:1fr;row-gap:20px;max-width:760px;margin-bottom:48px}
+.ab-team-top p{font-size:18px;line-height:28px;color:var(--navy-600);max-width:44ch}
+.ab-team-top p+p{margin-top:14px}
+.ab-team-top .cta-row{margin-top:24px}
+.ab-team-photo{margin:0;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:var(--paper-shadow);padding:clamp(12px,2vw,28px)}
+.ab-team-photo img{width:100%;height:auto;aspect-ratio:787/530}
+.ab-team-photo figcaption{margin-top:14px;padding-top:12px;border-top:1px solid var(--navy-100);display:flex;justify-content:space-between;gap:16px;font-size:14px;line-height:20px;color:var(--navy-500)}
+.ab-team-photo figcaption .mono{font-size:12px}
+@media (max-width:1023px){ .ab-team-top{grid-template-columns:1fr;row-gap:20px} }
+@media (max-width:767px){ .ab-team-top{margin-bottom:28px} .ab-team-top p{font-size:16px;line-height:25px} .ab-team-photo figcaption{flex-direction:column;gap:4px} }
+
+/* ---------- Final band without Drew ---------- */
+.ab-cta .cta-stage{grid-template-columns:minmax(0,1fr) auto;padding-bottom:64px;align-items:center}
+.ab-cta .cta-copy{padding-bottom:0}
+.ab-cta-sig{display:flex;align-items:center;gap:14px;padding:18px 20px;border:1px solid rgba(255,255,255,.16);border-radius:4px;color:var(--navy-300);font-size:14px;line-height:20px;max-width:300px}
+.ab-cta-sig img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none}
+.ab-cta-sig b{display:block;color:#fff;font-weight:600;font-size:15px}
+@media (max-width:1023px){ .ab-cta .cta-stage{grid-template-columns:1fr;row-gap:32px} }
+@media (max-width:767px){ .ab-cta .cta-stage{padding-bottom:32px} }
+</style>
+</head>
+<body data-page="about" data-root="../">
+<!-- chrome:sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M2.5 8h10.2M8.8 3.8 13 8l-4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chev" viewBox="0 0 10 10"><path d="M2 3.75 5 6.75l3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-how" viewBox="0 0 24 24"><path d="M4 20h16V4.5h-5v5h-5v5H4z"/><path d="M10 14.5V20M15 9.5V20"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4.5 3.75 6.5v13L9 17.5l6 2 5.25-2v-13L15 6.5 9 4.5Z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+  <symbol id="i-valet" viewBox="0 0 24 24"><path d="M4.5 5.5h15v10.5h-8.25L7 19.5V16H4.5z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></symbol>
+  <symbol id="i-books" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M9 3.5v17M12.5 8H16M12.5 11.5H16M12.5 15H15"/></symbol>
+  <symbol id="i-price" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-2.75-1.5-2.75 1.5-2.75-1.5-2.75 1.5z"/><path d="M9.5 8h5M9.5 11.5h5M9.5 15h2.5"/></symbol>
+</svg>
+<!-- /chrome:sprite -->
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- chrome:header -->
+<header class="hdr" id="hdr">
+  <div class="wide">
+    <a class="logo" href="../index.html" aria-label="HeyDrew home"><img src="../img/o-logo.webp" width="75" height="44" alt="HeyDrew!"></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-item" data-group="product">
+          <button class="nav-top" type="button" id="nt-product" aria-expanded="false" aria-controls="np-product" data-group="product">Product<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--product" id="np-product" aria-labelledby="nt-product">
+            <div class="np-main">
+              <span class="np-lbl">The service</span>
+              <ul>
+                <li><a class="np-link" href="../product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a></li>
+                <li><a class="np-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a></li>
+                <li><a class="np-link" href="../product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a></li>
+                <li><a class="np-link" href="../product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a></li>
+                <li><a class="np-link" href="../product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a></li>
+              </ul>
+            </div>
+            <div class="np-feat">
+              <div class="np-feat-top">
+                <div class="np-drew" aria-hidden="true"><img src="../img/o-drew-point.webp" width="560" height="810" alt="" loading="lazy" decoding="async"></div>
+                <div><span class="tab"><i class="tick" aria-hidden="true"></i>Free assessment</span><p class="np-feat-h">See which strategies fit you.</p></div>
+              </div>
+              <p class="np-feat-p">A few minutes in TaxLand shows which ones fit your business.</p>
+              <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=about&amp;pos=nav_product" data-pos="nav_product" data-cta="nav_product">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+              <p class="micro">Free. No credit card.</p>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item" data-group="solutions">
+          <button class="nav-top" type="button" id="nt-solutions" aria-expanded="false" aria-controls="np-solutions" data-group="solutions">Solutions<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--solutions" id="np-solutions" aria-labelledby="nt-solutions">
+            <div class="np-main">
+              <span class="np-lbl">By business</span>
+              <ul>
+                <li><a class="np-link" href="../solutions/s-corp-owners.html" data-slug="s-corp-owners" data-nav="s_corp_owners"><span class="np-t">S-Corp Owners</span><span class="np-d">Augusta Rule, Accountable Plan and payroll moves</span></a></li>
+                <li><a class="np-link" href="../solutions/self-employed.html" data-slug="self-employed" data-nav="self_employed"><span class="np-t">Self-Employed &amp; LLCs</span><span class="np-d">Solo 401(k), HSA and hiring your kids</span></a></li>
+                <li><a class="np-link" href="../solutions/real-estate-investors.html" data-slug="real-estate-investors" data-nav="real_estate_investors"><span class="np-t">Real Estate Investors</span><span class="np-d">Planning for owners who hold property</span></a></li>
+                <li><a class="np-link" href="../solutions/families.html" data-slug="families" data-nav="families"><span class="np-t">Families &amp; Generational Wealth</span><span class="np-d">529 plans, IRAs and wages for your kids</span></a></li>
+              </ul>
+            </div>
+            <div class="np-strat">
+              <span class="np-lbl">By strategy</span>
+              <div class="np-sheet">
+                <a class="np-all" href="../solutions/strategies.html" data-slug="strategies" data-nav="strategies"><span>All strategies</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+                <a class="np-q" href="../solutions/strategies.html#hire-your-kids" data-nav="strategy_hire_your_kids"><span class="box" aria-hidden="true"></span>Hire Your Kids</a>
+                <a class="np-q" href="../solutions/strategies.html#augusta-rule" data-nav="strategy_augusta_rule"><span class="box" aria-hidden="true"></span>Augusta Rule</a>
+                <a class="np-q" href="../solutions/strategies.html#solo-401k" data-nav="strategy_solo_401k"><span class="box" aria-hidden="true"></span>Solo 401(k)</a>
+                <a class="np-q" href="../solutions/strategies.html#accountable-plan" data-nav="strategy_accountable_plan"><span class="box" aria-hidden="true"></span>Accountable Plan</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-top" href="../resources.html" data-slug="resources" data-nav="resources">Resources</a></li>
+        <li class="nav-item" data-group="company">
+          <button class="nav-top is-current" type="button" id="nt-company" aria-expanded="false" aria-controls="np-company" data-group="company">Company<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--company" id="np-company" aria-labelledby="nt-company">
+            <ul>
+              <li><a class="np-link" href="../company/about.html" data-slug="about" data-nav="about" aria-current="page"><span class="np-no" aria-hidden="true">01</span><span><span class="np-t">About HeyDrew</span><span class="np-d">The people and the idea behind Drew</span></span></a></li>
+              <li><a class="np-link" href="../company/careers.html" data-slug="careers" data-nav="careers"><span class="np-no" aria-hidden="true">02</span><span><span class="np-t">Careers<span class="np-hire">We're hiring</span></span><span class="np-d">Open roles on the team</span></span></a></li>
+              <li><a class="np-link" href="../company/affiliates.html" data-slug="affiliates" data-nav="affiliates"><span class="np-no" aria-hidden="true">03</span><span><span class="np-t">Affiliate Program</span><span class="np-d">Refer business owners through Impact</span></span></a></li>
+              <li><a class="np-link" href="../company/contact.html" data-slug="contact" data-nav="contact"><span class="np-no" aria-hidden="true">04</span><span><span class="np-t">Contact</span><span class="np-d">Reach a person on our team</span></span></a></li>
+              <li><a class="np-link" href="../company/security.html" data-slug="security" data-nav="security"><span class="np-no" aria-hidden="true">05</span><span><span class="np-t">Security &amp; Privacy</span><span class="np-d">Encrypted, and never sold</span></span></a></li>
+            </ul>
+            <p class="np-founder"><span class="mono">Founded by</span><img src="../img/o-andrew-avatar.webp" width="24" height="24" alt="">Andrew Cordle</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="hdr-r">
+      <a class="signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
+      <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=about&amp;pos=nav" data-pos="nav" data-cta="nav"><span class="btn-long">See what you can keep</span><span class="btn-short">Start free</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <button class="menu-btn" type="button" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet-top"><img src="../img/o-logo.webp" width="61" height="36" alt="HeyDrew!"><button class="close-btn" type="button" id="menu-close" aria-label="Close menu">✕</button></div>
+  <nav class="sheet-nav" aria-label="Mobile">
+    <div class="sm-group" data-group="product">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-product" data-group="product"><span>Product</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-product"><div><div class="sm-list">
+        <a class="sm-link" href="../product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a>
+        <a class="sm-link" href="../product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a>
+        <a class="sm-link" href="../product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a>
+        <a class="sm-link" href="../product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a>
+        <a class="sm-link" href="../product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a>
+      </div></div></div>
+    </div>
+    <div class="sm-group" data-group="solutions">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-solutions" data-group="solutions"><span>Solutions</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-solutions"><div><div class="sm-list">
+        <span class="sm-lbl">By business</span>
+        <a class="sm-link sm-link--plain" href="../solutions/s-corp-owners.html" data-slug="s-corp-owners" data-nav="s_corp_owners"><span><span class="np-t">S-Corp Owners</span><span class="np-d">Augusta Rule, Accountable Plan and payroll moves</span></span></a>
+        <a class="sm-link sm-link--plain" href="../solutions/self-employed.html" data-slug="self-employed" data-nav="self_employed"><span><span class="np-t">Self-Employed &amp; LLCs</span><span class="np-d">Solo 401(k), HSA and hiring your kids</span></span></a>
+        <a class="sm-link sm-link--plain" href="../solutions/real-estate-investors.html" data-slug="real-estate-investors" data-nav="real_estate_investors"><span><span class="np-t">Real Estate Investors</span><span class="np-d">Planning for owners who hold property</span></span></a>
+        <a class="sm-link sm-link--plain" href="../solutions/families.html" data-slug="families" data-nav="families"><span><span class="np-t">Families &amp; Generational Wealth</span><span class="np-d">529 plans, IRAs and wages for your kids</span></span></a>
+        <span class="sm-lbl">By strategy</span>
+        <a class="sm-link sm-link--plain" href="../solutions/strategies.html" data-slug="strategies" data-nav="strategies"><span><span class="np-t">All strategies</span><span class="np-d">What each one is and who it fits</span></span></a>
+        <div class="np-sheet sm-sheet">
+          <a class="np-q" href="../solutions/strategies.html#hire-your-kids" data-nav="strategy_hire_your_kids"><span class="box" aria-hidden="true"></span>Hire Your Kids</a>
+          <a class="np-q" href="../solutions/strategies.html#augusta-rule" data-nav="strategy_augusta_rule"><span class="box" aria-hidden="true"></span>Augusta Rule</a>
+          <a class="np-q" href="../solutions/strategies.html#solo-401k" data-nav="strategy_solo_401k"><span class="box" aria-hidden="true"></span>Solo 401(k)</a>
+          <a class="np-q" href="../solutions/strategies.html#accountable-plan" data-nav="strategy_accountable_plan"><span class="box" aria-hidden="true"></span>Accountable Plan</a>
+        </div>
+      </div></div></div>
+    </div>
+    <a class="sm-top" href="../case-studies.html" data-slug="case-studies" data-nav="case_studies"><span>Case Studies</span></a>
+    <a class="sm-top" href="../resources.html" data-slug="resources" data-nav="resources"><span>Resources</span></a>
+    <div class="sm-group" data-group="company">
+      <button class="sm-top is-current" type="button" aria-expanded="false" aria-controls="sm-company" data-group="company"><span>Company</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-company"><div><div class="sm-list">
+        <a class="sm-link sm-link--plain" href="../company/about.html" data-slug="about" data-nav="about" aria-current="page"><span><span class="np-t">About HeyDrew</span><span class="np-d">The people and the idea behind Drew</span></span></a>
+        <a class="sm-link sm-link--plain" href="../company/careers.html" data-slug="careers" data-nav="careers"><span><span class="np-t">Careers<span class="np-hire">We're hiring</span></span><span class="np-d">Open roles on the team</span></span></a>
+        <a class="sm-link sm-link--plain" href="../company/affiliates.html" data-slug="affiliates" data-nav="affiliates"><span><span class="np-t">Affiliate Program</span><span class="np-d">Refer business owners through Impact</span></span></a>
+        <a class="sm-link sm-link--plain" href="../company/contact.html" data-slug="contact" data-nav="contact"><span><span class="np-t">Contact</span><span class="np-d">Reach a person on our team</span></span></a>
+        <a class="sm-link sm-link--plain" href="../company/security.html" data-slug="security" data-nav="security"><span><span class="np-t">Security &amp; Privacy</span><span class="np-d">Encrypted, and never sold</span></span></a>
+      </div></div></div>
+    </div>
+    <a class="sm-signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
+  </nav>
+  <div class="sheet-foot">
+    <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=about&amp;pos=nav" data-pos="nav" data-cta="nav_sheet">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+    <p class="micro">Free. Takes a few minutes. No credit card.</p>
+  </div>
+</div>
+<!-- /chrome:header -->
+
+<main id="main">
+<section class="ph ab-hero" aria-labelledby="ph-h">
+    <div class="stage ph-stage">
+      <div class="ab-grid">
+        <div class="ph-copy">
+          <ol class="crumbs" aria-label="Breadcrumb" data-hero-in style="--i:0"><li><a href="../index.html">HeyDrew</a></li><li>Company</li><li aria-current="page">About</li></ol>
+          <h1 class="ph-h1" id="ph-h" data-hero-in style="--i:1">You created the income. We help you <span class="hl">keep it</span>.</h1>
+          <p class="lead" data-hero-in style="--i:2">HeyDrew is a tax strategy service for business owners, powered by AI and backed by licensed pros. We plan all year, not just in April.</p>
+          <div class="cta-row" data-sticky-hide data-hero-in style="--i:3">
+            <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=about&amp;pos=hero" data-pos="hero" data-cta="hero">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+            <a class="link" href="https://heydrew.com/contact/?src=about&amp;pos=hero" data-call="hero_call" data-confirm="booking URL">Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div>
+        </div>
+        <figure class="ab-print" data-hero-in style="--i:2">
+          <div class="ab-photo"><img src="../img/pages/andrew-cordle.webp" width="520" height="679" alt="Andrew Cordle, founder of HeyDrew, smiling in a backwards cap, with a small figure of Drew sitting on his shoulder" fetchpriority="high" data-confirm="photo rights"></div>
+          <figcaption class="ab-cap paper"><span class="mono">Founder</span><b>Andrew Cordle</b><p>HeyDrew is named after Andrew. The one on his shoulder is Drew, the guide you'll see across HeyDrew.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="ab-facts" aria-label="Company facts">
+    <div class="wrap">
+      <dl data-reveal="stagger">
+        <div><dt>Founded by</dt><dd><img src="../img/o-andrew-avatar.webp" width="26" height="26" alt="">Andrew Cordle</dd></div>
+        <div><dt>Company</dt><dd>Aspire Advisors LLC d/b/a HeyDrew!</dd></div>
+        <div><dt>Filing</dt><dd>Licensed professionals file your return</dd></div>
+        <div><dt>Cadence</dt><dd>Strategy all year, not just April</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sec ab-why" aria-labelledby="why-h">
+    <div class="wrap">
+      <h2 class="h2" id="why-h" data-reveal>By tax season, the best moves are already gone.</h2>
+      <div class="ab-why-grid">
+        <div class="ab-why-body" data-reveal>
+          <p>Andrew Cordle built HeyDrew after seeing too many business owners wait until tax season to think about strategy. By then, many of the best opportunities were already gone.</p>
+          <p>People were earning money, building businesses and creating wealth, and still handling taxes reactively. HeyDrew makes proactive tax strategy more accessible, more organized and easier to execute.</p>
+          <ul class="ticks">
+            <li><span class="box on" aria-hidden="true"></span>Designed to bridge strategy, execution and filing</li>
+            <li><span class="box on" aria-hidden="true"></span>Built to help entrepreneurs keep more of what they earn</li>
+            <li><span class="box on" aria-hidden="true"></span>For people who want proactive support, not last-minute stress</li>
+          </ul>
+        </div>
+        <div class="ab-dir" data-reveal="stagger">
+          <div class="ab-dir-row is-back"><span class="mono"><svg aria-hidden="true"><use href="#arr"/></svg>Reactive</span><p>Looks back at a year that's already over.</p></div>
+          <div class="ab-dir-row is-fwd"><span class="mono"><svg aria-hidden="true"><use href="#arr"/></svg>Proactive</span><p>Looks forward, at the moves you can still make.</p></div>
+          <p class="ab-dir-note">Most accountants work the first row. HeyDrew was built for the second.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ab-note-sec" aria-labelledby="note-h">
+    <div class="wrap ab-note-grid">
+      <article class="ab-letter paper paper--margin" data-reveal data-confirm="Andrew approves wording">
+        <div class="ab-letter-h"><img src="../img/o-andrew-avatar.webp" width="32" height="32" alt=""><span class="pd-t">A note from Andrew</span><span class="mono">Founder</span></div>
+        <h2 class="h2" id="note-h">Making money is the first game. Keeping it is the second.</h2>
+        <p>I lost everything in 2008. Rebuilding taught me something nobody tells you when you start a business: making money is the first game. Keeping it is the second one, and most owners never get coached on it.</p>
+        <p>For years I've built tax plans for families with serious wealth. The strategies aren't secret. They're in the tax code. Most owners just never get shown them, because their CPA is busy looking at last year.</p>
+        <p class="ab-pull">HeyDrew brings that playbook to every business owner ready to use it.</p>
+        <div class="ab-sign"><i>Andrew Cordle</i><span>Founder, HeyDrew</span></div>
+      </article>
+      <aside class="ab-bio" aria-labelledby="bio-h" data-reveal>
+        <h3 id="bio-h">About Andrew</h3>
+        <ul>
+          <li><span>Founded</span><b>HeyDrew</b></li>
+          <li><span>Founded</span><b>Collective Influence</b></li>
+          <li><span>Founded</span><b>The Aspire Tour</b></li>
+          <li><span>Hosts</span><b>The Money Is ___ show</b></li>
+        </ul>
+        <p>His framework for business owners is three words long. HeyDrew is built around the middle one.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec ckm-sec" aria-labelledby="ckm-h">
+    <div class="wrap">
+      <h2 class="h2" id="ckm-h" data-reveal>Create. Keep. Multiply.</h2>
+      <p class="ckm-intro" data-reveal>Andrew's framework for building wealth. Most advice covers the first and the last. HeyDrew owns the one in the middle.</p>
+      <ol class="ckm" id="ckm">
+        <li class="ckm-row"><span class="ckm-w">Create.</span><p>Build the business. Earn the income.</p></li>
+        <li class="ckm-row is-keep"><span class="ckm-w"><span class="hl">Keep.</span></span><p><b>This is HeyDrew.</b>Plan the year so more of what you earn stays yours.</p><span class="stamp ckm-stamp" aria-hidden="true">We're the Keep</span></li>
+        <li class="ckm-row"><span class="ckm-w">Multiply.</span><p>Put what you kept to work.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec sec--band" aria-labelledby="wdw-h">
+    <div class="wrap">
+      <header class="sh" data-reveal>
+        <span class="tab"><i class="tick" aria-hidden="true"></i>AI-driven. Human-perfected.</span>
+        <h2 class="h2" id="wdw-h">Who does what.</h2>
+        <p class="lead">Software does the searching and the sorting. Licensed people handle everything that needs judgment or a license, including filing.</p>
+      </header>
+      <div class="wdw paper" data-reveal>
+        <table>
+          <caption>How the work splits on your account</caption>
+          <thead><tr><th scope="col"><span class="sr-only">Task</span></th><th scope="col" class="c">AI</th><th scope="col" class="c c-p">People</th></tr></thead>
+          <tbody id="wdw-rows">
+            <tr><th scope="row">Screens your situation for strategies you likely qualify for</th><td><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="p-col"><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+            <tr><th scope="row">Flags deadlines before they pass</th><td><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="p-col"><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+            <tr><th scope="row">Keeps your documents organized in one secure portal</th><td><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="p-col"><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+            <tr class="wdw-split"><th scope="row">Your single point of contact, all year<small>Your Tax Valet. Message them in the portal and hear back within a couple of hours, usually sooner.</small></th><td><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="p-col"><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td></tr>
+            <tr><th scope="row">Reviews your plan and files your return<small>Licensed tax professionals</small></th><td><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="p-col"><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td></tr>
+            <tr><th scope="row">Bookkeeping and payroll, if you want them<small>Dedicated bookkeeping and payroll specialists</small></th><td><span class="dash" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="p-col"><span class="box" aria-hidden="true"></span><span class="sr-only">Yes</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="team-h">
+    <div class="wrap">
+      <div class="ab-team-top">
+        <h2 class="h2" id="team-h" data-reveal>The people helping you plan smarter.</h2>
+        <div data-reveal>
+          <p>Behind HeyDrew is a team focused on helping business owners plan earlier, make smarter moves, and walk into tax season prepared, not surprised.</p>
+          <p>Tax expertise, engineering and go-to-market sit side by side. Nobody hands work over a wall.</p>
+          <div class="cta-row"><a class="link" href="careers.html">We're hiring. See open roles<svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+        </div>
+      </div>
+      <figure class="ab-team-photo" data-reveal>
+        <img src="../img/pages/team-group.webp" width="787" height="530" alt="Headshots of the HeyDrew team arranged in a collage on a patch of sand, with Drew waving from the top right corner" loading="lazy" decoding="async" data-confirm="photo rights">
+        <figcaption><span>The HeyDrew team</span><span class="mono">Aspire Advisors LLC d/b/a HeyDrew!</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec sec--tight" aria-label="What a client said">
+    <div class="wrap">
+      <figure class="quote" data-reveal>
+        <blockquote><p>&ldquo;What hooked me was how he simplified something complex so anyone can understand it.&rdquo;</p></blockquote>
+        <figcaption><img src="../img/o-t-kesh.webp" width="56" height="56" alt="" loading="lazy"><div><b>Kesh K.</b><span>Business Owner, Scottsdale AZ</span></div></figcaption>
+      </figure>
+      <p class="micro quote-note">Testimonials reflect individual experiences and are not a guarantee of future results.</p>
+    </div>
+  </section>
+
+  <section class="cta-band cta-band--ink on-dark ab-cta" aria-labelledby="cta-h" data-sticky-hide>
+    <div class="stage cta-stage">
+      <div class="cta-copy" data-reveal>
+        <h2 class="h2" id="cta-h">The year&rsquo;s still open. Use it.</h2>
+        <p class="lead">A few minutes in TaxLand shows which strategies fit your business, before you talk to anyone.</p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=about&amp;pos=final" data-pos="final" data-cta="final">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          <a class="btn btn--ghost-dark" href="https://heydrew.com/contact/?src=about&amp;pos=final" data-call="final_call" data-confirm="booking URL">Book a strategy call</a>
+        </div>
+        <p class="small">Free. Takes a few minutes. No credit card.</p>
+      </div>
+      <div class="ab-cta-sig" data-reveal><img src="../img/o-andrew-avatar.webp" width="48" height="48" alt=""><span><b>Andrew Cordle</b>Founder. Create. Keep. Multiply.</span></div>
+    </div>
+  </section>
+</main>
+
+<!-- chrome:footer -->
+<footer class="foot on-dark" id="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="../index.html" class="foot-logo" aria-label="HeyDrew home"><img src="../img/logo-white.svg" width="120" height="70" alt="HeyDrew!"></a>
+        <p><img src="../img/o-drew-avatar.webp" width="28" height="28" alt="">AI-Driven, Human-Perfected.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/heydrewcpa/" data-foot="instagram" aria-label="HeyDrew on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@heydrew" data-foot="youtube" data-confirm="channel URL" aria-label="HeyDrew on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.25v5.5L14.75 12z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="cols">
+        <div><h4>Product</h4><a href="../product/how-it-works.html" data-foot="how_it_works">How It Works</a><a href="../product/taxland.html" data-foot="taxland">TaxLand Assessment</a><a href="../product/tax-valet.html" data-foot="tax_valet">Your Tax Valet</a><a href="../product/bookkeeping-payroll.html" data-foot="bookkeeping_payroll">Bookkeeping &amp; Payroll</a><a href="../product/pricing.html" data-foot="pricing">Pricing</a></div>
+        <div><h4>Solutions</h4><a href="../solutions/s-corp-owners.html" data-foot="s_corp_owners">S-Corp Owners</a><a href="../solutions/self-employed.html" data-foot="self_employed">Self-Employed &amp; LLCs</a><a href="../solutions/real-estate-investors.html" data-foot="real_estate_investors">Real Estate Investors</a><a href="../solutions/families.html" data-foot="families">Families &amp; Generational Wealth</a><a href="../solutions/strategies.html" data-foot="strategies">All Strategies</a></div>
+        <div><h4>Company</h4><a href="../company/about.html" data-foot="about">About HeyDrew</a><a href="../company/careers.html" data-foot="careers">Careers</a><a href="../company/affiliates.html" data-foot="affiliates">Affiliate Program</a><a href="../company/contact.html" data-foot="contact">Contact</a><a href="../company/security.html" data-foot="security">Security &amp; Privacy</a></div>
+        <div><h4>Resources</h4><a href="../resources.html" data-foot="resources">Resources</a><a href="../case-studies.html" data-foot="case_studies">Case Studies</a><a href="../index.html#faq" data-foot="faq">FAQ</a><a href="https://taxland.heydrew.com/?src=about&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
+      </div>
+    </div>
+    <hr>
+    <div id="disclaimers" data-confirm="legal review">
+      <h4>Disclaimers</h4>
+      <p>All savings and deduction figures on this page are illustrative, based on hypothetical scenarios, and are not a guarantee of results. Deductions reduce taxable income; actual tax savings depend on your tax bracket, filing status, entity type, state and eligibility. Strategy matches shown by the homepage estimator are a preliminary screen based on limited answers and are not tax, legal or financial advice. Tax laws, limits and thresholds change every year. Every strategy must be properly implemented and documented under current IRS and state rules. Testimonials reflect individual experiences and do not guarantee future results. HeyDrew! is a d/b/a of Aspire Advisors LLC.</p>
+    </div>
+    <div class="foot-bottom">
+      <p class="copy">© 2026 Aspire Advisors LLC d/b/a HeyDrew!</p>
+      <ul class="foot-legal" aria-label="Legal">
+        <li><a href="https://heydrew.com/terms-of-service/" data-foot="tos">Terms of Service</a></li>
+        <li><a href="https://heydrew.com/privacy-policy/" data-foot="privacy">Privacy</a></li>
+        <li><a href="https://heydrew.com/cookie-policy/" data-foot="cookies">Cookies</a></li>
+        <li><a href="https://heydrew.com/sms-terms/" data-foot="messaging">Messaging Terms</a></li>
+        <li><a href="https://heydrew.com/terms-of-use/" data-foot="tou">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- /chrome:footer -->
+
+<!-- chrome:overlays -->
+<!-- Exit intent (rules in README; preview with ?exit=1) -->
+<div class="xi" id="xi" hidden>
+  <div class="xi-bd" data-xi-close="backdrop"></div>
+  <div class="xi-dlg" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="xi-t" aria-describedby="xi-p">
+    <div class="xi-drew" aria-hidden="true"><img src="../img/o-drew-point.webp" width="560" height="810" alt="" loading="lazy" decoding="async"></div>
+    <div class="xi-paper paper paper--margin">
+      <div class="xi-h">
+        <img class="avatar" src="../img/o-drew-avatar.webp" width="24" height="24" alt="">
+        <span class="plan-title">Your 2026 Strategy Plan</span>
+        <button type="button" class="xi-x" data-xi-close="close" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      </div>
+      <h2 class="xi-t" id="xi-t">Before you go, see which strategies you might be missing.</h2>
+      <p class="xi-p" id="xi-p">Most owners never hear about these. A few minutes in TaxLand shows which ones fit your business.</p>
+      <div class="xi-rows"><ul id="xi-rows" aria-label="Strategies in the plan">
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Hire Your Kids</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Augusta Rule</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Accountable Plan</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Solo 401(k)</span></li>
+      </ul><span class="stamp xi-stamp" id="xi-stamp" aria-hidden="true">Unchecked</span></div>
+      <p class="xi-more" id="xi-more" aria-hidden="true">+ more in your full plan</p>
+      <a class="btn btn--primary xi-go" id="xi-go" href="https://taxland.heydrew.com/?src=about&amp;pos=exit" data-pos="exit" data-cta="exit_intent">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <p class="micro xi-fine">Free. Takes a few minutes. No credit card.</p>
+      <div class="xi-stub">
+        <form id="xi-form" novalidate>
+          <label class="xi-lbl" for="xi-email">Not ready? Get the strategy checklist by email.</label>
+          <div class="xi-field">
+            <input id="xi-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@yourbusiness.com" required aria-describedby="xi-err">
+            <button type="submit" class="btn btn--ghost">Send it</button>
+          </div>
+          <p class="xi-err" id="xi-err" role="alert"></p>
+        </form>
+        <div class="xi-thanks" id="xi-thanks" tabindex="-1" hidden><span class="stamp">✓ Sent</span><p><b>It's on its way.</b>Check your inbox for the strategy checklist.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a class="sticky" id="sticky" href="https://taxland.heydrew.com/?src=about&amp;pos=sticky" data-pos="sticky" aria-label="See what you can keep, free assessment">
+  <img src="../img/o-drew-avatar.webp" width="32" height="32" alt="">
+  <span class="t"><b id="st-b">See what you can keep</b><span id="st-s">Free. A few minutes.</span></span>
+  <span class="go" aria-hidden="true"><svg><use href="#arr"/></svg></span>
+</a>
+<!-- /chrome:overlays -->
+
+<!-- Shared behaviour. GSAP is optional: pages render complete without it. -->
+<script src="../assets/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+/* About: Create. Keep. Multiply. focus scrub + who-does-what ticks. GSAP optional; without it everything is simply visible and ticked. */
+window.addEventListener('DOMContentLoaded',function(){
+  var d=document, gsap=window.gsap, ST=window.ScrollTrigger;
+  var reduce=false; try{ reduce=matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  var boxes=[].slice.call(d.querySelectorAll('#wdw-rows .box'));
+  if(!gsap||!ST||reduce){ boxes.forEach(function(b){ b.classList.add('on'); }); return; }
+  try{
+    gsap.registerPlugin(ST);
+    /* Keep: the highlighter draws and the stamp lands as the row reaches the middle of the screen */
+    var keep=d.querySelector('.ckm-row.is-keep'), hl=keep.querySelector('.hl'), stamp=keep.querySelector('.ckm-stamp');
+    gsap.set(hl,{'--hl':0});
+    var tl=gsap.timeline({scrollTrigger:{trigger:'#ckm',start:'top 70%',once:true}});
+    tl.from('#ckm .ckm-w',{yPercent:30,opacity:0,duration:.8,ease:'power3.out',stagger:.12,clearProps:'transform,opacity'})
+      .to(hl,{'--hl':1,duration:.7,ease:'power2.inOut'},'-=.2')
+      .from(stamp,{opacity:0,scale:1.6,rotation:-14,duration:.35,ease:'back.out(2)',clearProps:'opacity,transform'},'-=.15');
+    /* Ticks check in, one per row, when the table lands */
+    ST.create({trigger:'#wdw-rows',start:'top 75%',once:true,onEnter:function(){
+      boxes.forEach(function(b,i){ setTimeout(function(){ b.classList.add('on'); },180+i*140); });
+    }});
+  }catch(err){ boxes.forEach(function(b){ b.classList.add('on'); }); }
+});
+</script>
+</body>
+</html>

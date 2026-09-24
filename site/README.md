@@ -1,6 +1,30 @@
 # HeyDrew homepage redesign (prototype)
 
-A single self-contained page: `index.html` (inline CSS + JS). Images are loaded from `img/` using relative paths. The only external resources are Google Fonts (DM Sans, plus DM Mono 500 for data on paper) and GSAP 3.12.5 + ScrollTrigger from cdnjs (pinned versions).
+The homepage `index.html` plus shared assets (see below). Images are loaded from `img/` using relative paths. The only external resources are Google Fonts (DM Sans, plus DM Mono 500 for data on paper) and GSAP 3.12.5 + ScrollTrigger from cdnjs (pinned versions).
+
+## Multi-page foundation (2026-09-24)
+
+The homepage now shares its chrome and styles with every page.
+
+| Path | What it is |
+|---|---|
+| `assets/css/site.css` | Shared: tokens, base, type, buttons, paper/stamp/box, deadline bar, header + dropdown nav + menu sheet, stage, section, FAQ, footer, sticky CTA, exit sheet, hero entrance, reduced motion |
+| `assets/css/home.css` | Homepage sections only |
+| `assets/css/pages.css` | Page components for inner pages (see `_components.html`) |
+| `assets/js/site.js` | Shared: analytics (`HD.track`, adds `page_slug`), TaxLand links, deadline bar, header, dropdowns, menu sheet, sticky CTA, FAQ, exit intent, scroll depth, `[data-reveal]` reveals. Every block guards its elements. |
+| `assets/js/home.js` | Homepage: estimator, rail, tiles, swipe rails, GSAP choreography |
+| `_template.html` | Blank page with the full shared chrome and build instructions in a comment |
+| `_components.html` | Live component reference with copyable markup (noindex) |
+| `tools/sync-chrome.mjs` | Copies the chrome blocks from `_template.html` into every page |
+| `index.backup3.html` | The single-file homepage before the split (rollback) |
+
+**Relative links.** Every page declares `<body data-page="<slug>" data-root="">` (`"../"` in `product/`, `solutions/`, `company/`). The shared markup (sprite, header + sheet, footer, exit sheet + sticky) lives between `<!-- chrome:NAME -->` markers and is written for the root in `_template.html`. After adding a page or editing the chrome, run `node tools/sync-chrome.mjs` from `site/`: it copies the blocks into every page, prefixes relative `href`/`src` with the page's depth, sets `?src=<slug>` and marks the current page (`aria-current="page"`, `.is-current` on its dropdown). `--check` reports stale pages. site.js also sets the current page and TaxLand `src` at runtime.
+
+**Nav.** Dropdowns are disclosure buttons (not ARIA menus): hover intent 120ms open / 200ms close for mouse, click/tap toggles, Enter/Space/ArrowDown open and focus the first link, arrows/Home/End move inside, Left/Right move between top items, Esc closes and returns focus, tabbing out or clicking outside closes. Without JS, panels open on hover/focus-within. Below 1024px the menu sheet shows the same links as accordions (the current page's group starts open) with the CTA pinned at the bottom.
+
+**Strategy anchors** the nav links to on `solutions/strategies.html`: `#hire-your-kids`, `#augusta-rule`, `#solo-401k`, `#accountable-plan`.
+
+**Copy rule:** never state a number of strategies anywhere (no "8", "eight", "N of 8", "+ 4 more").
 
 ## Open / preview
 
@@ -82,7 +106,7 @@ Analytics: `strategy_rail_swipe` and `testimonial_rail_swipe` each fire once, on
 
 ## Exit intent
 
-The exit sheet is a "Your 2026 Strategy Plan" page: four unchecked strategy rows under a red "8 unchecked" stamp. It has the page's primary CTA and a soft email capture for the 8-strategy checklist. On desktop, the pointing Drew (`o-drew-point.webp`) sits beside the sheet. On phones it is a bottom sheet with the Drew avatar and no Drew image.
+The exit sheet is a "Your 2026 Strategy Plan" page: four unchecked strategy rows under a red "Unchecked" stamp. It has the page's primary CTA and a soft email capture for the strategy checklist. On desktop, the pointing Drew (`o-drew-point.webp`) sits beside the sheet. On phones it is a bottom sheet with the Drew avatar and no Drew image.
 
 If the visitor already finished the estimator, the sheet is personalized:
 

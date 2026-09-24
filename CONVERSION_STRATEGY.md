@@ -47,7 +47,7 @@ The current homepage asks visitors for a sensitive financial commitment (the Tax
 4. **One action, one color.** Green means "See what you can keep." Nothing else is green except money gains and checkmarks.
 
 ### 3.3 The big idea: the hero *is* the product
-The first screen shows a "Your 2026 Strategy Plan" card with the eight strategies locked. The visitor answers two tap questions (entity type, revenue range), and the card unlocks "Up to N of 8 strategies may fit a business like yours," then hands off to TaxLand with those answers pre-filled so the visitor arrives about 30% done. No email, no dollar figure, no call required. This combines Collective's "How much can I save?" pattern, Keeper and Pilot's product-card heroes, and quiz-funnel mechanics (easy first question, progress already underway).
+The first screen shows a "Your 2026 Strategy Plan" card with strategy rows still unchecked. The visitor answers two tap questions (entity type, revenue range), and the card unlocks "Good news. Strategies like these may fit a business like yours." with the matched strategies checked (no strategy counts anywhere, by client rule: HeyDrew keeps adding strategies) then hands off to TaxLand with those answers pre-filled so the visitor arrives about 30% done. No email, no dollar figure, no call required. This combines Collective's "How much can I save?" pattern, Keeper and Pilot's product-card heroes, and quiz-funnel mechanics (easy first question, progress already underway).
 
 ---
 
@@ -61,7 +61,7 @@ The first screen shows a "Your 2026 Strategy Plan" card with the eight strategie
 | 3 | **Proof strip** | "Who are you?" answered in 3 seconds: licensed pros, a named founder, year-round, security. | No proof above the fold |
 | 4 | **The problem** | Names the enemy (backward-looking tax prep) and makes Dec 31 the real deadline, with a 12-month timeline and a 4-row comparison. | Keeps the site's best copy, "Most CPAs work backwards" |
 | 5 | **How it works** | Visitors see step 2 (a short, no-obligation call where you get your price) before committing to step 1. | Missing from the homepage |
-| 6 | **The 8 strategies** | Named, code-backed moves create "that's me" moments and prove this isn't a loophole shop. Drew reviews a plan at his desk (moment 2). | Fixes duplicated HSA/HRA copy |
+| 6 | **The strategies** | Named, code-backed moves create "that's me" moments and prove this isn't a loophole shop. Drew reviews a plan at his desk (moment 2). | Fixes duplicated HSA/HRA copy |
 | 7 | **Illustrative example** | Keeps the $135K counter (brand signature) but as a hypothetical owner with line items and the disclaimer printed underneath, plus the FAQ's honesty line. | "$50K", "18+", "100% Success Rate" removed |
 | 8 | **TaxLand portal** | The one joyful, immersive moment, with Drew holding the phone in the valley (moment 3). The biggest button on the page. | The storybook world, now contained in one section |
 | 9 | **Testimonials** | All six real quotes in a grid, led by the strongest (Jess B., Vicky G.). No carousel, no invented stars. | Hidden carousel |
@@ -133,7 +133,7 @@ Run one at a time, to a sample size fixed in advance (95% significance), judged 
 | **T5** | Header label "See what you can keep" vs "Start free assessment" | Naming "free" and "assessment" may lift header clicks. | Header `cta_click` | – |
 | **T6** | Hero Drew pointing vs Drew holding phone vs no Drew | Tests whether the guide helps or cheapens the premium feel. | Q1 rate; lead quality | Phone screen retouch |
 | **T7** | Deadline bar on vs off (Q4 only) | True urgency lifts starts without raising bounce. | Lead submits in Oct–Dec | Legal-approved wording |
-| Backlog | Testimonial order (money outcome first) · desktop exit-intent "8 strategies" PDF for email · founder video placement | – | – | – |
+| Backlog | Testimonial order (money outcome first) · desktop exit-intent strategy checklist PDF for email · founder video placement | – | – | – |
 
 ---
 

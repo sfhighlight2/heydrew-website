@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Studies | HeyDrew</title>
+<meta name="description" content="Six HeyDrew clients in their own words, plus clearly labeled illustrative scenarios that show how a tax plan gets built.">
+<meta name="theme-color" content="#F7F8FB">
+<meta name="color-scheme" content="light">
+<script>
+  /* Motion gate (keep inline, keep first): content is only pre-hidden when .js-motion exists. */
+  (function(){
+    var d=document.documentElement; d.classList.add('js'); window.__t0=(window.performance&&performance.now())||0;
+    try{ if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches){ d.classList.add('js-motion'); } }catch(e){}
+    window.__motionFailsafe=setTimeout(function(){ if(!window.__motionRan){ window.__motionLate=true; d.classList.remove('js-motion'); } },1500);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<style id="page-css">
+/* Case Studies. Honesty is the layout: real words first, labeled hypotheticals second. */
+
+/* Hero: framed desk scene */
+.cs-hero .ph-media--frame img{object-position:50% 40%}
+
+/* Reading key: a two-cell ledger strip */
+.cs-key{padding:56px 0 0}
+.key-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.key-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:20px;padding:22px 24px 22px 0;text-decoration:none;color:var(--navy-900);transition:background-color 160ms var(--ease)}
+.key-item+.key-item{border-left:1px solid var(--line);padding-left:24px}
+.key-item:hover{background:var(--navy-50)}
+.key-t{font-size:15px;line-height:21px;color:var(--navy-500)}
+.key-t b{display:block;font-size:17px;line-height:24px;font-weight:600;letter-spacing:-.01em;color:var(--navy-900)}
+.key-arr{width:16px;height:16px;color:var(--navy-400);transform:rotate(90deg);transition:transform 160ms var(--ease)}
+.key-item:hover .key-arr{transform:rotate(90deg) translateX(3px)}
+.key-faces{display:flex}
+.key-faces img{width:40px;height:40px;border-radius:50%;border:2px solid #fff;object-fit:cover;background:var(--navy-100)}
+.key-faces img+img{margin-left:-12px}
+.key-stamp{display:inline-block;font:500 10px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-950);border:1.5px solid var(--ink-950);border-radius:4px;padding:6px 7px;transform:rotate(-4deg);background:#fff}
+.key-why{margin-top:20px;max-width:72ch;font-size:15px;line-height:23px;color:var(--navy-500)}
+
+/* In their words */
+.cs-words{padding-top:112px}
+.words-h{margin-bottom:56px}
+.words-h .tab{margin-bottom:18px}
+.lead-q{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:56px;align-items:start;padding:40px 0 64px;border-top:2px solid var(--ink-950)}
+.lq-who{display:flex;flex-direction:column;gap:2px}
+.lq-who img{width:112px;height:112px;border-radius:50%;object-fit:cover;background:var(--navy-100);margin-bottom:16px}
+.lq-who b{font-size:17px;line-height:24px;font-weight:600}
+.lq-who span{font:500 12px/18px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--navy-500)}
+.lead-q blockquote p{font-size:clamp(1.625rem,1.1rem + 1.5vw,2.5rem);line-height:1.22;font-weight:500;letter-spacing:-.024em;color:var(--navy-900);text-indent:-.42em;text-wrap:pretty;max-width:30em}
+
+.q-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;row-gap:72px;padding-top:56px;border-top:1px solid var(--line)}
+.q{margin:0;display:flex;flex-direction:column;gap:22px}
+.q blockquote p{font-size:22px;line-height:31px;font-weight:500;letter-spacing:-.015em;color:var(--navy-900);text-indent:-.4em;text-wrap:pretty}
+.q--big blockquote p{font-size:clamp(1.75rem,1.2rem + 1.4vw,2.5rem);line-height:1.15;letter-spacing:-.028em;font-weight:600}
+.q figcaption{display:flex;align-items:center;gap:14px}
+.q figcaption img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;background:var(--navy-100)}
+.q figcaption b{display:block;font-size:16px;line-height:22px;font-weight:600}
+.q figcaption span span{display:block;font-size:14px;line-height:20px;color:var(--navy-500)}
+.q--vicky{grid-column:1 / span 6}
+.q--rob{grid-column:8 / span 5;padding-top:48px}
+.q--kesh{grid-column:2 / span 5}
+.q--allen{grid-column:7 / span 6;padding-top:80px}
+.q--will{grid-column:4 / span 6}
+.words-note{margin-top:64px}
+
+/* Scenarios */
+.cs-sc .sh .l2{font-size:.72em}
+.sc-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);column-gap:48px;align-items:start}
+.sc-index{position:sticky;top:112px}
+.sc-index-note{font:500 11px/16px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500);padding-bottom:14px;border-bottom:1px solid var(--navy-200)}
+.sc-index a{position:relative;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;padding:14px 0 14px 14px;border-bottom:1px solid var(--navy-200);text-decoration:none;color:var(--navy-600);transition:color 160ms var(--ease)}
+.sc-index a::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;background:var(--green-500);transform:scaleY(0);transform-origin:top;transition:transform 220ms var(--ease)}
+.sc-index a:hover,.sc-index a.is-on{color:var(--navy-900)}
+.sc-index a.is-on::before{transform:none}
+.sc-l{font:500 13px/22px var(--mono);color:var(--navy-400)}
+.sc-index a.is-on .sc-l{color:var(--green-700)}
+.sc-index b{display:block;font-size:15px;line-height:22px;font-weight:600;letter-spacing:-.01em}
+.sc-index b+span{display:block;font-size:13px;line-height:19px;color:var(--navy-500)}
+
+.sc-list{display:grid;gap:40px}
+.sc{padding:0 36px 28px;scroll-margin-top:96px}
+.sc-top{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:28px 220px 24px 0;border-bottom:2px solid var(--ink-950)}
+.sc-no{font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.sc-t{font-size:28px;line-height:34px;font-weight:650;letter-spacing:-.022em;color:var(--navy-900);text-wrap:balance}
+.sc-stamp{position:absolute;right:-6px;top:26px;white-space:normal;max-width:180px;text-align:center;line-height:1.35;transform:rotate(-3deg)}
+.sc-row{display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:28px;padding:22px 0;border-bottom:1px solid var(--navy-100)}
+.sc-lbl{margin:0;font:500 11px/20px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.sc-sit{font-size:17px;line-height:27px;color:var(--navy-900);max-width:62ch}
+.sc-qs{display:grid;gap:10px;counter-reset:q}
+.sc-qs li{position:relative;padding-left:34px;font-size:16px;line-height:24px;color:var(--navy-900);counter-increment:q}
+.sc-qs li::before{content:"Q" counter(q);position:absolute;left:0;top:3px;font:500 11px/18px var(--mono);color:var(--navy-400)}
+.sc-ex{display:grid}
+.sc-ex li{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:16px;padding:12px 0;border-top:1px dashed var(--navy-200)}
+.sc-ex li:first-child{border-top:0;padding-top:0}
+.sc-ex b{grid-column:2;font-size:16px;line-height:24px;font-weight:600;color:var(--navy-900)}
+.sc-ex b+span{grid-column:2;font-size:15px;line-height:23px;color:var(--navy-600);max-width:58ch}
+.v{grid-row:1 / span 2;align-self:start;justify-self:start;margin-top:2px;font:500 10.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--navy-600);border:1px solid var(--navy-300);border-radius:4px;padding:5px 6px;white-space:nowrap;background:#fff}
+.v--fit{color:var(--green-700);border-color:var(--green-600);background:var(--green-100)}
+.v--no{color:var(--miss-600);border-color:rgba(194,65,58,.45)}
+.sc-docs{display:grid;gap:8px}
+.sc-docs li{position:relative;padding-left:28px;font-size:16px;line-height:24px;color:var(--navy-900)}
+.sc-docs li::before{content:"";position:absolute;left:2px;top:4px;width:12px;height:15px;border:1.5px solid var(--navy-400);border-radius:2px;background:linear-gradient(var(--navy-300),var(--navy-300)) 2px 5px/6px 1.5px no-repeat,linear-gradient(var(--navy-300),var(--navy-300)) 2px 9px/6px 1.5px no-repeat}
+.sc-docs a{margin-left:8px;font-size:14px;font-weight:600;color:var(--green-700);text-underline-offset:3px;white-space:nowrap}
+.sc-disc{margin-top:20px;font-size:13px;line-height:19px;color:var(--navy-500);max-width:80ch}
+
+/* The one example with numbers */
+.num-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:72px;align-items:start}
+.num-copy .lead{margin-top:20px}
+.num-persona{margin-top:28px;padding:18px 20px;border-left:2px solid var(--ink-950);background:var(--navy-50);font-size:16px;line-height:25px;color:var(--navy-600)}
+.num-persona b{color:var(--navy-900)}
+.num-honest{margin-top:36px}
+.num-honest p{font-size:17px;line-height:27px;font-style:italic;color:var(--navy-900)}
+.num-honest figcaption{margin-top:10px;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy-500)}
+.num-sheet .paper-doc{max-width:none}
+.num-sheet .pd-h .tab{font-size:10.5px}
+.num-sheet .pd-note{max-width:none}
+
+/* Share your story */
+.cs-share{padding:0 0 var(--sec)}
+.share{display:flex;align-items:center;justify-content:space-between;gap:24px 48px;padding:36px 40px;border-top:1px dashed var(--navy-300)}
+.share-h{font-size:26px;line-height:32px;font-weight:650;letter-spacing:-.02em;color:var(--navy-900);max-width:24em;text-wrap:balance}
+.share-copy p{margin-top:10px;font-size:16px;line-height:25px;color:var(--navy-600);max-width:60ch}
+
+@media (max-width:1023px){
+  .sc-grid{grid-template-columns:1fr}
+  .sc-index{position:static;margin-bottom:28px}
+  .sc-index ol{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+  .num-grid{grid-template-columns:1fr;row-gap:48px}
+  .q-grid{column-gap:24px}
+  .q--vicky,.q--kesh,.q--will{grid-column:1 / span 7}
+  .q--rob,.q--allen{grid-column:6 / span 7;padding-top:0}
+  .sc-row{grid-template-columns:150px minmax(0,1fr)}
+}
+@media (max-width:767px){
+  .cs-key{padding-top:36px}
+  .key-grid{grid-template-columns:1fr}
+  .key-item{padding:16px 0}
+  .key-item+.key-item{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .key-item:hover{background:none}
+  .cs-words{padding-top:72px}
+  .words-h{margin-bottom:32px}
+  .lead-q{grid-template-columns:1fr;row-gap:24px;padding:28px 0 44px}
+  .lq-who{display:grid;grid-template-columns:64px 1fr;column-gap:14px;align-items:center}
+  .lq-who img{width:64px;height:64px;margin:0;grid-row:1 / span 2}
+  .lq-who b{align-self:end}
+  .lq-who span{align-self:start}
+  .q-grid{grid-template-columns:1fr;row-gap:40px;padding-top:36px}
+  .q--vicky,.q--kesh,.q--will,.q--rob,.q--allen{grid-column:1;padding-top:0}
+  .q blockquote p{font-size:19px;line-height:27px}
+  .q--big blockquote p{font-size:26px;line-height:31px}
+  .q figcaption img{width:48px;height:48px}
+  .words-note{margin-top:40px}
+  .sc-index ol{grid-template-columns:1fr}
+  .sc-index a{padding:12px 0 12px 14px}
+  .sc-list{gap:28px}
+  .sc{padding:0 16px 20px 16px}
+  .sc-top{padding:22px 0 18px;gap:8px}
+  .sc-stamp{position:static;justify-self:start;margin:4px 0 2px;max-width:none;transform:rotate(-2deg)}
+  .sc-t{font-size:22px;line-height:28px}
+  .sc-row{grid-template-columns:1fr;row-gap:10px;padding:18px 0}
+  .sc-sit{font-size:16px;line-height:25px}
+  .sc-ex li{grid-template-columns:1fr;row-gap:6px}
+  .sc-ex b,.sc-ex b+span{grid-column:1}
+  .v{grid-row:auto}
+  .sc-docs a{display:block;margin:2px 0 0}
+  .share{flex-direction:column;align-items:flex-start;padding:24px 18px}
+  .share .btn{width:100%}
+  .share-h{font-size:21px;line-height:27px}
+  .num-sheet .pd-h .tab{display:none}
+}
+
+</style>
+</head>
+<body data-page="case-studies" data-root="">
+<!-- chrome:sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M2.5 8h10.2M8.8 3.8 13 8l-4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chev" viewBox="0 0 10 10"><path d="M2 3.75 5 6.75l3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-how" viewBox="0 0 24 24"><path d="M4 20h16V4.5h-5v5h-5v5H4z"/><path d="M10 14.5V20M15 9.5V20"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4.5 3.75 6.5v13L9 17.5l6 2 5.25-2v-13L15 6.5 9 4.5Z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+  <symbol id="i-valet" viewBox="0 0 24 24"><path d="M4.5 5.5h15v10.5h-8.25L7 19.5V16H4.5z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></symbol>
+  <symbol id="i-books" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M9 3.5v17M12.5 8H16M12.5 11.5H16M12.5 15H15"/></symbol>
+  <symbol id="i-price" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-2.75-1.5-2.75 1.5-2.75-1.5-2.75 1.5z"/><path d="M9.5 8h5M9.5 11.5h5M9.5 15h2.5"/></symbol>
+</svg>
+<!-- /chrome:sprite -->
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- chrome:header -->
+<header class="hdr" id="hdr">
+  <div class="wide">
+    <a class="logo" href="index.html" aria-label="HeyDrew home"><img src="img/o-logo.webp" width="75" height="44" alt="HeyDrew!"></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-item" data-group="product">
+          <button class="nav-top" type="button" id="nt-product" aria-expanded="false" aria-controls="np-product" data-group="product">Product<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--product" id="np-product" aria-labelledby="nt-product">
+            <div class="np-main">
+              <span class="np-lbl">The service</span>
+              <ul>
+                <li><a class="np-link" href="product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a></li>
+                <li><a class="np-link" href="product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a></li>
+                <li><a class="np-link" href="product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a></li>
+                <li><a class="np-link" href="product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a></li>
+                <li><a class="np-link" href="product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a></li>
+              </ul>
+            </div>
+            <div class="np-feat">
+              <div class="np-feat-top">
+                <div class="np-drew" aria-hidden="true"><img src="img/o-drew-point.webp" width="560" height="810" alt="" loading="lazy" decoding="async"></div>
+                <div><span class="tab"><i class="tick" aria-hidden="true"></i>Free assessment</span><p class="np-feat-h">See which strategies fit you.</p></div>
+              </div>
+              <p class="np-feat-p">A few minutes in TaxLand shows which ones fit your business.</p>
+              <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=nav_product" data-pos="nav_product" data-cta="nav_product">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+              <p class="micro">Free. No credit card.</p>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item" data-group="solutions">
+          <button class="nav-top" type="button" id="nt-solutions" aria-expanded="false" aria-controls="np-solutions" data-group="solutions">Solutions<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--solutions" id="np-solutions" aria-labelledby="nt-solutions">
+            <div class="np-main">
+              <span class="np-lbl">By business</span>
+              <ul>
+                <li><a class="np-link" href="solutions/s-corp-owners.html" data-slug="s-corp-owners" data-nav="s_corp_owners"><span class="np-t">S-Corp Owners</span><span class="np-d">Augusta Rule, Accountable Plan and payroll moves</span></a></li>
+                <li><a class="np-link" href="solutions/self-employed.html" data-slug="self-employed" data-nav="self_employed"><span class="np-t">Self-Employed &amp; LLCs</span><span class="np-d">Solo 401(k), HSA and hiring your kids</span></a></li>
+                <li><a class="np-link" href="solutions/real-estate-investors.html" data-slug="real-estate-investors" data-nav="real_estate_investors"><span class="np-t">Real Estate Investors</span><span class="np-d">Planning for owners who hold property</span></a></li>
+                <li><a class="np-link" href="solutions/families.html" data-slug="families" data-nav="families"><span class="np-t">Families &amp; Generational Wealth</span><span class="np-d">529 plans, IRAs and wages for your kids</span></a></li>
+              </ul>
+            </div>
+            <div class="np-strat">
+              <span class="np-lbl">By strategy</span>
+              <div class="np-sheet">
+                <a class="np-all" href="solutions/strategies.html" data-slug="strategies" data-nav="strategies"><span>All strategies</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+                <a class="np-q" href="solutions/strategies.html#hire-your-kids" data-nav="strategy_hire_your_kids"><span class="box" aria-hidden="true"></span>Hire Your Kids</a>
+                <a class="np-q" href="solutions/strategies.html#augusta-rule" data-nav="strategy_augusta_rule"><span class="box" aria-hidden="true"></span>Augusta Rule</a>
+                <a class="np-q" href="solutions/strategies.html#solo-401k" data-nav="strategy_solo_401k"><span class="box" aria-hidden="true"></span>Solo 401(k)</a>
+                <a class="np-q" href="solutions/strategies.html#accountable-plan" data-nav="strategy_accountable_plan"><span class="box" aria-hidden="true"></span>Accountable Plan</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-top" href="case-studies.html" data-slug="case-studies" data-nav="case_studies" aria-current="page">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-top" href="resources.html" data-slug="resources" data-nav="resources">Resources</a></li>
+        <li class="nav-item" data-group="company">
+          <button class="nav-top" type="button" id="nt-company" aria-expanded="false" aria-controls="np-company" data-group="company">Company<svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+          <div class="nav-panel np--company" id="np-company" aria-labelledby="nt-company">
+            <ul>
+              <li><a class="np-link" href="company/about.html" data-slug="about" data-nav="about"><span class="np-no" aria-hidden="true">01</span><span><span class="np-t">About HeyDrew</span><span class="np-d">The people and the idea behind Drew</span></span></a></li>
+              <li><a class="np-link" href="company/careers.html" data-slug="careers" data-nav="careers"><span class="np-no" aria-hidden="true">02</span><span><span class="np-t">Careers<span class="np-hire">We're hiring</span></span><span class="np-d">Open roles on the team</span></span></a></li>
+              <li><a class="np-link" href="company/affiliates.html" data-slug="affiliates" data-nav="affiliates"><span class="np-no" aria-hidden="true">03</span><span><span class="np-t">Affiliate Program</span><span class="np-d">Refer business owners through Impact</span></span></a></li>
+              <li><a class="np-link" href="company/contact.html" data-slug="contact" data-nav="contact"><span class="np-no" aria-hidden="true">04</span><span><span class="np-t">Contact</span><span class="np-d">Reach a person on our team</span></span></a></li>
+              <li><a class="np-link" href="company/security.html" data-slug="security" data-nav="security"><span class="np-no" aria-hidden="true">05</span><span><span class="np-t">Security &amp; Privacy</span><span class="np-d">Encrypted, and never sold</span></span></a></li>
+            </ul>
+            <p class="np-founder"><span class="mono">Founded by</span><img src="img/o-andrew-avatar.webp" width="24" height="24" alt="">Andrew Cordle</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="hdr-r">
+      <a class="signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
+      <a class="btn btn--primary btn--sm" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=nav" data-pos="nav" data-cta="nav"><span class="btn-long">See what you can keep</span><span class="btn-short">Start free</span><svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <button class="menu-btn" type="button" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet-top"><img src="img/o-logo.webp" width="61" height="36" alt="HeyDrew!"><button class="close-btn" type="button" id="menu-close" aria-label="Close menu">✕</button></div>
+  <nav class="sheet-nav" aria-label="Mobile">
+    <div class="sm-group" data-group="product">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-product" data-group="product"><span>Product</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-product"><div><div class="sm-list">
+        <a class="sm-link" href="product/how-it-works.html" data-slug="how-it-works" data-nav="how_it_works"><span class="np-ic" aria-hidden="true"><svg><use href="#i-how"/></svg></span><span><span class="np-t">How It Works</span><span class="np-d">Five steps from quiz to filed return</span></span></a>
+        <a class="sm-link" href="product/taxland.html" data-slug="taxland" data-nav="taxland"><span class="np-ic" aria-hidden="true"><svg><use href="#i-map"/></svg></span><span><span class="np-t">TaxLand Assessment</span><span class="np-d">The free game that maps your strategies</span></span></a>
+        <a class="sm-link" href="product/tax-valet.html" data-slug="tax-valet" data-nav="tax_valet"><span class="np-ic" aria-hidden="true"><svg><use href="#i-valet"/></svg></span><span><span class="np-t">Your Tax Valet</span><span class="np-d">One person, all year, a few hours' reply</span></span></a>
+        <a class="sm-link" href="product/bookkeeping-payroll.html" data-slug="bookkeeping-payroll" data-nav="bookkeeping_payroll"><span class="np-ic" aria-hidden="true"><svg><use href="#i-books"/></svg></span><span><span class="np-t">Bookkeeping &amp; Payroll</span><span class="np-d">Clean books so the strategy holds up</span></span></a>
+        <a class="sm-link" href="product/pricing.html" data-slug="pricing" data-nav="pricing"><span class="np-ic" aria-hidden="true"><svg><use href="#i-price"/></svg></span><span><span class="np-t">Pricing</span><span class="np-d">One annual fee. Never auto-renews.</span></span></a>
+      </div></div></div>
+    </div>
+    <div class="sm-group" data-group="solutions">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-solutions" data-group="solutions"><span>Solutions</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-solutions"><div><div class="sm-list">
+        <span class="sm-lbl">By business</span>
+        <a class="sm-link sm-link--plain" href="solutions/s-corp-owners.html" data-slug="s-corp-owners" data-nav="s_corp_owners"><span><span class="np-t">S-Corp Owners</span><span class="np-d">Augusta Rule, Accountable Plan and payroll moves</span></span></a>
+        <a class="sm-link sm-link--plain" href="solutions/self-employed.html" data-slug="self-employed" data-nav="self_employed"><span><span class="np-t">Self-Employed &amp; LLCs</span><span class="np-d">Solo 401(k), HSA and hiring your kids</span></span></a>
+        <a class="sm-link sm-link--plain" href="solutions/real-estate-investors.html" data-slug="real-estate-investors" data-nav="real_estate_investors"><span><span class="np-t">Real Estate Investors</span><span class="np-d">Planning for owners who hold property</span></span></a>
+        <a class="sm-link sm-link--plain" href="solutions/families.html" data-slug="families" data-nav="families"><span><span class="np-t">Families &amp; Generational Wealth</span><span class="np-d">529 plans, IRAs and wages for your kids</span></span></a>
+        <span class="sm-lbl">By strategy</span>
+        <a class="sm-link sm-link--plain" href="solutions/strategies.html" data-slug="strategies" data-nav="strategies"><span><span class="np-t">All strategies</span><span class="np-d">What each one is and who it fits</span></span></a>
+        <div class="np-sheet sm-sheet">
+          <a class="np-q" href="solutions/strategies.html#hire-your-kids" data-nav="strategy_hire_your_kids"><span class="box" aria-hidden="true"></span>Hire Your Kids</a>
+          <a class="np-q" href="solutions/strategies.html#augusta-rule" data-nav="strategy_augusta_rule"><span class="box" aria-hidden="true"></span>Augusta Rule</a>
+          <a class="np-q" href="solutions/strategies.html#solo-401k" data-nav="strategy_solo_401k"><span class="box" aria-hidden="true"></span>Solo 401(k)</a>
+          <a class="np-q" href="solutions/strategies.html#accountable-plan" data-nav="strategy_accountable_plan"><span class="box" aria-hidden="true"></span>Accountable Plan</a>
+        </div>
+      </div></div></div>
+    </div>
+    <a class="sm-top" href="case-studies.html" data-slug="case-studies" data-nav="case_studies" aria-current="page"><span>Case Studies</span></a>
+    <a class="sm-top" href="resources.html" data-slug="resources" data-nav="resources"><span>Resources</span></a>
+    <div class="sm-group" data-group="company">
+      <button class="sm-top" type="button" aria-expanded="false" aria-controls="sm-company" data-group="company"><span>Company</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></button>
+      <div class="sm-body" id="sm-company"><div><div class="sm-list">
+        <a class="sm-link sm-link--plain" href="company/about.html" data-slug="about" data-nav="about"><span><span class="np-t">About HeyDrew</span><span class="np-d">The people and the idea behind Drew</span></span></a>
+        <a class="sm-link sm-link--plain" href="company/careers.html" data-slug="careers" data-nav="careers"><span><span class="np-t">Careers<span class="np-hire">We're hiring</span></span><span class="np-d">Open roles on the team</span></span></a>
+        <a class="sm-link sm-link--plain" href="company/affiliates.html" data-slug="affiliates" data-nav="affiliates"><span><span class="np-t">Affiliate Program</span><span class="np-d">Refer business owners through Impact</span></span></a>
+        <a class="sm-link sm-link--plain" href="company/contact.html" data-slug="contact" data-nav="contact"><span><span class="np-t">Contact</span><span class="np-d">Reach a person on our team</span></span></a>
+        <a class="sm-link sm-link--plain" href="company/security.html" data-slug="security" data-nav="security"><span><span class="np-t">Security &amp; Privacy</span><span class="np-d">Encrypted, and never sold</span></span></a>
+      </div></div></div>
+    </div>
+    <a class="sm-signin" href="https://portal.heydrew.com/" data-signin data-confirm="portal URL">Sign in</a>
+  </nav>
+  <div class="sheet-foot">
+    <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=nav" data-pos="nav" data-cta="nav_sheet">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+    <p class="micro">Free. Takes a few minutes. No credit card.</p>
+  </div>
+</div>
+<!-- /chrome:header -->
+
+<main id="main">
+  <!-- Hero -->
+  <section class="ph ph--split cs-hero" aria-labelledby="ph-h">
+    <div class="stage ph-stage">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <ol class="crumbs" aria-label="Breadcrumb" data-hero-in style="--i:0"><li><a href="index.html">HeyDrew</a></li><li aria-current="page">Case Studies</li></ol>
+          <h1 class="ph-h1" id="ph-h" data-hero-in style="--i:1">Real owners. <span class="hl">Honest</span> examples.</h1>
+          <p class="lead" data-hero-in style="--i:2">Six clients in their own words, and four labeled scenarios that show how a plan gets built.</p>
+          <div class="cta-row" data-sticky-hide data-hero-in style="--i:3">
+            <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=hero" data-pos="hero" data-cta="hero">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+            <a class="link" href="https://heydrew.com/contact/?src=case-studies&amp;pos=hero" data-call="hero_call" data-confirm="booking URL">Book a strategy call<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          </div>
+        </div>
+        <figure class="ph-media ph-media--frame cs-hero-media" data-hero-in style="--i:2">
+          <img src="img/o-drew-desk.webp" width="1300" height="863" alt="Drew at his desk, checking off rows on a printed strategy plan" fetchpriority="high">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading key -->
+  <section class="cs-key" aria-label="How to read this page">
+    <div class="wrap">
+      <div class="key-grid" data-reveal="stagger">
+        <a class="key-item" href="#words">
+          <span class="key-faces" aria-hidden="true">
+            <img src="img/pages/people/jess.webp" width="40" height="40" alt="" loading="lazy" decoding="async">
+            <img src="img/pages/people/rob.webp" width="40" height="40" alt="" loading="lazy" decoding="async">
+            <img src="img/pages/people/allen.webp" width="40" height="40" alt="" loading="lazy" decoding="async">
+          </span>
+          <span class="key-t"><b>In their words</b>Real HeyDrew clients, quoted word for word.</span>
+          <svg class="key-arr" aria-hidden="true"><use href="#arr"/></svg>
+        </a>
+        <a class="key-item" href="#scenarios">
+          <span class="key-stamp" aria-hidden="true">Illustrative</span>
+          <span class="key-t"><b>Illustrative scenarios</b>Hypothetical owners, built to show the process. Not clients.</span>
+          <svg class="key-arr" aria-hidden="true"><use href="#arr"/></svg>
+        </a>
+      </div>
+      <p class="key-why" data-reveal>Why no big "we saved them $X" stories? Because we don't publish results we can't show you. When clients share their numbers with us for publication, they'll appear here with their permission.</p>
+    </div>
+  </section>
+
+  <!-- In their words -->
+  <section class="sec cs-words" id="words" aria-labelledby="words-h" data-confirm="all six are consenting HeyDrew tax clients">
+    <div class="wrap">
+      <header class="words-h" data-reveal>
+        <span class="tab"><i class="tick" aria-hidden="true"></i>Real clients</span>
+        <h2 class="h2" id="words-h">In their words.</h2>
+      </header>
+
+      <figure class="lead-q" data-reveal>
+        <figcaption class="lq-who">
+          <img src="img/pages/people/jess.webp" width="112" height="112" alt="Jess B." loading="lazy" decoding="async">
+          <b>Jess B.</b>
+          <span>Business Owner, Denver CO</span>
+        </figcaption>
+        <blockquote><p>“I feel empowered, because I know I have a team that's got my back and is making sure I'm protected. If you're a business owner and you're carrying that anxiety of not knowing what you don't know, this is the team you want.”</p></blockquote>
+      </figure>
+
+      <div class="q-grid" data-reveal="stagger">
+        <figure class="q q--vicky">
+          <blockquote><p>“I've already saved more in taxes than my initial investment—and that alone felt like a breakthrough.”</p></blockquote>
+          <figcaption><img src="img/pages/people/vicky.webp" width="56" height="56" alt="Vicky G." loading="lazy" decoding="async"><span><b>Vicky G.</b><span>Business Owner, Phoenix AZ</span></span></figcaption>
+        </figure>
+        <figure class="q q--rob q--big">
+          <blockquote><p>“They've given us clarity, strategy, and speed.”</p></blockquote>
+          <figcaption><img src="img/pages/people/rob.webp" width="56" height="56" alt="Rob R." loading="lazy" decoding="async"><span><b>Rob R.</b><span>Business Owner, Lewiston ME</span></span></figcaption>
+        </figure>
+        <figure class="q q--kesh">
+          <blockquote><p>“What hooked me was how he simplified something complex so anyone can understand it.”</p></blockquote>
+          <figcaption><img src="img/pages/people/kesh.webp" width="56" height="56" alt="Kesh K." loading="lazy" decoding="async"><span><b>Kesh K.</b><span>Business Owner, Scottsdale AZ</span></span></figcaption>
+        </figure>
+        <figure class="q q--allen">
+          <blockquote><p>“I left inspired, challenged, and equipped with strategies I can immediately apply.”</p></blockquote>
+          <figcaption><img src="img/pages/people/allen.webp" width="56" height="56" alt="Allen D." loading="lazy" decoding="async"><span><b>Allen D.</b><span>Business Owner, Los Angeles CA</span></span></figcaption>
+        </figure>
+        <figure class="q q--will">
+          <blockquote><p>“We learned the process to take our company to the next level.”</p></blockquote>
+          <figcaption><img src="img/pages/people/will.webp" width="56" height="56" alt="Will H." loading="lazy" decoding="async"><span><b>Will H.</b><span>Business Owner, Nashville TN</span></span></figcaption>
+        </figure>
+      </div>
+      <p class="micro words-note">Testimonials reflect individual experiences and are not a guarantee of future results.</p>
+    </div>
+  </section>
+
+  <!-- Illustrative scenarios -->
+  <section class="sec sec--band cs-sc" id="scenarios" aria-labelledby="sc-h">
+    <div class="wrap">
+      <header class="sh" data-reveal>
+        <h2 class="h2" id="sc-h">How a plan gets built.<span class="l2">Four illustrative scenarios.</span></h2>
+        <p class="lead">These owners don't exist. The questions do. Each file shows what a Tax Valet asks, what gets explored, and what ends up on paper.</p>
+      </header>
+
+      <div class="sc-grid">
+        <nav class="sc-index" aria-label="Scenarios">
+          <p class="sc-index-note">Illustrative scenarios, not clients.</p>
+          <ol>
+            <li><a href="#sc-a" data-sc="sc-a"><span class="sc-l">A</span><span><b>The S-Corp consultant</b><span>Home office, travel, a solo firm</span></span></a></li>
+            <li><a href="#sc-b" data-sc="sc-b"><span class="sc-l">B</span><span><b>The family business</b><span>Two teens who help out</span></span></a></li>
+            <li><a href="#sc-c" data-sc="sc-c"><span class="sc-l">C</span><span><b>The owner with rentals</b><span>A business plus property</span></span></a></li>
+            <li><a href="#sc-d" data-sc="sc-d"><span class="sc-l">D</span><span><b>The solo creator</b><span>Lumpy income, a home studio</span></span></a></li>
+          </ol>
+        </nav>
+
+        <div class="sc-list">
+          <!-- A -->
+          <article class="sc paper" id="sc-a" aria-labelledby="sc-a-h" data-reveal>
+            <header class="sc-top">
+              <span class="sc-no">Scenario A</span>
+              <h3 class="sc-t" id="sc-a-h">The S-Corp consultant</h3>
+              <span class="stamp sc-stamp">Illustrative scenario, not a client</span>
+            </header>
+            <div class="sc-row">
+              <h4 class="sc-lbl">The situation</h4>
+              <p class="sc-sit">Runs a one-person consulting firm taxed as an S-Corp. Works from a dedicated room at home, drives to client sites, and pays for a phone and software personally. Holds a planning day with a contractor each quarter. Files on time, but nobody has planned anything.</p>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Questions the Tax Valet asks</h4>
+              <ul class="sc-qs">
+                <li>How did you set your salary, and when was it last reviewed?</li>
+                <li>Which business costs are you paying personally right now?</li>
+                <li>Is there a room at home used only for the business?</li>
+                <li>Where do your quarterly planning days happen today?</li>
+                <li>What have you put toward retirement so far this year?</li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Strategies explored</h4>
+              <ul class="sc-ex">
+                <li><span class="v v--fit">Likely fit</span><b>Accountable Plan</b><span>The S-Corp reimburses home office, phone and mileage costs paid personally, as long as they're documented and submitted on time.</span></li>
+                <li><span class="v">Worth a look</span><b>Augusta Rule</b><span>Renting the home to the business for real meetings, at a fair market rate, for no more than 14 days a year.</span></li>
+                <li><span class="v v--fit">Likely fit</span><b>Solo 401(k)</b><span>With no employees besides the owner, it may allow larger contributions than an IRA. Timing rules apply.</span></li>
+                <li><span class="v">Review</span><b>Owner salary</b><span>For S-Corp owners, a reasonable salary is a strategy decision, not just a payroll setting.</span></li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">What the plan documents</h4>
+              <ul class="sc-docs">
+                <li>A signed Accountable Plan resolution <a href="resources.html#doc-accountable">Get the template</a></li>
+                <li>Monthly reimbursement reports with receipts and mileage logs</li>
+                <li>A comparable rent worksheet for the home meeting space <a href="resources.html#doc-augusta">Get the worksheet</a></li>
+                <li>An agenda, attendee list and notes for each meeting day</li>
+                <li>Retirement plan paperwork and a contribution schedule</li>
+              </ul>
+            </div>
+            <p class="sc-disc">Illustrative scenario. A hypothetical owner built to show the process, not a HeyDrew client. Whether any strategy fits you depends on your facts and the rules in effect for your tax year.</p>
+          </article>
+
+          <!-- B -->
+          <article class="sc paper" id="sc-b" aria-labelledby="sc-b-h" data-reveal>
+            <header class="sc-top">
+              <span class="sc-no">Scenario B</span>
+              <h3 class="sc-t" id="sc-b-h">The family business with working kids</h3>
+              <span class="stamp sc-stamp">Illustrative scenario, not a client</span>
+            </header>
+            <div class="sc-row">
+              <h4 class="sc-lbl">The situation</h4>
+              <p class="sc-sit">Married co-owners of a small online shop. Their two teenagers pack orders after school and run the shop's social accounts. The kids get paid now and then, in cash, with no records. College is a few years out.</p>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Questions the Tax Valet asks</h4>
+              <ul class="sc-qs">
+                <li>How old is each child, and what work do they actually do?</li>
+                <li>How many hours a week, and what would you pay someone else for it?</li>
+                <li>How is the business set up for tax: sole proprietorship, partnership or S-Corp?</li>
+                <li>Do the kids have bank accounts in their own names?</li>
+                <li>What are you already saving for college or retirement?</li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Strategies explored</h4>
+              <ul class="sc-ex">
+                <li><span class="v v--fit">Likely fit</span><b>Hire Your Kids</b><span>Real wages for real work, paid through payroll and deductible to the business. How payroll taxes apply depends on the entity.</span></li>
+                <li><span class="v">Worth a look</span><b>Traditional &amp; Roth IRA</b><span>Kids with earned income can contribute to an IRA of their own. Which kind depends on their situation.</span></li>
+                <li><span class="v">Worth a look</span><b>529 Education Plan</b><span>Tax-advantaged college savings. State rules on deductions vary.</span></li>
+                <li><span class="v v--no">Stop</span><b>Cash with no records</b><span>Undocumented payments don't support a deduction. The plan replaces them.</span></li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">What the plan documents</h4>
+              <ul class="sc-docs">
+                <li>A written job description for each child</li>
+                <li>Timesheets, kept as the work happens</li>
+                <li>Pay rates compared with what the same work costs elsewhere</li>
+                <li>Payroll records and year-end wage forms</li>
+                <li>Statements showing wages paid into the kids' own accounts</li>
+              </ul>
+            </div>
+            <p class="sc-disc">Illustrative scenario. A hypothetical family built to show the process, not a HeyDrew client. Whether any strategy fits you depends on your facts and the rules in effect for your tax year.</p>
+          </article>
+
+          <!-- C -->
+          <article class="sc paper" id="sc-c" aria-labelledby="sc-c-h" data-reveal>
+            <header class="sc-top">
+              <span class="sc-no">Scenario C</span>
+              <h3 class="sc-t" id="sc-c-h">The owner who also holds rentals</h3>
+              <span class="stamp sc-stamp">Illustrative scenario, not a client</span>
+            </header>
+            <div class="sc-row">
+              <h4 class="sc-lbl">The situation</h4>
+              <p class="sc-sit">Owns an operating business taxed as an S-Corp and, separately, two long-term rental properties titled in the owners' personal names. The business books are clean. The rentals live in a spreadsheet.</p>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Questions the Tax Valet asks</h4>
+              <ul class="sc-qs">
+                <li>How is each property titled, and is it insured to match?</li>
+                <li>Who manages the rentals, and roughly how many hours go into them?</li>
+                <li>Do you have purchase and improvement records for each property?</li>
+                <li>Is anything being bought, sold or refinanced this year?</li>
+                <li>Does the business ever meet at your home?</li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Strategies explored</h4>
+              <ul class="sc-ex">
+                <li><span class="v v--fit">First</span><b>Property records</b><span>Clean, property-by-property books and depreciation records come first. Every other decision depends on them.</span></li>
+                <li><span class="v">Review</span><b>How the properties are held</b><span>Ownership and titling affect liability, bookkeeping and taxes. Worth reviewing with your team and an attorney.</span></li>
+                <li><span class="v v--no">Unlikely</span><b>Real estate professional status</b><span>It comes with strict time tests. Alongside a full-time business, most owners won't meet them, and the plan says so.</span></li>
+                <li><span class="v">Worth a look</span><b>Augusta Rule</b><span>Separate from the rentals: the owners' own home, used for real business meetings, at a fair market rate.</span></li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">What the plan documents</h4>
+              <ul class="sc-docs">
+                <li>A ledger for each property, kept with the bookkeeping</li>
+                <li>Purchase, improvement and depreciation records</li>
+                <li>An hour log, if time spent is part of the decision</li>
+                <li>A comparable rent worksheet for any home meetings <a href="resources.html#doc-augusta">Get the worksheet</a></li>
+              </ul>
+            </div>
+            <p class="sc-disc">Illustrative scenario. A hypothetical owner built to show the process, not a HeyDrew client. Whether any strategy fits you depends on your facts and the rules in effect for your tax year.</p>
+          </article>
+
+          <!-- D -->
+          <article class="sc paper" id="sc-d" aria-labelledby="sc-d-h" data-reveal>
+            <header class="sc-top">
+              <span class="sc-no">Scenario D</span>
+              <h3 class="sc-t" id="sc-d-h">The solo creator</h3>
+              <span class="stamp sc-stamp">Illustrative scenario, not a client</span>
+            </header>
+            <div class="sc-row">
+              <h4 class="sc-lbl">The situation</h4>
+              <p class="sc-sit">A single-member LLC earning from brand sponsorships, platform payouts and affiliate links. Income arrives in bursts. Buys camera gear and works from a home studio. Has a high-deductible health plan and no retirement account yet.</p>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Questions the Tax Valet asks</h4>
+              <ul class="sc-qs">
+                <li>Where does income arrive, and how is it tracked today?</li>
+                <li>Is the LLC taxed as a sole proprietorship, or has it elected S-Corp status?</li>
+                <li>How are you handling estimated tax payments on uneven income?</li>
+                <li>Is your health plan HSA-eligible?</li>
+                <li>What gear and studio costs did you pay for this year, and do you have receipts?</li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">Strategies explored</h4>
+              <ul class="sc-ex">
+                <li><span class="v v--fit">Likely fit</span><b>Solo 401(k)</b><span>Built for owners with no employees. Contributions can flex from year to year, which suits uneven income.</span></li>
+                <li><span class="v v--fit">Likely fit</span><b>Health Savings Account</b><span>With an HSA-eligible plan, contributions can be deductible and grow tax-free for medical costs.</span></li>
+                <li><span class="v">Run the math</span><b>S-Corp election</b><span>It makes sense at some income levels and not at others. The plan shows the comparison both ways.</span></li>
+                <li><span class="v">Depends</span><b>Accountable Plan</b><span>Relevant if the business becomes an S-Corp. As a sole proprietorship, those costs are deducted directly.</span></li>
+              </ul>
+            </div>
+            <div class="sc-row">
+              <h4 class="sc-lbl">What the plan documents</h4>
+              <ul class="sc-docs">
+                <li>Bookkeeping categories for each income source</li>
+                <li>A quarterly estimated tax schedule</li>
+                <li>Retirement and HSA account paperwork</li>
+                <li>Receipts and business-use notes for equipment and the studio</li>
+              </ul>
+            </div>
+            <p class="sc-disc">Illustrative scenario. A hypothetical owner built to show the process, not a HeyDrew client. Whether any strategy fits you depends on your facts and the rules in effect for your tax year.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The one example with numbers -->
+  <section class="sec cs-num" aria-labelledby="num-h">
+    <div class="wrap num-grid">
+      <div class="num-copy" data-reveal>
+        <h2 class="h2" id="num-h">Where the numbers come in.</h2>
+        <p class="lead">This is the one worked example with dollar figures on our site. It's hypothetical, and it's the same one you'll find on our homepage.</p>
+        <p class="num-persona" data-confirm="scenario inputs behind $135K"><b>A hypothetical owner.</b> Married, S-Corp, two kids who help in the business, works from a home office, about $400K in revenue.</p>
+        <figure class="num-honest">
+          <blockquote><p>“Can you guarantee I'll save money? No, and be skeptical of anyone who says otherwise. What we guarantee is that we'll look at every strategy you legitimately qualify for and show you the math.”</p></blockquote>
+          <figcaption>From our FAQ</figcaption>
+        </figure>
+      </div>
+      <div class="num-sheet" data-reveal>
+        <div class="paper-doc paper paper--margin">
+          <span class="stamp">Illustrative</span>
+          <div class="pd-h"><span class="pd-t">Hypothetical owner, 2026 plan</span><span class="tab">Deduction</span></div>
+          <ul class="pd-rows" data-confirm="placeholder line amounts: CPA must supply the real split (must sum to $135,000)">
+            <li><span class="box on" aria-hidden="true"></span><span><span class="n">Hire Your Kids</span><span class="d">2 kids' wages</span></span><span class="amt">$32,200</span></li>
+            <li><span class="box on" aria-hidden="true"></span><span><span class="n">Augusta Rule</span><span class="d">14 days of rent</span></span><span class="amt">$21,000</span></li>
+            <li><span class="box on" aria-hidden="true"></span><span><span class="n">Solo 401(k)</span><span class="d">Contributions</span></span><span class="amt">$58,000</span></li>
+            <li><span class="box on" aria-hidden="true"></span><span><span class="n">Accountable Plan</span><span class="d">Home office, phone, mileage</span></span><span class="amt">$12,000</span></li>
+            <li><span class="box on" aria-hidden="true"></span><span><span class="n">Other strategies</span><span class="d">HSA, HRA, IRA, 529</span></span><span class="amt">$11,800</span></li>
+          </ul>
+          <div class="pd-total">
+            <span class="lbl">Potential deductions in this example†</span>
+            <span class="pd-sum" aria-label="$135,000"><span class="cur">$</span>135,000</span>
+          </div>
+        </div>
+        <p class="pd-note">† Illustrative, hypothetical example. Deductions reduce taxable income; they are not dollar-for-dollar tax savings. Your results depend on your income, entity, state and eligibility, and are not guaranteed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share your story -->
+  <section class="cs-share" aria-labelledby="share-h">
+    <div class="wrap">
+      <div class="share paper" data-reveal>
+        <div class="share-copy">
+          <h2 class="share-h" id="share-h">Are you a HeyDrew client? Tell us how your year went.</h2>
+          <p>A win, a lesson, or a plain "here's what changed." With your approval, we'll publish it here in your own words, next to the six above.</p>
+        </div>
+        <a class="btn btn--ghost" href="https://heydrew.com/contact/?src=case-studies&amp;pos=share_story" data-call="share_story" data-confirm="contact URL for client stories">Share your story<svg aria-hidden="true"><use href="#arr"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA band -->
+  <section class="cta-band" aria-labelledby="cta-h" data-sticky-hide>
+    <div class="stage cta-stage">
+      <div class="cta-copy" data-reveal>
+        <h2 class="h2" id="cta-h">Your plan starts with <span class="hl">your</span> facts.</h2>
+        <p class="lead">See which strategies fit your business before December 31 decides for you.</p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=final" data-pos="final" data-cta="final">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+          <a class="btn btn--ghost" href="https://heydrew.com/contact/?src=case-studies&amp;pos=final" data-call="final_call" data-confirm="booking URL">Book a strategy call</a>
+        </div>
+        <p class="small">Free. Takes a few minutes. No credit card.</p>
+      </div>
+      <div class="cta-drew" aria-hidden="true"><img src="img/o-drew-celebrate.webp" width="400" height="685" alt="" loading="lazy" decoding="async"><span class="cta-shadow"></span></div>
+      <span class="horizon" aria-hidden="true"></span>
+    </div>
+  </section>
+
+</main>
+
+<!-- chrome:footer -->
+<footer class="foot on-dark" id="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="foot-logo" aria-label="HeyDrew home"><img src="img/logo-white.svg" width="120" height="70" alt="HeyDrew!"></a>
+        <p><img src="img/o-drew-avatar.webp" width="28" height="28" alt="">AI-Driven, Human-Perfected.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/heydrewcpa/" data-foot="instagram" aria-label="HeyDrew on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@heydrew" data-foot="youtube" data-confirm="channel URL" aria-label="HeyDrew on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.25v5.5L14.75 12z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="cols">
+        <div><h4>Product</h4><a href="product/how-it-works.html" data-foot="how_it_works">How It Works</a><a href="product/taxland.html" data-foot="taxland">TaxLand Assessment</a><a href="product/tax-valet.html" data-foot="tax_valet">Your Tax Valet</a><a href="product/bookkeeping-payroll.html" data-foot="bookkeeping_payroll">Bookkeeping &amp; Payroll</a><a href="product/pricing.html" data-foot="pricing">Pricing</a></div>
+        <div><h4>Solutions</h4><a href="solutions/s-corp-owners.html" data-foot="s_corp_owners">S-Corp Owners</a><a href="solutions/self-employed.html" data-foot="self_employed">Self-Employed &amp; LLCs</a><a href="solutions/real-estate-investors.html" data-foot="real_estate_investors">Real Estate Investors</a><a href="solutions/families.html" data-foot="families">Families &amp; Generational Wealth</a><a href="solutions/strategies.html" data-foot="strategies">All Strategies</a></div>
+        <div><h4>Company</h4><a href="company/about.html" data-foot="about">About HeyDrew</a><a href="company/careers.html" data-foot="careers">Careers</a><a href="company/affiliates.html" data-foot="affiliates">Affiliate Program</a><a href="company/contact.html" data-foot="contact">Contact</a><a href="company/security.html" data-foot="security">Security &amp; Privacy</a></div>
+        <div><h4>Resources</h4><a href="resources.html" data-foot="resources">Resources</a><a href="case-studies.html" data-foot="case_studies">Case Studies</a><a href="index.html#faq" data-foot="faq">FAQ</a><a href="https://taxland.heydrew.com/?src=case-studies&amp;pos=footer" data-pos="footer" data-cta="footer" data-foot="assessment">Start the assessment</a><a href="https://portal.heydrew.com/" data-foot="signin" data-confirm="portal URL">Sign in</a></div>
+      </div>
+    </div>
+    <hr>
+    <div id="disclaimers" data-confirm="legal review">
+      <h4>Disclaimers</h4>
+      <p>All savings and deduction figures on this page are illustrative, based on hypothetical scenarios, and are not a guarantee of results. Deductions reduce taxable income; actual tax savings depend on your tax bracket, filing status, entity type, state and eligibility. Strategy matches shown by the homepage estimator are a preliminary screen based on limited answers and are not tax, legal or financial advice. Tax laws, limits and thresholds change every year. Every strategy must be properly implemented and documented under current IRS and state rules. Testimonials reflect individual experiences and do not guarantee future results. HeyDrew! is a d/b/a of Aspire Advisors LLC.</p>
+    </div>
+    <div class="foot-bottom">
+      <p class="copy">© 2026 Aspire Advisors LLC d/b/a HeyDrew!</p>
+      <ul class="foot-legal" aria-label="Legal">
+        <li><a href="https://heydrew.com/terms-of-service/" data-foot="tos">Terms of Service</a></li>
+        <li><a href="https://heydrew.com/privacy-policy/" data-foot="privacy">Privacy</a></li>
+        <li><a href="https://heydrew.com/cookie-policy/" data-foot="cookies">Cookies</a></li>
+        <li><a href="https://heydrew.com/sms-terms/" data-foot="messaging">Messaging Terms</a></li>
+        <li><a href="https://heydrew.com/terms-of-use/" data-foot="tou">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- /chrome:footer -->
+
+<!-- chrome:overlays -->
+<!-- Exit intent (rules in README; preview with ?exit=1) -->
+<div class="xi" id="xi" hidden>
+  <div class="xi-bd" data-xi-close="backdrop"></div>
+  <div class="xi-dlg" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="xi-t" aria-describedby="xi-p">
+    <div class="xi-drew" aria-hidden="true"><img src="img/o-drew-point.webp" width="560" height="810" alt="" loading="lazy" decoding="async"></div>
+    <div class="xi-paper paper paper--margin">
+      <div class="xi-h">
+        <img class="avatar" src="img/o-drew-avatar.webp" width="24" height="24" alt="">
+        <span class="plan-title">Your 2026 Strategy Plan</span>
+        <button type="button" class="xi-x" data-xi-close="close" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      </div>
+      <h2 class="xi-t" id="xi-t">Before you go, see which strategies you might be missing.</h2>
+      <p class="xi-p" id="xi-p">Most owners never hear about these. A few minutes in TaxLand shows which ones fit your business.</p>
+      <div class="xi-rows"><ul id="xi-rows" aria-label="Strategies in the plan">
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Hire Your Kids</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Augusta Rule</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Accountable Plan</span></li>
+        <li><span class="box" aria-hidden="true"></span><span class="nm">Solo 401(k)</span></li>
+      </ul><span class="stamp xi-stamp" id="xi-stamp" aria-hidden="true">Unchecked</span></div>
+      <p class="xi-more" id="xi-more" aria-hidden="true">+ more in your full plan</p>
+      <a class="btn btn--primary xi-go" id="xi-go" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=exit" data-pos="exit" data-cta="exit_intent">See what you can keep<svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <p class="micro xi-fine">Free. Takes a few minutes. No credit card.</p>
+      <div class="xi-stub">
+        <form id="xi-form" novalidate>
+          <label class="xi-lbl" for="xi-email">Not ready? Get the strategy checklist by email.</label>
+          <div class="xi-field">
+            <input id="xi-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@yourbusiness.com" required aria-describedby="xi-err">
+            <button type="submit" class="btn btn--ghost">Send it</button>
+          </div>
+          <p class="xi-err" id="xi-err" role="alert"></p>
+        </form>
+        <div class="xi-thanks" id="xi-thanks" tabindex="-1" hidden><span class="stamp">✓ Sent</span><p><b>It's on its way.</b>Check your inbox for the strategy checklist.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a class="sticky" id="sticky" href="https://taxland.heydrew.com/?src=case-studies&amp;pos=sticky" data-pos="sticky" aria-label="See what you can keep, free assessment">
+  <img src="img/o-drew-avatar.webp" width="32" height="32" alt="">
+  <span class="t"><b id="st-b">See what you can keep</b><span id="st-s">Free. A few minutes.</span></span>
+  <span class="go" aria-hidden="true"><svg><use href="#arr"/></svg></span>
+</a>
+<!-- /chrome:overlays -->
+
+<!-- Shared behaviour. GSAP is optional: pages render complete without it. -->
+<script src="assets/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+/* Case Studies: the scenario index follows the file in view (IntersectionObserver, no scroll listener). */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.sc-index a[data-sc]'));
+  if(!links.length||!('IntersectionObserver' in window)) return;
+  var byId={}; links.forEach(function(a){ byId[a.getAttribute('data-sc')]=a; });
+  var visible={};
+  function paint(){
+    var best=null;
+    links.forEach(function(a){ var id=a.getAttribute('data-sc'); if(visible[id]&&!best) best=id; });
+    links.forEach(function(a){ var on=a.getAttribute('data-sc')===best; a.classList.toggle('is-on',on); if(on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+  }
+  var io=new IntersectionObserver(function(en){ en.forEach(function(e){ visible[e.target.id]=e.isIntersecting; }); paint(); },{rootMargin:'-35% 0px -55% 0px'});
+  links.forEach(function(a){ var el=document.getElementById(a.getAttribute('data-sc')); if(el) io.observe(el); });
+  links.forEach(function(a){ a.addEventListener('click',function(){ if(window.HD&&HD.track) HD.track('scenario_jump',{scenario:a.getAttribute('data-sc')}); }); });
+})();
+
+</script>
+</body>
+</html>
