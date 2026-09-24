@@ -1,0 +1,304 @@
+{
+ "desktop": {
+  "errs": [],
+  "initBytes": 595158,
+  "totalBytes": 1105654,
+  "fold": {
+   "heroCta": {
+    "top": 522,
+    "bottom": 574,
+    "vis": true
+   },
+   "plan": {
+    "top": 190,
+    "bottom": 749,
+    "vis": true
+   },
+   "chips": [
+    383,
+    380,
+    435,
+    487,
+    484
+   ],
+   "proof": {
+    "top": 915,
+    "bottom": 1016,
+    "vis": true
+   },
+   "estNote": {
+    "top": 833,
+    "bottom": 867,
+    "vis": true
+   },
+   "navBtn": {
+    "top": 14,
+    "bottom": 58,
+    "vis": true
+   },
+   "vh": 900
+  },
+  "after": {
+   "sw": 1440,
+   "cw": 1440,
+   "H": 13767
+  },
+  "reqs": [
+   [
+    "/Aspire/Hey%20Drew/homepage-redesign/site/img/o-fg-1600.webp",
+    158868
+   ],
+   [
+    "e/Hey%20Drew/homepage-redesign/site/img/o-backdrop-1600.webp",
+    139660
+   ],
+   [
+    "xt%20SSD/Aspire/Hey%20Drew/homepage-redesign/site/index.html",
+    129537
+   ],
+   [
+    "spire/Hey%20Drew/homepage-redesign/site/img/o-drew-hero.webp",
+    109064
+   ],
+   [
+    "pire/Hey%20Drew/homepage-redesign/site/img/o-drew-point.webp",
+    78696
+   ],
+   [
+    "tps://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+    72214
+   ],
+   [
+    "s.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2",
+    62556
+   ],
+   [
+    "spire/Hey%20Drew/homepage-redesign/site/img/o-drew-desk.webp",
+    59684
+   ],
+   [
+    "/Hey%20Drew/homepage-redesign/site/img/o-drew-celebrate.webp",
+    55806
+   ],
+   [
+    "D/Aspire/Hey%20Drew/homepage-redesign/site/img/o-andrew.webp",
+    50604
+   ],
+   [
+    "js.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+    43380
+   ],
+   [
+    "static.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2",
+    31312
+   ],
+   [
+    "ns/v17/rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2",
+    28400
+   ],
+   [
+    "Hey%20Drew/homepage-redesign/site/img/o-art-accountable.webp",
+    15810
+   ]
+  ],
+  "est": {
+   "planCtaBottom": 690,
+   "count": "6\nof 8 strategies",
+   "fit": "may fit a business like yours.*",
+   "sum": "SOLE PROP / 1-MEMBER LLC / $250K-$1M",
+   "hrefs": {
+    "deadline": "https://taxland.heydrew.com/?src=home&pos=deadline",
+    "nav": "https://taxland.heydrew.com/?src=home&pos=nav",
+    "hero": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=hero",
+    "hiw": "https://taxland.heydrew.com/?src=home&pos=hiw",
+    "bento": "https://taxland.heydrew.com/?src=home&pos=bento",
+    "example": "https://taxland.heydrew.com/?src=home&pos=example",
+    "portal": "https://taxland.heydrew.com/?src=home&pos=portal",
+    "pricing": "https://taxland.heydrew.com/?src=home&pos=pricing",
+    "final": "https://taxland.heydrew.com/?src=home&pos=final",
+    "footer": "https://taxland.heydrew.com/?src=home&pos=footer",
+    "sticky": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=sticky"
+   },
+   "sticky": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=sticky",
+   "dl": "hero_view,hiw_card_view,hiw_card_view,hiw_card_view,scroll_depth,example_counter_complete,scroll_depth,portal_view,scroll_depth,scroll_depth,estimator_q1_answer,estimator_q2_answer,estimator_result_view"
+  }
+ },
+ "mobile": {
+  "errs": [],
+  "initBytes": 535474,
+  "totalBytes": 891190,
+  "fold": {
+   "heroCta": {
+    "top": 0,
+    "bottom": 0,
+    "vis": true
+   },
+   "plan": {
+    "top": 499,
+    "bottom": 1062,
+    "vis": true
+   },
+   "chips": [
+    682,
+    682,
+    752,
+    752,
+    808
+   ],
+   "proof": {
+    "top": 1246,
+    "bottom": 1449,
+    "vis": true
+   },
+   "estNote": {
+    "top": 1163,
+    "bottom": 1214,
+    "vis": true
+   },
+   "navBtn": {
+    "top": 10,
+    "bottom": 50,
+    "vis": true
+   },
+   "vh": 853
+  },
+  "after": {
+   "sw": 390,
+   "cw": 390,
+   "H": 15336
+  },
+  "reqs": [
+   [
+    "xt%20SSD/Aspire/Hey%20Drew/homepage-redesign/site/index.html",
+    129537
+   ],
+   [
+    "spire/Hey%20Drew/homepage-redesign/site/img/o-drew-hero.webp",
+    109064
+   ],
+   [
+    "pire/Hey%20Drew/homepage-redesign/site/img/o-drew-point.webp",
+    78696
+   ],
+   [
+    "tps://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+    72214
+   ],
+   [
+    "s.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2",
+    62556
+   ],
+   [
+    "spire/Hey%20Drew/homepage-redesign/site/img/o-drew-desk.webp",
+    59684
+   ],
+   [
+    "/Hey%20Drew/homepage-redesign/site/img/o-drew-celebrate.webp",
+    55806
+   ],
+   [
+    "D/Aspire/Hey%20Drew/homepage-redesign/site/img/o-andrew.webp",
+    50604
+   ],
+   [
+    "D/Aspire/Hey%20Drew/homepage-redesign/site/img/o-fg-800.webp",
+    47482
+   ],
+   [
+    "re/Hey%20Drew/homepage-redesign/site/img/o-backdrop-800.webp",
+    44332
+   ],
+   [
+    "js.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+    43380
+   ],
+   [
+    "static.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2",
+    31312
+   ],
+   [
+    "ns/v17/rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2",
+    28400
+   ],
+   [
+    "Hey%20Drew/homepage-redesign/site/img/o-art-accountable.webp",
+    15810
+   ]
+  ],
+  "est": {
+   "planCtaBottom": 983,
+   "count": "6\nof 8 strategies",
+   "fit": "may fit a business like yours.*",
+   "sum": "SOLE PROP / 1-MEMBER LLC / $250K-$1M",
+   "hrefs": {
+    "deadline": "https://taxland.heydrew.com/?src=home&pos=deadline",
+    "nav": "https://taxland.heydrew.com/?src=home&pos=nav",
+    "hero": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=hero",
+    "hiw": "https://taxland.heydrew.com/?src=home&pos=hiw",
+    "bento": "https://taxland.heydrew.com/?src=home&pos=bento",
+    "example": "https://taxland.heydrew.com/?src=home&pos=example",
+    "portal": "https://taxland.heydrew.com/?src=home&pos=portal",
+    "pricing": "https://taxland.heydrew.com/?src=home&pos=pricing",
+    "final": "https://taxland.heydrew.com/?src=home&pos=final",
+    "footer": "https://taxland.heydrew.com/?src=home&pos=footer",
+    "sticky": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=sticky"
+   },
+   "sticky": "https://taxland.heydrew.com/?entity=sole&rev=250k-1m&src=home&pos=sticky",
+   "dl": "hero_view,sticky_cta_shown,hiw_card_view,scroll_depth,scroll_depth,portal_view,example_counter_complete,scroll_depth,scroll_depth,estimator_q1_answer,estimator_q2_answer,estimator_result_view"
+  },
+  "stickyText": {
+   "t": "Continue in TaxLand\nYour answers carry over",
+   "show": true
+  }
+ },
+ "throttled": [
+  "153ms op=0 jsm=true gsap=false",
+  "653ms op=0 jsm=true gsap=true",
+  "1118ms op=0.9529 jsm=true gsap=true",
+  "1585ms op=1 jsm=true gsap=true",
+  "2047ms op=1 jsm=true gsap=true",
+  "2509ms op=1 jsm=false gsap=true",
+  "2966ms op=1 jsm=false gsap=true",
+  "3424ms op=1 jsm=false gsap=true",
+  "3887ms op=1 jsm=false gsap=true",
+  "4343ms op=1 jsm=false gsap=true",
+  "4805ms op=1 jsm=false gsap=true",
+  "5265ms op=1 jsm=false gsap=true",
+  "5724ms op=1 jsm=false gsap=true",
+  "6183ms op=1 jsm=false gsap=true"
+ ],
+ "blocked": [
+  [
+   854,
+   "1"
+  ],
+  [
+   1361,
+   "1"
+  ],
+  [
+   1865,
+   "1"
+  ],
+  [
+   2368,
+   "1"
+  ],
+  [
+   2871,
+   "1"
+  ],
+  [
+   3375,
+   "1"
+  ],
+  [
+   3880,
+   "1"
+  ],
+  [
+   4385,
+   "1"
+  ]
+ ]
+}

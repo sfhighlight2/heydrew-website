@@ -1,0 +1,10 @@
+# Build/QA artifacts
+site/img/raw/
+site/shots/
+site/*.backup*.html
+research/**/*.png
+research/**/*.jpg
+research/verify/
+research/**/web/
+node_modules/
+.DS_Store

@@ -1,0 +1,286 @@
+{
+ "collective-desk": {
+  "load": 313,
+  "reqs": 147,
+  "fcp": 356,
+  "transfer": 1279904,
+  "h1": [
+   "The all-in-one financial solution for self-employed entrepreneurs"
+  ],
+  "ctas": [
+   "Privacy Policy",
+   "What we do",
+   "Pricing",
+   "Pricing",
+   "Customers",
+   "Customers",
+   "Company",
+   "Resources",
+   "Login",
+   "Get started",
+   "Get started",
+   "How much can I save?"
+  ]
+ },
+ "collective-mob": {
+  "load": 286,
+  "reqs": 148,
+  "fcp": 304,
+  "transfer": 1257994,
+  "h1": [
+   "The all-in-one financial solution for self-employed entrepreneurs"
+  ],
+  "ctas": [
+   "Privacy Policy",
+   "Sign up this month for S Corp savings an",
+   "Get started",
+   "How much can I save?"
+  ]
+ },
+ "keeper-desk": {
+  "load": 855,
+  "reqs": 115,
+  "fcp": 388,
+  "transfer": 1230739,
+  "h1": [
+   "Taxes built for \nyou\nmodern workers\nfreelancers\nS-Corps\nrental property\ninvestments"
+  ],
+  "ctas": [
+   "Features",
+   "Covered scenarios",
+   "Pricing",
+   "Calculators",
+   "Education",
+   "Login",
+   "Try for free",
+   "Get started free",
+   "Talk to an expert",
+   "Privacy Policy",
+   "Manage preferences",
+   "Continue"
+  ]
+ },
+ "keeper-mob": {
+  "load": 2888,
+  "reqs": 95,
+  "fcp": 432,
+  "transfer": 830130,
+  "h1": [
+   "Taxes built for \nyou\nmodern workers\nfreelancers\nS-Corps\nrental property\ninvestments"
+  ],
+  "ctas": [
+   "Try for free",
+   "Get started free",
+   "Talk to an expert",
+   "Get started free",
+   "Privacy Policy",
+   "Manage preferences",
+   "Continue"
+  ]
+ },
+ "pilot-desk": {
+  "load": 2152,
+  "reqs": 282,
+  "fcp": 124,
+  "transfer": 249084,
+  "h1": [
+   "Accounting and tax servicesfor small businesses and startups"
+  ],
+  "ctas": [
+   "THE AI OPERATING SYSTEM FOR ACCOUNTING F",
+   "Why Pilot",
+   "Pricing",
+   "Meridian",
+   "SIGN IN",
+   "GET STARTED",
+   "START FREE TRIAL",
+   "GET STARTED"
+  ]
+ },
+ "pilot-mob": {
+  "load": 1928,
+  "reqs": 161,
+  "fcp": 628,
+  "transfer": 367201,
+  "h1": [
+   "If you're buried in bookkeeping, who's leading the company?"
+  ],
+  "ctas": [
+   "THE AI OPERATING SYSTEM FOR ACCOUNTING F",
+   "TALK TO OUR TEAM",
+   "EXPLORE WHAT WE DO"
+  ]
+ },
+ "found-desk": {
+  "load": 1142,
+  "reqs": 140,
+  "fcp": 240,
+  "transfer": 2187055,
+  "h1": [
+   "Smarter business banking that pays you back:"
+  ],
+  "ctas": [
+   "Skip to main content",
+   "Business Banking",
+   "Bookkeeping & Taxes",
+   "Teams",
+   "Pricing",
+   "Resources",
+   "Sign in",
+   "See a demo",
+   "Get started",
+   "Get started"
+  ]
+ },
+ "found-mob": {
+  "load": 1343,
+  "reqs": 118,
+  "fcp": 408,
+  "transfer": 1928467,
+  "h1": [
+   "Smarter business banking that pays you back:"
+  ],
+  "ctas": [
+   "Skip to main content",
+   "Get started"
+  ]
+ },
+ "ramp-desk": {
+  "load": 297,
+  "reqs": 1,
+  "fcp": 308,
+  "transfer": 5796,
+  "h1": [],
+  "ctas": []
+ },
+ "ramp-mob": {
+  "load": 4562,
+  "reqs": 373,
+  "fcp": 524,
+  "transfer": 4250198,
+  "h1": [
+   "Time is money. Save both."
+  ],
+  "ctas": [
+   "___",
+   "New: AI Token Spend Management — see, un",
+   "Back",
+   "banking*",
+   "Get started for free"
+  ]
+ },
+ "mercury-desk": {
+  "load": 698,
+  "reqs": 161,
+  "fcp": 412,
+  "transfer": 7582516,
+  "h1": [
+   "Radically different banking"
+  ],
+  "ctas": [
+   "Products",
+   "Solutions",
+   "Resources",
+   "About",
+   "Pricing",
+   "Log in",
+   "Open account",
+   "Open account",
+   "Launch demo"
+  ]
+ },
+ "mercury-mob": {
+  "load": 802,
+  "reqs": 166,
+  "fcp": 460,
+  "transfer": 4259638,
+  "h1": [
+   "Radically different banking"
+  ],
+  "ctas": [
+   "Open Menu",
+   "Products",
+   "Solutions",
+   "Resources",
+   "About",
+   "Pricing",
+   "Log in",
+   "Open account",
+   "Open account",
+   "Launch demo"
+  ]
+ },
+ "lemonade-desk": {
+  "load": 846,
+  "reqs": 83,
+  "fcp": 320,
+  "transfer": 530264,
+  "h1": [
+   "Forget everything you\nknow about insurance"
+  ],
+  "ctas": [
+   "Renters",
+   "Homeowners",
+   "Car",
+   "Pet",
+   "Life",
+   "Giveback",
+   "My Account",
+   "CHECK OUR PRICES",
+   "Privacy Policy.",
+   "REJECT ALL",
+   "ACCEPT ALL",
+   "CUSTOMIZE",
+   "CONFIRM"
+  ]
+ },
+ "lemonade-mob": {
+  "load": 828,
+  "reqs": 75,
+  "fcp": 280,
+  "transfer": 529591,
+  "h1": [
+   "Forget everything you know about insurance"
+  ],
+  "ctas": [
+   "CHECK OUR PRICES",
+   "Privacy Policy.",
+   "REJECT ALL",
+   "ACCEPT ALL",
+   "CUSTOMIZE",
+   "CONFIRM"
+  ]
+ },
+ "heydrew-desk": {
+  "load": 1747,
+  "reqs": 88,
+  "fcp": 324,
+  "transfer": 7423946,
+  "h1": [
+   "Keep Your Money,",
+   "Stop Overpaying the IRS"
+  ],
+  "ctas": [
+   "How It Works",
+   "About Us",
+   "FAQ",
+   "Careers",
+   "Get Started",
+   "Sign In",
+   "Take The Assessment"
+  ]
+ },
+ "heydrew-mob": {
+  "load": 1170,
+  "reqs": 85,
+  "fcp": 260,
+  "transfer": 7352115,
+  "h1": [
+   "Keep Your Money,",
+   "Stop Overpaying the IRS"
+  ],
+  "ctas": [
+   "Take The Assessment"
+  ]
+ }
+}
